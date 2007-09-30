@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>rdf-utils</groupId>
+	<groupId>org.wymiwyg</groupId>
 	<artifactId>rdf-utils</artifactId>
 	<version>0.6.0</version>
 	<description>diff, patch and more</description>
@@ -25,7 +25,7 @@
 				</configuration>
 				<executions>
 					<execution>
-						<phase>package</phase><!-- exec as part of the package phase. -->
+						<phase>assebly</phase><!-- exec as part of the package phase. -->
 						<goals>
 							<goal>attached</goal><!-- use assembly's 'attached' goal -->
 						</goals>
@@ -71,5 +71,14 @@
 			<version>3.8.2</version>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>berlios-wymiwyg-repository</id>
+			<name>wymiwyg repository on berlios svn</name>
+			<url>
+				scp://shell.berlios.de/home/groups/wymiwyg/htdocs/maven2
+			</url>
+		</repository>
+	</distributionManagement>
 </project>
 

@@ -1,0 +1,15 @@
+<rdf:RDF
+    xmlns:j.0="http://xmlns.com/foaf/0.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.1="http://wymiwyg.org/ontologies/diff#" >
+  <rdf:Description rdf:nodeID="A0">
+    <j.0:mbox_sha1sum rdf:nodeID="A1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <j.0:mbox rdf:nodeID="A0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <j.1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">urn:urn-5:UVIJ-S61Q6lIwrlEbl-30C30bpY=</j.1:name>
+    <j.0:mbox rdf:nodeID="A0"/>
+  </rdf:Description>
+</rdf:RDF>

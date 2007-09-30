@@ -1,0 +1,4 @@
+_:A40e64f86X3aX10897b66c2cX3aXX2dX5eb8 <http://xmlns.com/foaf/0.1/mbox_sha1sum> "123" .
+_:A40e64f86X3aX10897b66c2cX3aXX2dX5eb8 <http://xmlns.com/foaf/0.1/name> "B. Tester" .
+<http://example.org/persons#b> <http://xmlns.com/foaf/0.1/givenName> "Beta" .
+<http://example.org/persons#b> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "123" .

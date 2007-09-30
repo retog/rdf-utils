@@ -1,0 +1,29 @@
+When danny asked if I could do a short presentation I thought that the utility tool for doing diff and patch for rdf graphs would better suit into ten minutes than knobot which I tried to present two years ago.
+
+[slide 1]
+The motivation of implementing diff and patch however, relates to KnoBot as I needed a diff utility to debug KnoBot. I happened to find myself in the situation: I can explain why the graph increases by a dozen triples, but why more than hundred? Or: what content was changed since yesterday? For graphs with more than a few triples neither comparing a serialization nor their visual representation is really handy.
+
+[2]
+I come across the concept of rdf-molecules a concept similar to Minimum Self contained Graph but which takes functional and inverse functional properties into account and allows a loosless decompotion of a graph into small units. It is important to have the smallest possible subgraphs as the diff operations has to check if the subgraphs are isomorphic, which is reasonable fast only for small graphs. 
+
+The paper introduces the concept of grounded and ungrounded nodes, grounded are named resources, literals as well as "functionally grounded nodes". A molecule is something than cannot be splitted withous loosing meaning. A terminal molecule is one that contains only grounded nodes and thus the easiest case for comparisons. A contextual molecule is one that contains anonymous nodes and which may thus take more time for comparison.
+
+[3]
+A problem I had with molecules is that it is not-deterministic which functional or inverse functional property is used to ground a node. Thus, in the diff-utility functional node are handled as reference to set of groundings, in the terminology of the molecules paper this are "non-terminal-molecules", typically consisting of a single triple. What makes diffs smaller is that when a resource is identified by exactly one set of non-terminal molecules per graph, only the differences of this fg-node are in the diff, while molecules containing the node, can safely be considered as equal and omitted in the diff.
+
+[4]
+Despite the narrow original focus the tool is quite generic and not limited to detecting small changes in a graph. You can diff arbitrary graphs, and reconstruct them having the diff and one of the graphs. Well, the only things that may get losts are redundancies if the original graphs weren't lean. The ability to diff an patch arbitrary graphs allowed automated tests with generated random graphs.mg src="components-of-a-graph.png" class="incremental"/>
+
+[5]
+It's not a perfect tool tough, the patch functionality could be improved to allow better results when patching a graph that isn't identical to the oriiginal. The diff functionality could generate smaller diff it there was an option to make one-way-diffs, i.e. diffs that are not suitable for the unpacth operation, or grow only diffs, basically a diff against the union of the graph and another one.
+
+[6]
+Majior performance improvements would be possible by allowing strong-hashes on the big-subset of molecules for which deterministic serialization is possible, saving a lot of graph-isomorphism.
+
+[7]
+What I'm most interest in, is discussion the possibility of using the graph decomposition infrastructure for store capable of storing multiple models and their changes over time. Basically it would be a database for molecules and fg-nodes plus a meta-model stating the periods of time in which a component is contained in a source graph, not only on such a basis would allow rolling back to previous versions, it would also prevent duplicate storing of data, e.g. if the same rss-item is retrieved from multiple feeds only the meta-model gets a couple of additional triples, the molecules resulting from tre item remain the same.
+
+
+The meta-model could contain information on how component relates, e.g. that one contextual molecule is a subgraph of another, this is important as when the union of different models is requested this allows returning a leaner graph. Also the "why should I believe this"-button should return trustees asserting the molecule as well as those assering a supergraph of it.
+
+I would have liked to have a prototype (but the test generator told me what do instead) .

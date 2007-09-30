@@ -1,0 +1,101 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ns0="http://purl.org/rss/1.0/"
+   xmlns:ns1="http://wymiwyg.org/ontologies/virtuser#"
+   xmlns:ns2="http://xmlns.com/foaf/0.1/"
+   xmlns:ns3="http://wymiwyg.org/ontologies/knobot/personal-history#"
+   xmlns:ns4="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:ns5="http://wymiwyg.org/ontologies/knobot#"
+   xmlns:ns6="http://wymiwyg.org/ontologies/rwcf#"
+   xmlns:ns7="http://wymiwyg.org/ontologies/language-selection#"
+   xmlns:ns8="http://wymiwyg.org/ontologies/foaf/extensions#"
+   xmlns:ns9="http://wymiwyg.org/ontologies/authorization#"
+   xmlns:ns10="http://purl.org/dc/elements/1.1/"
+   xmlns:ns11="urn://wymiwyg.org/knobot/default/"
+   xmlns:ns12="http://wymiwyg.org/ontologies/hostcanonicalizer#">
+  <rdf:Description rdf:about="http://localhost/me">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-78a8">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <ns7:abbreviation>fr</ns7:abbreviation>
+    <ns7:name>Français</ns7:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8585/me">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/foaf/extensions#AgentProfileDocument"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns2:primaryTopic rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7ef2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8585/">
+    <ns10:creator xml:lang="it"></ns10:creator>
+    <ns10:date>2005-12-21T19:46+01:00</ns10:date>
+    <ns10:language>it</ns10:language>
+    <ns0:description xml:lang="it">This is the entry page, should write something...&lt;br/&gt;</ns0:description>
+    <ns0:title xml:lang="it">A new Topic!</ns0:title>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Commentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7031">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    <rdf:li rdf:resource="http://localhost:8585/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7d9a">
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Commentable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7ab0">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <ns7:abbreviation>en</ns7:abbreviation>
+    <ns7:name>English</ns7:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7034">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/authorization#PermissionAlternatives"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7ef2">
+    <ns10:date>2005-12-20T21:58+0100</ns10:date>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/virtuser#TemporarySubject"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <ns9:pass_sha1sum>6fd0b9ba50273caac39d1335073f1046d7382647</ns9:pass_sha1sum>
+    <ns9:permission rdf:resource="http://wymiwyg.org/ontologies/authorization#admin"/>
+    <ns9:permission rdf:resource="http://wymiwyg.org/ontologies/authorization#edit"/>
+    <ns9:permission rdf:resource="http://wymiwyg.org/ontologies/authorization#mark"/>
+    <ns9:shortName>reto</ns9:shortName>
+    <ns3:personalHistory rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7031"/>
+    <ns2:family_name>Bachmann-Gmuer</ns2:family_name>
+    <ns2:givenname>Reto</ns2:givenname>
+    <ns2:isPrimaryTopicOf rdf:resource="http://localhost:8585/me"/>
+    <ns2:mbox rdf:resource="mailto:reto@gmuer.ch"/>
+    <ns2:mbox_sha1sum>63267630b67d56a6fca96d01bfc324d7e0a31df1</ns2:mbox_sha1sum>
+    <ns2:name>Reto Bachmann-Gmuer</ns2:name>
+  </rdf:Description>
+  <rdf:Description>
+	<ns2:homepage rdf:resource="http://gmuer.ch/" />
+	<ns2:mbox rdf:resource="mailto:yahoo@gmuer.ch" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7f67">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <ns7:abbreviation>it</ns7:abbreviation>
+    <ns7:name>Italiano</ns7:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7a2b">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <ns7:abbreviation>de</ns7:abbreviation>
+    <ns7:name>Deutsch</ns7:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost/">
+    <ns2:maker rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7b73"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7973">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/hostcanonicalizer#Canonicalizer"/>
+    <ns12:accessURLBase rdf:resource="http://localhost:8585/"/>
+    <ns12:canonicalBase rdf:resource="http://localhost:8585"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7b73">
+    <ns4:seeAlso rdf:resource="http://localhost/me"/>
+    <ns2:weblog rdf:resource="http://localhost/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn://wymiwyg.org/knobot/defaults">
+    <ns11:childStrength>0.9</ns11:childStrength>
+    <ns11:itemPrototype rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7d9a"/>
+    <ns11:notificationEmail rdf:resource="mailto:reto@gmuer.ch"/>
+  </rdf:Description>
+</rdf:RDF>

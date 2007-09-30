@@ -1,0 +1,823 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ns0="http://purl.org/rss/1.0/"
+   xmlns:ns1="http://wymiwyg.org/ontologies/foaf/role#"
+   xmlns:ns2="http://purl.org/rss/1.0/modules/content/"
+   xmlns:ns3="http://xmlns.com/foaf/0.1/"
+   xmlns:ns4="http://wymiwyg.org/ontologies/transaction#"
+   xmlns:ns5="http://wymiwyg.org/ontologies/knobot/personal-history#"
+   xmlns:ns6="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:ns7="http://wymiwyg.org/ontologies/knobot#"
+   xmlns:ns8="http://wymiwyg.org/ontologies/rwcf#"
+   xmlns:ns9="http://wymiwyg.org/ontologies/language-selection#"
+   xmlns:ns10="http://wymiwyg.org/ontologies/rss/attach#"
+   xmlns:ns11="http://wymiwyg.org/ontologies/authorization#"
+   xmlns:ns12="http://purl.org/dc/elements/1.1/"
+   xmlns:ns13="urn://wymiwyg.org/knobot/default/">
+  <rdf:Description rdf:about="http://www.osar.ch/2005/11/14/pm-srk">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-11-14</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns0:description xml:lang="fr">La Commission des institutions politiques du Conseil des Etats a livré aujourd’hui sa position dans le cadre de l’aplanissement des divergences à l’égard des révisions de la loi sur l’asile et de celle sur les étrangers. La commission poursuit sur une ligne dure. Mais des zones d’ombres demeurent que l’absence de message du Conseil fédéral rendra difficile à dissiper...&lt;br/&gt;</ns0:description>
+    <ns0:description xml:lang="de">Die Staatspolitische Kommission des Ständerates hält bei der Revision des Asylgesetzes an ihrer harten Linie fest. Die SFH befürchtet eine Einschränkung des Schutzbereichs der vorläufigen Aufnahme. Die geplante Zweiklassenmedizin verletzt das Gleichheitsgebot...&lt;br/&gt; &lt;a target="_self" href="/asylum-politics/asylum-law/revision"&gt;&amp;gt;&amp;gt; Dossier Asylgesetz-Revision&lt;/a&gt;&lt;br/&gt;</ns0:description>
+    <ns2:encoded xml:lang="fr">&lt;p&gt;La Commission des institutions politiques du Conseil des Etats a livré aujourd’hui sa position dans le cadre de l’aplanissement des divergences à l’égard des révisions de la loi sur l’asile et de celle sur les étrangers. La commission poursuit sur une ligne dure. Mais des zones d’ombres demeurent que l’absence de message du Conseil fédéral rendra difficile à dissiper.&lt;/p&gt;&lt;p&gt;La commission propose une nouvelle formulation de la définition de l’inexigibilité du renvoi. En dépit des assurances émises par la Conseillère aux Etats Trix Heberlein lors du point de presse de la commission, l’OSAR craint que cette valse des étiquettes n’entraîne une restriction de l’étendue de la protection actuellement conférée par l’admission provisoire. Faute de Message du Conseil fédéral, on navigue cependant au radar. En 2004, 4200 personnes ont reçu une admission provisoire, la grande majorité d’entre elles parce que leur renvoi s’avérait inexigible.&lt;/p&gt;&lt;p&gt;A une courte majorité, la commission propose de limiter les prestations prises en charge par l’assurance-maladie des requérants d’asile. Ce faisant, elle persiste dans sa détermination du 17 mars 2005, pourtant rejetée le 27 septembre 2005 par le plénum du Conseil national. Une médecine à deux vitesses s’inscrit en filigrane de cette proposition inédite dont l’application entraînerait d’inévitables inégalités de traitement et placerait les médecins dans des dilemmes éthiques insolubles. L’OSAR est très préoccupée que les requérants d’asile puissent servir de cobayes et faire les frais d’un essai aux contours mal définis.&lt;/p&gt;&lt;p&gt;La commission approuve la suppression de l’aide sociale dans le cadre de procédures extraordinaires, ce qui vient contredire la jurisprudence du Tribunal fédéral. Ainsi, même quand le séjour des requérants en cause sera autorisé, ils ne pourront recevoir qu’une aide minimale conçue pour les pousser à quitter la Suisse !&lt;/p&gt;&lt;p&gt;Par ailleurs, la commission propose que l’aide d’urgence soit accordée à tout requérant d’asile débouté à la condition que l’intéressé rende vraisemblable son état de nécessité. Cela correspond à la pratique actuelle et est tout à fait admissible aux yeux de l’OSAR. Au demeurant, l’état de besoin sera la règle puisque les intéressés n’ont pas le droit d’exercer une activité lucrative.&lt;/p&gt;&lt;p&gt;Questions complémentaires :&lt;br/&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Jürg Schertenleib, Leiter Rechtsdienst, Tel. 031 370 75 36 (Direktwahl) oder 078 824 25 95&lt;/li&gt;&lt;li&gt;Yann Golay, porte-parole, tél. 031 370 75 67 (ligne directe) ou 079 708 99 26&lt;/li&gt;&lt;/ul&gt;</ns2:encoded>
+    <ns2:encoded xml:lang="de">&lt;p&gt;&lt;strong&gt;Die Staatspolitische Kommission des Ständerates hält bei der Revision des Asylgesetzes an ihrer harten Linie fest. Die SFH befürchtet eine Einschränkung des Schutzbereichs der vorläufigen Aufnahme. Die geplante Zweiklassenmedizin verletzt das Gleichheitsgebot. Zudem ist es demokratiepolitisch heikel, wenn das Volk zweimal Nein sagen muss, wenn es die neuen Zwangsmassnahmen (z.B. Beugehaft) ablehnen will.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Nach dem Willen der SPK-S soll die vorläufige Aufnahme wegen Unzumutbarkeit des Wegweisungsvollzugs künftig nur angeordnet werden, wenn Asylsuchende in „ihrer Existenz konkret gefährdet“ sind. Heute reicht eine „konkrete Gefährdung“ aus. Ständerätin Trix Heberlein legte an der Pressekonferenz zwar dar, dass keine Änderung der heutigen Praxis beabsichtigt sei. Die SFH befürchtet aber eine Einschränkung des Schutzbereichs der vorläufigen Aufnahme. So wird z.B. die Gefahr einer Zwangsprostitution heute als „konkrete Gefährdung“ anerkannt. Es ist aber ungewiss, ob sie auch als „Existenzgefährdung“ anerkannt würde.&lt;/p&gt;&lt;p&gt;Die Kommission will zudem die Zweiklassenmedizin einführen: Künftig soll der Bundesrat die Kompetenz erhalten, die Pflichtleistungen der Krankenkassen für Asylsuchende und Schutzbedürftige ohne B-Bewilligung einzuschränken. Aus Sicht der SFH verletzt die Regelung den verfassungsmässigen Grundsatz der Gleichbehandlung und stellt die Ärzteschaft vor ethisch äusserst heikle Entscheidungen. Zudem liegt damit ein gefährlicher Präzedenzfall für Einschränkungen zulasten weiterer Personengruppen vor.&lt;/p&gt;&lt;p&gt;Künftig soll der Sozialhilfestopp auch bei legalem Aufenthalt im ausserordentlichen Verfahren angeordnet werden können. Selbst wenn also die Behörde z.B. eine Wiedererwägungsgesuch wegen Verschlechterung der Situation im Heimatland prüfen und den Aufenthalt bis zum Abschluss des Verfahrens erlauben, bleiben die Betroffenen von der Sozialhilfe ausgeschlossen. Sie können nur Nothilfe erhalten, die bewusst abschreckend ausgestaltet ist. Damit würde ein Urteil des Bundesgerichts rückgängig gemacht, das den Sozialhilfestopp bei legalem Aufenthalt als unzulässig korrigierte. In solchen Fällen darf es gerade nicht darum gehen, die Ausreise mit Abschreckung zu fördern.&lt;/p&gt;&lt;p&gt;Den verfassungswidrigen Nothilfestopp lehnte die SPK glücklicherweise ab. Sie verlangt aber, dass Notlagen künftig glaubhaft gemacht werden müssen, damit Nothilfe geleistet wird. Diese Anforderung gilt bereits heute, ohne dass sie wörtlich im Gesetz steht.&lt;/p&gt;&lt;p&gt;Für die vom Sozialhilfestopp betroffenen Altfälle sollen die Kantone zudem eine Kopf-Pauschale von CHF 15'000.- erhalten.&lt;/p&gt;&lt;p&gt;Demokratiepolitisch heikel ist der Umstand, dass zwei Volksabstimmungen nötig sind, um die Änderungen des ANAG (Beugehaft, Änderungen der vorläufigen Aufnahme usw.) zu kippen. Nach dem Willen der Kommission sollen sie sowohl in der Revision des Asylgesetzes (AsylG und ANAG) wie des Ausländergesetzes (AuG)enthalten sein.&lt;/p&gt;&lt;p&gt;Rückfragen:&lt;br/&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Jürg Schertenleib, Leiter Rechtsdienst, Tel. 031 370 75 36 (Direktwahl) oder 078 824 25 95&lt;/li&gt;&lt;li&gt;Yann Golay, porte-parole, tél. 031 370 75 67 (ligne directe) ou 079 708 99 26&lt;/li&gt;&lt;/ul&gt;&lt;a target="_self" href="/asylum-politics/asylum-law/revision"&gt;&amp;gt;&amp;gt; Dossier Asylgesetz-Revision&lt;/a&gt;</ns2:encoded>
+    <ns0:title xml:lang="fr">Loi sur l’asile : des propositions parfois floues et souvent préoccupantes</ns0:title>
+    <ns0:title xml:lang="de">Ständeratskommission bleibt hart</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-479d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-2c9a">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rss/attach#Attachment"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rss/attach#InlineAttachment"/>
+    <ns6:label xml:lang="fr"></ns6:label>
+    <ns6:label xml:lang="de">Aktion vom 28. Februar 2005</ns6:label>
+    <ns10:document rdf:resource="http://www.osar.ch/2005/03/11/dsc06066_aktion-vom"/>
+    <ns10:height>304</ns10:height>
+    <ns10:type>image/x-citrix-pjpeg</ns10:type>
+    <ns10:width>415</ns10:width>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2290">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.86</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533798</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:sourceLabel xml:lang="fr">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="en">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="de">Home</ns7:sourceLabel>
+    <ns7:strength>0.99</ns7:strength>
+    <ns7:strengthReduction>0.0</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/events"/>
+    <ns7:targetLabel xml:lang="fr">Manifestations</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="en">Special Events</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="de">Veranstaltungen</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-2328">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    <rdf:li rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-202b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-229f">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.6960311</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533681</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.6960311</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/10/28/bfm-report-women"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/sfh-asylgesetzrevision">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="en">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-05-17</ns12:date>
+    <ns12:language>en</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="fr">Le débat au Conseil National sur le projet de révision de la loi sur l'asile continue. L'OSAR vous informe dans son &lt;a href="/asylum-politics/asylum-law/revision"&gt;Dossier Révision Loi sur l'asile.&lt;/a&gt;</ns0:description>
+    <ns0:description xml:lang="en">The debate on Asylum policy is going on. Inform yourself in our Dossier Revision of Asylum Law.</ns0:description>
+    <ns0:description xml:lang="de">Die Debatte zur Revision des Asylgesetzes geht weiter. Informieren sie sich in unserem &lt;a target="_self" href="/asylum-politics/asylum-law/revision"&gt;Dossier Asylgesetz-Revision.&lt;/a&gt;</ns0:description>
+    <ns2:encoded xml:lang="fr">Le débat au Conseil National sur le projet de révision de la loi sur l'asile continue. L'OSAR vous informe dans son &lt;a href="/asylum-politics/asylum-law/revision"&gt;Dossier Révision Loi sur l'asile.&lt;/a&gt;</ns2:encoded>
+    <ns2:encoded xml:lang="en">&lt;p class="linkedTitle"&gt;The debate on Asylum policy is going on. Inform yourself in our &lt;a target="_self" href="/asylum-politics/asylum-law/revision"&gt;Dossier Revision of Asylum Law&lt;/a&gt;.&lt;/p&gt;</ns2:encoded>
+    <ns2:encoded xml:lang="de">Die Debatte zur Revision des Asylgesetzes geht weiter. Informieren sie sich in unserem &lt;a target="_self" href="/asylum-politics/asylum-law/revision"&gt;Dossier Asylgesetz-Revision.&lt;/a&gt;</ns2:encoded>
+    <ns0:title xml:lang="fr">Que dit l'OSAR concernant la loi sur l'asile?</ns0:title>
+    <ns0:title xml:lang="en">What OSAR says concerning the revision of the Asylum Law</ns0:title>
+    <ns0:title xml:lang="de">Was sagt die SFH zur Asylgesetz-Revision?</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-4776"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/asylum-rights">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-03-14</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns0:description xml:lang="fr">&lt;p align="left"&gt;A l’échelle planétaire, près de 20 millions de personnes sont en fuite. La plupart d’entre elles se trouvent en Afrique et en Asie. Les réfugié-e-s demeurent souvent à l’intérieur des frontières de leur propre pays ou s’enfuient dans un pays voisin. Ce sont principalement ceux qui ont de la famille ou des connaissances dans les pays occidentaux qui essayent de s’y réfugier pour fuir l’oppression ou la misère des camps de réfugié-e-s. C’est pourquoi il faut agir sur deux plans: d’une part, assurer la protection et la prise en charge des réfugié-e-s ou des déplacé-e-s sur place, mais aussi garantir aux personnes qui fuient par exemple jusqu’en Suisse l’accès à une procédure équitable et à un accueil solidaire.&lt;/p&gt;&lt;blockquote style="margin-right: 0px;" dir="ltr"&gt;&lt;p align="left"&gt;L’Organisation suisse d’aide aux réfugiés accompagne les requérants d’asile dans leurs pénibles démarches auprès des instances. Elle est présente à toutes les &lt;a href="/asylum-rights/asylum-procedure"&gt;étapes déterminantes de la procédure,&lt;/a&gt; du dépôt de la demande d’asile à sa reconnaissance ou au renvoi de l’intéressé-e. Sa publication «&lt;a target="_self" href="/2004/10/05/fluchtland_schweiz_0404"&gt;La Suisse terre d’asile&lt;/a&gt;» décrit en détail la procédure d’asile en Suisse.&lt;/p&gt;&lt;/blockquote&gt;&lt;p align="left"&gt;L’OSAR est une organisation spécialisée dans l’aide aux déplacés. Elle transmet ses connaissances approfondies du droit d’asile et des &lt;a href="/country-of-origin"&gt;pays d’origine des réfugiés&lt;/a&gt; aux services de consultation juridique pour requérants d’asile, à des avocats indépendants et à d’autres organismes actifs dans le domaine. L’OSAR organise en outre des &lt;a href="/education"&gt;formations&lt;/a&gt; continues, publie des magazines techniques et grand public, ainsi qu’un bulletin électronique.&lt;/p&gt;&lt;blockquote style="margin-right: 0px;" dir="ltr"&gt;&lt;p align="left"&gt;L’OSAR soutient aussi les requérants d’asile pendant leurs auditions. Elle coordonne les &lt;a href="/asylum-rights/ngo-representation"&gt;représentations des oeuvres d’entraide&lt;/a&gt; et forme les représentants pour les préparer à leur travail lourd de responsabilités. Elle leur transmet des informations de fond sur les différents pays d’origine.&lt;/p&gt;&lt;p align="left"&gt;Pour obtenir la meilleure protection possible des déplacés, l’OSAR s’immisce dans les processus législatifs (révision de la loi sur l'asile) et s’exprime sur les questions relevant de la &lt;a href="/asylum-politics"&gt;politique d’asile.&lt;/a&gt;&lt;/p&gt;&lt;p align="left"&gt;&lt;a target="_self" href="/asylum-rights/all-about-asylum-in-switzerland/statistik"&gt;Statistique&lt;/a&gt;&lt;a target="_blank" href="mailto:protection@osar.ch"&gt;&lt;br/&gt; Souscrivez à notre Newsletter!&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</ns0:description>
+    <ns0:description xml:lang="de">&lt;p&gt;Weltweit sind 34 Millionen Menschen auf der Flucht. Die meisten von ihnen in Afrika und Asien. Flüchtlinge bleiben oft innerhalb des eigenen Landes oder fliehen ins Nachbarland. Verständlicherweise versuchen vor allem diejenigen mit Verwandten oder Bekannten in westlichen Industriestaaten, aus der Unterdrückung oder dem Elend der Flüchtlingslager zu entkommen. Darum braucht es beides: Schutz und Versorgung von Flüchtlingen oder Vertriebenen vor Ort sowie Zugang zu einem fairen Verfahren und solidarische Unterstützung der Menschen, die bis in die Schweiz flüchten.&lt;/p&gt;&lt;blockquote&gt;Die Schweizerische Flüchtlingshilfe begleitet Asylsuchende auf ihrem beschwerlichen Weg durch die Instanzen. Sie ist bei allen entscheidenden &lt;a target="_self" href="/asylum-rights/asylum-procedure"&gt;Etappen des Asylverfahrens&lt;/a&gt; – von der Einreichung des Asylgesuchs bis zur Anerkennung eines Gesuch oder der Wegweisung der Gesuchstellenden – präsent. Die SFH-Publikation &lt;a target="_self" href="/2004/10/05/fluchtland_schweiz_0404"&gt;«Fluchtland Schweiz»&lt;/a&gt; beschreibt das Schweizer Asylprozedere im Detail.&lt;/blockquote&gt;&lt;p&gt;Als Fachorganisation hilft die SFH den Vertriebenen, in dem sie ihr fundiertes Wissen im Asylrecht und bezüglich &lt;a target="_self" href="/country-of-origin"&gt;Herkunftsländern&lt;/a&gt; von Flüchtlingen an die Rechtsberatungsstellen für Asylsuchende, an unabhängige Anwälte und Anwältinnen und andere im Asylbereich Tätige weitergibt. Die SFH organisiert zudem &lt;a target="_self" href="/education"&gt;Weiterbildungen&lt;/a&gt;, veröffentlicht Fach- und Publikumszeitschriften und gibt einen elektronischen &lt;a target="_self" href="/asylum-rights/newsletter"&gt;Newsletter&lt;/a&gt; heraus.&lt;/p&gt;&lt;blockquote dir="ltr"&gt;&lt;p&gt;Die SFH unterstützt Asylsuchende auch während ihrer Anhörungen. Sie koordiniert die &lt;a target="_self" href="/asylum-rights/ngo-representation"&gt;Hilfswerksvertretungen&lt;/a&gt; und bildet die VertreterInnen für ihre verantwortungsvolle Arbeit aus. Sie vermittelt ihnen Hintergrundsinformationen über die jeweiligen Herkunftsländer.&lt;/p&gt;&lt;p&gt;Um einen bestmöglichen Schutz für Vertriebene zu erreichen, schaltet sich die SFH in Gesetzgebungsprozesse ein und meldet sich zu &lt;a target="_self" href="/asylum-politics"&gt;asylpolitischen Fragen&lt;/a&gt; zu Wort.&lt;/p&gt;&lt;p&gt;&lt;a target="_self" href="/asylum-rights/all-about-asylum-in-switzerland/statistik"&gt;Statistik&lt;/a&gt;&lt;br/&gt;&lt;a target="_blank" href="mailto:protection@osar.ch"&gt;Abonnieren Sie unseren Newsletter&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</ns0:description>
+    <ns0:title xml:lang="fr">Asile </ns0:title>
+    <ns0:title xml:lang="de">Asyl</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#AuthoritativelyServedResource"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/11/01/asylg-aug-change-comment">
+    <ns12:creator xml:lang="de">Jürg Schertenleib, Leiter Rechtsdienst der SFH</ns12:creator>
+    <ns12:date>2005-10-31</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="de">Was 1999 als Teilrevision begonnen hat, ist in der Zwischenzeit zu einer veritablen Totalrevision des Asylgesetzes angewachsen. Die Übersicht der SFH über die Änderungen legt den Akzent auf die Darstellung und Erläuterung der Beschlüsse. Kritik und Würdigung sind nicht abschliessend...</ns0:description>
+    <ns2:encoded xml:lang="de">&lt;p class="MsoTitle"&gt;Die laufende Asylgesetzrevision wurde kurz vor der Abstimmung über die Asylinitiative der SVP von Bundesrätin Metzler gestartet. Was 1999 kurz nach der Abstimmung über die letzte Asylgesetzrevision als Teilrevision begonnen hat, ist in der Zwischenzeit zu einer veritablen Totalrevision des Asylgesetzes angewachsen.&lt;/p&gt;&lt;p class="MsoTitle"&gt;Das Resultat der Revision wird wesentlich durch die von Justizminister Blocher im Sommer 2004 eingebrachten Verschärfungsvorschläge geprägt. Ständerat und Nationalrat haben in der Zwischenzeit ihre Zustimmung zu den meisten Vorschlägen gegeben. Zu diesen nachträglichen Verschärfungen gibt es keine Botschaft des Bundesrates. Die Frage der Übereinstimmung mit Verfassung, Völkerrecht und EU-Standards ist nicht nachgewiesen.&lt;/p&gt;&lt;p class="MsoTitle"&gt;Nun müssen noch die Differenzen zwischen den Räten bereinigt werden. Zurzeit wird die Schlussabstimmung zum Asylgesetz in der kommenden Winter-Session erwartet. Von verschiedener Seite wurde bereits das Referendum angekündigt.&lt;/p&gt;&lt;p class="MsoTitle"&gt;Die Zwangsmassnahmen (z.B. Beugehaft) sind gemäss Beschluss des Nationalrates in der Herbstsession sowohl Bestandteil des ANAG wie des AuG.&lt;/p&gt;&lt;p class="MsoTitle"&gt;Die Übersicht legt den Akzent auf die Darstellung und Erläuterung der Beschlüsse. Kritik und Würdigung sind nicht abschliessend.&lt;/p&gt;&lt;div&gt;&lt;a href="/2005/11/01/051031_asylg_uebersicht"&gt;&amp;gt;&amp;gt; kommentierte Übersicht und Anhang I (Materialien, Links)&lt;/a&gt;&lt;br/&gt;&lt;a href="/2005/11/01/asylg_uebersichtanhang2"&gt;&amp;gt;&amp;gt; Anhang II (Änderungen der Gesetztexte)&lt;/a&gt;&lt;br/&gt;&lt;a target="_self" href="/2005/10/31/051028_uebersicht"&gt;&amp;gt;&amp;gt; Kurzübersicht&lt;/a&gt; &lt;/div&gt;</ns2:encoded>
+    <ns0:title xml:lang="de">Die Änderungen von AsylG und ANAG - kommentierte Übersicht der SFH</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns10:attachments rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-1e92"/>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-479d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-20f9">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/10/12/melilla-und-ceuta">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-10-12</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns0:description xml:lang="fr">Position de l'ECRE (European Council on Refugees and Exiles) (english).Voir aussi le communiqué de presse de Médecins sans frontières.</ns0:description>
+    <ns0:description xml:lang="de">Stellungnahme des Europäischen Flüchtlingsrates ECRE zum Flüchtlingsdrama in Melilla und Ceuta (english).Siehe auch die Medienmitteilung von «Médecins Sans Frontières»</ns0:description>
+    <ns2:encoded xml:lang="fr">&lt;a target="_blank" href="/2005/10/12/statement_ecre_melilla_ceuta"&gt;Position&lt;/a&gt; de l'ECRE (European Council on Refugees and Exiles) (english).&lt;br/&gt;Voir aussi le &lt;a target="_blank" href="http://www.msf.ch/Actualites.29.0.html?&amp;amp;tx_ttnews[tt_news]=1401&amp;amp;tx_ttnews[backPid]=1&amp;amp;cHash=73d960a3b7"&gt;communiqué de presse&lt;/a&gt; de Médecins sans frontières.</ns2:encoded>
+    <ns2:encoded xml:lang="de">&lt;a target="_blank" href="/2005/10/12/statement_ecre_melilla_ceuta"&gt;Stellungnahme&lt;/a&gt; des Europäischen Flüchtlingsrates ECRE zum Flüchtlingsdrama in Melilla und Ceuta (english).&lt;br/&gt;Siehe auch die &lt;a target="_blank" href="http://www.msf.ch/News.29.0.html?&amp;amp;L=1&amp;amp;tx_ttnews[tt_news]=1402&amp;amp;tx_ttnews[backPid]=1&amp;amp;cHash=c9400f5e3f"&gt;Medienmitteilung&lt;/a&gt; von «Médecins Sans Frontières»</ns2:encoded>
+    <ns0:title xml:lang="fr">Melilla et Ceuta, la responsabilité de l'Europe</ns0:title>
+    <ns0:title xml:lang="de">Melilla und Ceuta, die Verantwortung Europas</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns10:attachments rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-20f9"/>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-479d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-3607">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    <rdf:li rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-2c9a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-229d">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.9975</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533697</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:sourceLabel xml:lang="fr">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="en">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="de">Home</ns7:sourceLabel>
+    <ns7:strength>0.9975</ns7:strength>
+    <ns7:strengthReduction>0.0</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/country-of-origin"/>
+    <ns7:targetLabel xml:lang="fr">Pays d'origine</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="en">Country Information</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="de">Herkunftsländer</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2297">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.6789464</ns7:childStrength>
+    <ns7:comparativeStrength>0.6789464</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533735</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.6789464</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/09/27/revision-de-la-loi"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn://wymiwyg.org/knobot/defaults">
+    <ns13:childStrength>0.0</ns13:childStrength>
+    <ns13:itemPrototype rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-1d1d"/>
+    <ns13:itemsPerTopic>20</ns13:itemsPerTopic>
+    <ns13:notificationEmail rdf:resource="mailto:webmaster@osar.ch"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-202b">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rss/attach#Attachment"/>
+    <ns6:label xml:lang="fr">Communiqué de presse, version PDF</ns6:label>
+    <ns6:label xml:lang="de">Medienmitteilung als PDF-Dokument</ns6:label>
+    <ns10:document rdf:resource="http://www.osar.ch/2005/11/08/051108_asylvo"/>
+    <ns10:type>application/pdf</ns10:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-1e92">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2291">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.88</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533792</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.0</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:sourceLabel xml:lang="fr">home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="en">home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="de">home</ns7:sourceLabel>
+    <ns7:strength>0.99125004</ns7:strength>
+    <ns7:strengthReduction>0.0</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/act-now"/>
+    <ns7:targetLabel xml:lang="fr">Agir</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="en">How you can help</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="de">Jetzt mitmachen</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/events">
+    <ns12:creator xml:lang="fr"></ns12:creator>
+    <ns12:creator xml:lang="de"></ns12:creator>
+    <ns12:date>2004-09-28T19:16+02:00</ns12:date>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="fr">Le calendrier des manifestations ci-dessous précise les activités liées à la Journée du réfugié 2005.&lt;br/&gt;</ns0:description>
+    <ns0:description xml:lang="de">Der Veranstaltungskalender listet vor allem die SFH-Veranstaltungen auf. Er steht aber auch externen VeranstalterInnen, allen im Flüchtlingsbereich tätigen Organisationen sowie Flüchtlingsgruppen offen.&lt;br/&gt;--&amp;gt; Für Veranstaltungen in der französischen Schweiz klicken Sie bitte links auf das &lt;strong&gt;Wort&lt;/strong&gt; "Français".</ns0:description>
+    <ns0:title xml:lang="fr">Manifestations</ns0:title>
+    <ns0:title xml:lang="de">Veranstaltungen</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/media">
+    <ns12:creator xml:lang="fr">kom</ns12:creator>
+    <ns12:creator xml:lang="de">kom</ns12:creator>
+    <ns12:date>2005-02-08</ns12:date>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="fr">&lt;p&gt;Nos portes-paroles&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Jürg Schertenleib,&lt;/strong&gt; &lt;strong&gt;Responsable service juridique,&lt;/strong&gt; 031-370 75 36 (Direktwahl) oder 078-824 25 95&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Yann Golay, porte-parole,&lt;/strong&gt; 031-370 75 67 (ligne directe) ou 079-708 99 26&lt;/p&gt;&lt;p&gt;sont à votre disposition pour tout renseignement concernant les activités de l'OSAR.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tous les &lt;a target="_self" href="/media/releases"&gt;communiqués de presse&lt;/a&gt; de l'OSAR&lt;/li&gt;&lt;li&gt;&lt;div&gt;&lt;a target="_self" href="/media/conferences"&gt;Conférences de presse:&lt;/a&gt; Informations de fond et communiqués de presse concernant les conférences média&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;</ns0:description>
+    <ns0:description xml:lang="de">&lt;p&gt;Für Medienauskünfte stehen Ihnen unsere Pressesprecher gerne zur Verfügung:&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Jürg Schertenleib,&lt;/strong&gt; &lt;strong&gt;Leiter Rechtsdienst,&lt;/strong&gt; 031 370 75 36 (Direktwahl) oder 078 824 25 95&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Yann Golay, Porte-parole,&lt;/strong&gt; 031 370 75 67 (ligne directe) ou 079 708 99 26&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;Weiter zu:&lt;/strong&gt; &lt;/p&gt;&lt;blockquote&gt;&lt;a href="/media/releases"&gt;Medienmitteilungen&lt;/a&gt; (alle Medienmitteilungen der SFH)&lt;br/&gt; &lt;a href="/media/conferences"&gt;Medienkonferenzen&lt;/a&gt; (Hintergrundinformation und Medienmitteilungen der SFH-Pressekonferenzen)&lt;/blockquote&gt;</ns0:description>
+    <ns0:title xml:lang="fr">Média</ns0:title>
+    <ns0:title xml:lang="de">Medieninformation</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/08/11/etwas-statistik-">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="en">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-08-11</ns12:date>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>en</ns12:language>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="fr">Liens au chiffres les plus actuels</ns0:description>
+    <ns0:description xml:lang="en">Link to the actual statistic for the asylum domain</ns0:description>
+    <ns0:description xml:lang="de">Link auf die aktuellsten Zahlen</ns0:description>
+    <ns2:encoded xml:lang="fr">&lt;a target="_self" href="/asylum-rights/all-about-asylum-in-switzerland/statistik"&gt;Liens au chiffres les plus actuels&lt;/a&gt;&lt;br/&gt;</ns2:encoded>
+    <ns2:encoded xml:lang="en">&lt;a target="_self" href="/asylum-rights/all-about-asylum-in-switzerland/statistik"&gt;Link to the actual statistic for the asylum domain&lt;/a&gt;</ns2:encoded>
+    <ns2:encoded xml:lang="de">&lt;a target="_self" href="/asylum-rights/all-about-asylum-in-switzerland/statistik"&gt;Link auf die aktuellsten Zahlen&lt;/a&gt;</ns2:encoded>
+    <ns0:title xml:lang="fr">Un peu de statistique - les chiffres du domaine d'asile</ns0:title>
+    <ns0:title xml:lang="en">Some statistic</ns0:title>
+    <ns0:title xml:lang="de">Etwas Statistik - die Zahlen zum Asylbereich</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-479d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-229b">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.995</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533708</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:sourceLabel xml:lang="fr">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="en">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="de">Home</ns7:sourceLabel>
+    <ns7:strength>0.995</ns7:strength>
+    <ns7:strengthReduction>0.0</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/integration"/>
+    <ns7:targetLabel xml:lang="fr">Vivre en Suisse</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="en">Integration</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="de">In der Schweiz leben</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/asylum-politics">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-02-25</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns0:description xml:lang="fr">En tant qu'organisation faîtière des œuvres d'entraide actives dans le domaine de l'asile (Caritas, l’EPER, l’OSEO, la CRS et l’USEJ), l'Organisation suisse d'aide aux réfugiés (OSAR) prend part au débat sur la politique d'asile en Suisse. &lt;br/&gt;&lt;p&gt;Elle s'investit dans les processus législatifs et participe aux procédures consultatives. L'OSAR analyse et commente les décisions du Conseil fédéral et du parlement. Elle évalue les prises de position des autorités et de l'administration et propose ses propres solutions.&lt;/p&gt;&lt;p&gt;Dans le cadre de son activité en lien avec la politique d'asile, elle s'adresse à la Confédération, aux cantons, aux municipalités, ainsi qu'à la société civile.&lt;/p&gt;&lt;p&gt;&lt;a target="_blank" href="mailto:protection@osar.ch"&gt;&lt;strong&gt;Souscrivez à notre Newsletter&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Sous &lt;strong&gt;Politique d'asile&lt;/strong&gt; vous trouverez:&lt;/p&gt;&lt;blockquote style="margin-right: 0px" dir="ltr"&gt;&lt;p&gt;&lt;a href="/asylum-politics/asylum-law/revision"&gt;Dossier Révision Loi sur l'asile&lt;/a&gt; / &lt;a href="/asylum-politics/asylum-law/nothilfe"&gt;Dossier Aide d'Urgence&lt;/a&gt; / &lt;a target="_self" href="/asylum-politics/topics/schengen-dublin"&gt;Dossier Schengen/Dublin&lt;/a&gt;&lt;br/&gt;&lt;a href="/asylum-politics/law-on-immigration"&gt;Loi sur les étrangers&lt;/a&gt; / &lt;a href="/asylum-politics/asylum-politics-in-the-EU"&gt;Politique d'asile dans l'UE&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Nos &lt;strong&gt;documents thématiques:&lt;/strong&gt;&lt;/p&gt;&lt;blockquote style="margin-right: 0px" dir="ltr"&gt;&lt;p&gt;&lt;a href="/asylum-politics/topics/deportation/working_education"&gt;Travail/Formation&lt;/a&gt; / &lt;a href="/asylum-politics/topics/deportation"&gt;Renvoi/Expulsion/Mesures de contrainte&lt;/a&gt; /&lt;br/&gt;&lt;a href="/asylum-politics/topics/humanitariancase"&gt;Cas de rigueur&lt;/a&gt; / &lt;a href="/asylum-politics/topics/safecountry"&gt;Safe Country&lt;/a&gt; / &lt;a target="_self" href="/asylum-politics/topics/children"&gt;Enfants réfugiés&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Les informations concernant le &lt;strong&gt;droit d'asile&lt;/strong&gt; vous trouverez &lt;a target="_self" href="/asylum-rights"&gt;ici&lt;/a&gt;.&lt;br/&gt;&lt;/p&gt;</ns0:description>
+    <ns0:description xml:lang="de">&lt;p&gt;Als Dachorganisation der im Asylbereich tätigen Hilfswerke - Caritas, HEKS, SRK, SAH und VSJF - beteiligt sich die SFH an der asylpolitischen Debatte der Schweiz. Sie schaltet sich in Gesetzgebungsprozesse ein und beteiligt sich an Vernehmlassungsverfahren.&lt;/p&gt;&lt;p&gt;Die SFH analysiert und kommentiert die Beschlüsse von Bundesrat und Parlament. Sie evaluiert die Stellungnahmen der Behörden und Verwaltung. Sie schlägt eigene Lösungsansätze vor.&lt;/p&gt;&lt;p&gt;Die SFH wendet sich in ihrer asylpolitischen Tätigkeit sowohl an den Bund wie an die Kantone, Gemeinden und die Zivilgesellschaft.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Abonnieren Sie unseren &lt;a target="_self" href="mailto:protection@osar.ch"&gt;Newsletter&lt;/a&gt;&lt;/strong&gt; &lt;a target="_self" href="mailto:protection@osar.ch"&gt;«&lt;strong&gt;Länder und Recht&lt;/strong&gt;&lt;/a&gt;&lt;a target="_self" href="mailto:protection@osar.ch"&gt;»&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Unter «Asylpolitik» finden Sie:&lt;/strong&gt;&lt;br/&gt;&lt;/p&gt;&lt;blockquote style="margin-right: 0px" dir="ltr"&gt;&lt;p&gt;&lt;a href="/asylum-politics/asylum-law/revision"&gt;Dossier AsylG-Revision&lt;/a&gt; / &lt;a href="/asylum-politics/asylum-law/nothilfe"&gt;Dossier Nothilfe&lt;/a&gt; / &lt;a target="_self" href="/asylum-politics/topics/schengen-dublin"&gt;Dossier Schengen/Dublin&lt;br/&gt;Ausländergesetz&lt;/a&gt; / &lt;a href="/asylum-politics/asylum-politics-in-the-EU"&gt;Asylpolitik in der EU&lt;/a&gt; /&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Themen:&lt;br/&gt;&lt;/strong&gt;&lt;a target="_self" href="/asylum-politics/topics/working_education"&gt;Arbeit/Bildung&lt;/a&gt; / &lt;a href="/asylum-politics/topics/deportation"&gt;Wegweisung/Ausschaffung/Zwangsmassnahmen&lt;/a&gt; /&lt;br/&gt;&lt;a href="/asylum-politics/topics/humanitariancase"&gt;Härtefälle&lt;/a&gt; / &lt;a href="/asylum-politics/topics/safecountry"&gt;Safe Country&lt;/a&gt; / &lt;a href="/asylum-politics/topics/children"&gt;Kinderflüchtlinge&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Unsere Informationen zu &lt;strong&gt;Asylrecht&lt;/strong&gt; finden Sie &lt;a target="_self" href="/asylum-rights"&gt;hier&lt;/a&gt;.&lt;/p&gt;</ns0:description>
+    <ns0:title xml:lang="fr">Politique d'asile</ns0:title>
+    <ns0:title xml:lang="de">Asylpolitik</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#AuthoritativelyServedResource"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2295">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.98875</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533754</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:sourceLabel xml:lang="fr">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="en">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="de">Home</ns7:sourceLabel>
+    <ns7:strength>0.98875</ns7:strength>
+    <ns7:strengthReduction>0.0</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/addresses"/>
+    <ns7:targetLabel xml:lang="fr">Adresses / Liens</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="en">Addresses/Links</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="de">Adressen/Links</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/integration">
+    <ns12:creator xml:lang="fr">int</ns12:creator>
+    <ns12:creator xml:lang="de">int</ns12:creator>
+    <ns12:date>2004-07-24</ns12:date>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="fr">&lt;p&gt;Vivre en Suisse représente bien souvent un défi pour les personnes qui peuvent rester: celui entre autres de trouver des repères pour refaire sa vie dans un nouveau pays, s'intégrer dans la vie sociale et politique, sur le marché du travail. L'Organisation suisse d'aide aux réfugiés informe et soutient les personnes dans leur intégration en Suisse.&lt;/p&gt;&lt;p&gt;L'OSAR comprend l'intégration comme un processus qui doit permettre, autant aux individus qu'aux groupes, d'avoir les mêmes chances. Ceci notamment en ce qui concerne l'accès au marché du travail, à une formation, à des soins médicaux ainsi qu'à la vie publique et à la participation politique. Tous ces aspects contribuent au processus d'intégration. Il ne s'agit pas d'une adaptation unilatérale des personnes étrangères, mais d'une négociation continuelle de normes et de valeurs entre immigrés et étrangers déjà établis.&lt;br/&gt;&lt;br/&gt;L'intégration ne fonctionne pas sans une participation active de la Suisse. Sur mandat de l'Office fédéral des migrations (ODM), l'OSAR accorde des subventions à des &lt;a target="_self" href="/integration/projects"&gt;projets d'intégration&lt;/a&gt; dans toute la Suisse pour un budget total de 4 millions de francs. L'OSAR gère ces tâches et  peut compter, dans ses réflexions sur l'intégration, sur l'appui d'une Commission consultative dont les membres, une vingtaine de représentants des plus importants groupes de migration en Suisse, reflètent par leurs prises de position les préoccupations et les besoins spécifiques liés à l'intégration des réfugiés dans notre pays.&lt;/p&gt;&lt;p&gt;L'OSAR propose régulièrement des &lt;a target="_self" href="/integration/reports-on-integration"&gt;rapports&lt;/a&gt; sur la situation de l'intégration des réfugiés en Suisse ainsi que des prises de position sur différents thèmes particulièrement  pertinents pour l'intégration. La formation professionnelle des réfugiés et leur qualification pour le marché du travail  sont au centre de ses efforts d'intégration. C'est aussi par ses propres moyens que l'OSAR finance des perfectionnements et des formations qui facilitent, ou du moins rendent possible, une intégration des réfugiés dans le monde professionnel suisse.&lt;/p&gt;</ns0:description>
+    <ns0:description xml:lang="de">&lt;div&gt;Für Menschen, die in der Schweiz bleiben dürfen, ist das Leben hier oft eine Herausforderung. Sie sind gezwungen, sich vollkommen neu zu orientieren: Sie müssen sich in ein fremdes gesellschaftliches und politisches Umfeld einfügen und sich in den Schweizer Arbeitsmarkt integrieren. Die Schweizerische Flüchtlingshilfe unterstützt Flüchtlinge bei ihrer Integration.&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;Die Schweizerische Flüchtlingshilfe SFH versteht Integration als Prozess, der Einzelpersonen und Gruppen die gleichen Chancen eröffnen soll: beim Zugang zu Arbeitsmarkt, Bildung, Gesundheitsversorgung und staatlichen Einrichtungen sowie zum öffentlichen Leben und zur politischen Mitsprache. Am Integrationsprozess sind alle beteiligt. Es geht dabei nicht um eine einseitige Anpassung der ausländischen Personen, sondern um ein fortwährendes Aushandeln von Normen und Werten zwischen Eingewanderten und bereits Niedergelassenen.&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;Integration kommt ohne die aktive Beteiligung der Schweiz nicht ins Rollen. Im Auftrag des Bundesamts für Migration (&lt;a target="_self" href="http://www.bfm.admin.ch/"&gt;BFM&lt;/a&gt;) bewilligt, unterstützt, kontrolliert und evaluiert die SFH daher &lt;a target="_self" href="/integration/projects"&gt;Integrationsprojekte&lt;/a&gt; mit einem Gesamtbudget von 4 Millionen Franken. Die SFH verankert diese Aufgabe mit einer Konsultativkommission im Alltag der Betroffenen. Rund zwanzig Flüchtlingevertreten die wichtigsten Migrationgruppen in der Schweiz und helfen mit, deren Bedürfnisse möglichst genau zu erfassen.&lt;/div&gt;&lt;div&gt;&lt;div&gt;Die SFH meldet sich regelmässig mit Berichten zur Lage der Integration von Flüchtlingen in der Schweiz und Stellungnahmen zu einzelnen für die Integration relevanten Themen zu Wort.&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;Die berufliche (Aus-)Bildung und die Qualifizierung von Flüchtlingen für den Arbeitsmarkt ist ein zentrales Anliegen der Integrationbemühungen der SFH. Sie finanziert daher auch aus eigenen Mitteln Aus- und Weiterbildungen, die Flüchtlingen den Einstieg in den Berufalltag erleichtern oder überhaupt erst ermöglichen.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</ns0:description>
+    <ns0:title xml:lang="fr">Vivre en Suisse</ns0:title>
+    <ns0:title xml:lang="de">Leben in der Schweiz</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/act-now">
+    <ns12:creator xml:lang="fr">ud/ml</ns12:creator>
+    <ns12:creator xml:lang="de">ud</ns12:creator>
+    <ns12:date>20040726</ns12:date>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="fr">&lt;p&gt;L'action de l'Organisation suisse d'aide aux réfugiés n'est possible que grâce au soutien et à l'aide de nombreuses personnes solidaires.&lt;/p&gt;&lt;p&gt;L'OSAR accompagne les requérants d'asile et les réfugiés dans la jungle du système juridique suisse. Elle soutient leur demande avec des informations spécifiques sur leurs pays d'origine respectifs. Elle les assiste durant leur période d'intégration avec une aide particulière. Elle aide au regroupement familial. Elle s'engage pour l'amélioration du statut juridique des personnes déplacées. Tout ce travail n'est possible que grâce aux &lt;a target="_self" href="/act-now/donations"&gt;donations&lt;/a&gt; généreuses de la population suisse.&lt;/p&gt;&lt;p&gt;Sans la collaboration de centaines d'activistes, &lt;a target="_self" href="/act-now/world-refugee-day"&gt;la Journée du réfugié&lt;/a&gt; n'existerait pas. Les bénévoles veillent à ce que dans plus de 200 villes et villages suisses la mémoire des réfugiés soit célébrée chaque troisième samedi de juin. Prenez part à l'action! Organisez, dans votre commune, des activités à l'occasion de la Journée du réfugié ou rejoignez un groupe existant. Veuillez prendre contact avec nos responsables de projet.&lt;/p&gt;&lt;p&gt;Sans la participation active de &lt;a target="_self" href="/act-now/volunteers"&gt;personnes engagées,&lt;/a&gt; aucune &lt;a target="_self" href="/act-now/campaign"&gt;campagne&lt;/a&gt; en faveur des réfugiés, aucune discussion politique introduisant de nouvelles approches ne pourraient être engagées. Participez au travail de nos &lt;a target="_self" href="/act-now/committees"&gt;comités&lt;/a&gt;, engagez-vous dans nos campagnes.&lt;/p&gt;&lt;p&gt;Par &lt;a target="_self" href="/act-now/selling-fundraising-articles"&gt;une vente de bonbons&lt;/a&gt;, les enfants aident une fois par an les réfugiés vivant en Suisse.&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;</ns0:description>
+    <ns0:description xml:lang="de">&lt;p&gt;&lt;strong&gt;Die Arbeit der Schweizerischen Flüchtlingshilfe ist nur dank der Unterstützung und Mithilfe von zahlreichen solidarischen Menschen möglich.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Die SFH begleitet Asylsuchende und Flüchtlinge durch den Dschungel des Schweizer Rechtssystems. Sie unterstützt ihre Gesuche mit fundierten Hintergundsinformation über die jeweiligen Herkunftsländer. Sie steht ihnen in der Integrationszeit mit Einzelhilfe zur Seite. Sie hilft bei der Familienzusammenführung. Sie setzt sich für die Verbesserung der Rechtsstellung von Vertriebenen ein.  All das ist nur möglich dank der grosszügigen &lt;a target="_self" href="/donations/general"&gt;Spenden&lt;/a&gt; der Schweizer Bevölkerung.  &lt;/p&gt;&lt;p&gt;Ohne die Mitarbeit von Hunderten von AktivistInnen gäbe es den &lt;a target="_self" href="/act-now/world-refugee-day"&gt;Flüchtlingstag&lt;/a&gt; nicht. Die freiwilligen HelferInnen sorgen dafür, dass in über 200 Schweizer Städten und Dörfern am 3. Samstag im Juni dem Schicksal von Vertriebenen gedacht wird. Machen auch Sie mit. Organisieren Sie in ihrem Dorf Aktivitäten zum Flüchtlingstag, beteiligen Sie sich an einer schon existierenden Gruppe. Kontaktieren Sie unseren Projektverantwortlichen.&lt;/p&gt;&lt;p&gt;Ohne die aktive Beteiligung von Engagierten wäre keine &lt;a target="_self" href="/act-now/campaign"&gt;Kampagne&lt;/a&gt; zu Gunsten von Flüchtlingen möglich, könnte keine politische Diskussion mit neuen Ansätzen geführt werden. Machen Sie in einem unserer &lt;a target="_self" href="/act-now/committees"&gt;Komitees&lt;/a&gt; mit, beteiligen Sie sich an unseren Kampagnen.&lt;/p&gt;&lt;p&gt;Mit dem &lt;a target="_self" href="/act-now/selling-fundraising-articles"&gt;Abzeichenverkauf&lt;/a&gt; helfen Kinder und Jugendliche alljährlich im Juni Flüchtlingen, die in die Schweiz kommen.&lt;/p&gt;</ns0:description>
+    <ns0:title xml:lang="fr">Agir</ns0:title>
+    <ns0:title xml:lang="de">Jetzt mitmachen</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns10:attachments rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-3607"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2294">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.6639036</ns7:childStrength>
+    <ns7:comparativeStrength>0.6639036</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533761</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.6639036</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/08/11/etwas-statistik-"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-228d">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#LanguageSelectionSeq"/>
+    <rdf:li rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-325f"/>
+    <rdf:li rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-1f4d"/>
+    <rdf:li rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-39e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/11/07/pm-sfh-asylv-vvwa-bvo">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-11-08</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns0:description xml:lang="fr">L’Organisation suisse d'aide aux réfugiés (OSAR) publie aujourd’hui sa prise de position relative à la révision des ordonnances sur l’asile.</ns0:description>
+    <ns0:description xml:lang="de">Die Schweizerische Flüchtlingshilfe (SFH) veröffentlicht heute ihre Stellungnahme zu den revidierten Asylverordnungen...</ns0:description>
+    <ns2:encoded xml:lang="fr">&lt;p&gt;&lt;strong&gt;L’Organisation suisse d'aide aux réfugiés (OSAR) publie aujourd’hui sa prise de position relative à la révision des ordonnances sur l’asile.  Elle rejette le projet de modification des forfaits d’encadrement parce qu’une nouvelle réduction des montants versés aux cantons hypothéquerait lourdement toute prise en charge adéquate des requérants d’asile et des personnes admises à titre provisoire. L’OSAR s’oppose en outre à la prolongation à 60 jours du séjour dans les centres d’enregistrement, lesquels ne sont pas conçus à cet effet : pas plus un encadrement approprié qu’un accès à une consultation juridique n’y sont garantis.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;L’Office fédéral des migrations (ODM) motive la révision des ordonnances sur l’asile par la baisse du nombre des demandes d’asile et veut configurer l es structures à l’accueil de 10'000 requérants d’asile par an. Un «concept de sauvetage» soulagerait les cantons si ce chiffre devait être dépassé.&lt;/p&gt;&lt;p&gt;L’OSAR rejette le nouveau modèle de calcul, dont l’adoption aurait pour conséquence de faire supporter aux cantons jusqu’à 87 % des coûts effectifs s’ils entendent maintenir les standards actuels d’encadrement. Or, par suite de l’exclusion de laide sociale des requérants frappés de non-entrée en matière, les cantons doivent déjà supporter des coûts non remboursés. Un nouveau report de coûts mettrait en péril toute prise en charge adéquate des requérants d’asile et des personnes admises à titre provisoire. En outre, les structures cantonales doivent pouvoir réagir avec une certaine souplesse aux variations du nombre des demandes d’asile. Et le fonctionnement du «concept de sauvetage» annoncé par la Confédération demeure peu clair.&lt;/p&gt;&lt;p&gt;Les &lt;strong&gt;centres d’enregistrement de la Confédération&lt;/strong&gt; ne sont pas adaptés à des séjours de 60 jours. De nombreuses prescriptions y limitent la liberté des requérants d’asile. Les facultés font défaut pour permettre à des familles de bénéficier de lieux de retrait. Les enfants n’y sont pas scolarisés. Les requérants d’asile ne peuvent s’en absenter pendant un moment déterminé que pour autant qu’ils en aient reçu l’autorisation écrite. En outre, la révision de la loi sur l’asile permettra la mise en détention de requérants d’asile si une non-entrée en matière leur est notifiée dans un centre d’enregistrement. L’OSAR demande que soit &lt;strong&gt;garanti un&lt;/strong&gt; &lt;strong&gt;accès sans entraves à une consultation juridique et à une consultation indépendante en vue du retour&lt;/strong&gt;. Les ONG devraient en outre pouvoir accéder aux centres d’enregistrement comme le prévoient les standards minimaux européens en la matière.&lt;/p&gt;&lt;p&gt;L’OSAR soutient l’élargissement de l’&lt;strong&gt;aide au retour&lt;/strong&gt; prônée par ce projet de révision et demande que les personnes avec une non-entrée en matière exécutoire puissent également en bénéficier. Par ailleurs, la facilitation de l‘&lt;strong&gt;accès au marché du travail&lt;/strong&gt; des personnes admises à titre provisoire doit être salué car cela répond à d’aigües nécessités économiques et sociales.&lt;/p&gt;&lt;p&gt;&lt;a href="/2005/11/07/sfh-stn-asylv-vvwa-bvo"&gt;Download&lt;/a&gt; de la position de l'OSAR (en allemand) sous Dossier «Revision de la loi sur l'asile».&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Questions complémentaires :&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Jürg Schertenleib, Leiter Rechtsdienst, Tel. 031 370 75 36 (Direktwahl)&lt;br/&gt;oder 078 824 25 95&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;Yann Golay, porte-parole, tél. 031 370 75 67 (ligne directe) ou 079 708 99 26&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;</ns2:encoded>
+    <ns2:encoded xml:lang="de">&lt;strong&gt;Die Schweizerische Flüchtlingshilfe (SFH) veröffentlicht heute ihre Stellungnahme zu den revidierten Asylverordnungen. Sie lehnt die vorgeschlagene Änderung der Betreuungspauschale ab, weil ein weiterer Abbau der Beiträge an die Kantone eine adäquate Betreuung von Asylsuchenden und vorläufig Aufgenommenen gefährdet. Sie richtet sich zudem gegen die Verlängerung des Aufenthaltes in den Empfangsstellen des Bundes auf 60 Tage. Diese sind dafür nicht eingerichtet; eine angemessene Betreuung und der Zugang zu Rechtsberatung sind nicht gewährleistet.&lt;br/&gt;&lt;/strong&gt;&lt;p&gt;Das Bundesamt für Migration begründet die Anpassung der Asylverordnungen mit dem Rückgang der Gesuchszahlen. Die Strukturen sollen auf 10'000 neue Asylgesuche pro Jahr ausgerichtet werden. Ein «Notfallkonzept» des Bundes soll die Kantone entlasten, falls mehr Gesuche gestellt werden.&lt;/p&gt;&lt;p&gt;Die SFH lehnt das neue Berechnungsmodell ab. Die Kantone müssten damit bis zu 87 Prozent der Kosten selber tragen, wenn sie die bisherigen Betreuungsstandards beibehalten wollten. Den Kantonen entstehen bereits ungedeckte Kosten durch den Sozialhilfestopp. Eine erneute Kostenverlagerung würde die adäquate Betreuung von Asylsuchenden und vorläufig Aufgenommenen gefährden. Die kantonalen Strukturen sollen zudem flexibel auf Schwankungen der Gesuchszahlen reagieren können. Wie das angekündigte «Notfallkonzept» des Bundes funktionieren soll, ist unklar.&lt;/p&gt;&lt;p&gt;Die &lt;strong&gt;Empfangsstellen des Bundes&lt;/strong&gt; sind für einen Aufenthalt von 60 Tagen nicht geeignet. Zahlreiche Vorschriften schränken die Freiheit der Asylsuchenden ein. Oft fehlen geeignete Rückzugsmöglichkeiten für Familien. Kinder werden nicht eingeschult. Nur mit einer schriftlichen Ausgangsbewilligung dürfen Asylsuchende die Empfangsstellen während bestimmter Zeiten verlassen. Mit der Asylgesetzrevision kann künftig während laufender Beschwerdefrist Ausschaffungshaft angeordnet werden, wenn ein Nichteintretensentscheid in einer Empfangsstelle eröffnet wird. Die SFH fordert, dass &lt;strong&gt;ungehinderter Zugang zu Rechtsberatung und unabhängiger Rückkehrberatung&lt;/strong&gt; gewährleistet wird. NGOs sollen Zugang zu den Empfangsstellen erhalten, wie es die EU-Mindestrichtlinien vorsehen.&lt;/p&gt;&lt;p&gt;Die SFH befürwortet die vorgeschlagene &lt;strong&gt;Ausweitung der Rückkehrhilfe&lt;/strong&gt; und verlangt, dass auch Personen mit rechtskräftigem Nichteintretensentscheid darin einbezogen werden. Der erleichterte Zugang zu &lt;strong&gt;Erwerbstätigkeit&lt;/strong&gt; für vorläufig Aufgenommene ist aus sozialen und wirtschaftlichen Gründen sehr zu begrüssen.&lt;/p&gt;&lt;p&gt;Im &lt;a target="_self" href="/asylum-politics/asylum-law/revision"&gt;Dossier Asylgesetzrevision&lt;/a&gt; finden Sie die &lt;a target="_self" href="/2005/11/07/sfh-stn-asylv-vvwa-bvo"&gt;ausführliche Stellungnahme&lt;/a&gt; der SFH. Die Frist zur Stellungnahme läuft noch bis zum 7. Dezember.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rückfragen:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Jürg Schertenleib, Leiter Rechtsdienst, Tel. 031 370 75 36 (Direktwahl)&lt;br/&gt;oder 078 824 25 95&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;Yann Golay, porte-parole, tél. 031 370 75 67 (ligne directe) ou 079 708 99 26&lt;br/&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;</ns2:encoded>
+    <ns0:title xml:lang="fr">Ne pas raboter l’encadrement</ns0:title>
+    <ns0:title xml:lang="de">Nicht bei der Betreuung sparen</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns10:attachments rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-2328"/>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-479d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/country-of-origin">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="en">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-02-08</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>en</ns12:language>
+    <ns0:description xml:lang="fr">&lt;p&gt;L'OSAR réalise, indépendamment des autorités suisses, des analyses pays spécifiques au domaine de l'asile. Celles-ci forment, dans le cadre de la procédure d'asile, un correctif aux estimations officielles.&lt;/p&gt;&lt;p&gt;Les analyses pays de l'OSAR sont construites selon les besoins spécifiques du secteur de l'asile en Suisse. Elles concernent donc en particulier les pays d'origine des personnes qui cherchent une protection chez nous. En plus des analyses pays et d'autres prises de positions internes ou externes, l'OSAR réalise des évaluations et effectue des recherches sur des cas particuliers. &lt;a target="_blank" href="mailto:protection@osar.ch"&gt;Souscrivez à notre Newsletter&lt;/a&gt;!&lt;/p&gt;&lt;p&gt;Nos experts pays ont un accès aux travaux de réseaux d'information dans les pays d'origine ainsi qu'à des experts, des organisations et institutions externes, en Suisse et à l'étranger ; comme par exemple à la plate-forme du réseau «European Country of Origin» &lt;a target="_self" href="http://www.ecoi.net./"&gt;http://www.ecoi.net.&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Voici le lien à la &lt;a target="_blank" href="/2005/07/12/liste-publication"&gt;liste de toutes les publications de l'OSAR.&lt;/a&gt;&lt;br/&gt;Ici vous trouverez une liste des &lt;a target="_self" href="/2005/08/11/050805_sfh_positionen"&gt;positions&lt;/a&gt; actuelles de l'OSAR sur les pays d'origine importants.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Problème avec le download?&lt;/strong&gt; Clickez encore une fois sur Français (ou la langue désirée) et le document se laisse télécharger. Avec &lt;a target="_self" href="http://www.adobe.com/products/acrobat/readstep2.html"&gt;la version la plus nouvelle de l'Acrobat Reader&lt;/a&gt; il n'y a pas des problèmes.&lt;/p&gt;</ns0:description>
+    <ns0:description xml:lang="en">&lt;p&gt;&lt;strong&gt;Due to our limited ressources, English is only used for our navigation tool and&lt;/strong&gt; &lt;strong&gt;for&lt;/strong&gt; &lt;a target="_blank" href="http://www.for-refugees.ch/"&gt;&lt;strong&gt;information for refugees and asylum seekers.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Choose or change your language for our website &amp;gt; click on either the word &lt;strong&gt;Deutsch&lt;/strong&gt; or &lt;strong&gt;Français&lt;/strong&gt; at the left side of the page.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p class="MsoNormal"&gt;Independent of the Swiss authorities, the Swiss Refugee Council does &lt;strong&gt;research on the refugee situation in particular countries.&lt;/strong&gt; This provides a civil-social corrective to official assessments in refugee procedures. The SRC's country of origin research is based on the needs of Swiss asylum proceedings. So it deals in particular with the countries of origin of people seeking refuge in Switzerland. Besides internally and externally composed position papers and topic reports, the SRC research programme also draws up expert assessments and examines individual cases.&lt;/p&gt;&lt;p class="MsoNormal"&gt;The country experts have access to information networks in the countries of origin and to external experts, organisations and institutions in Switzerland and other countries They also go on research journeys and they co-operate with the European Country of Origin Network: &lt;a href="http://www.ecoi.net/"&gt;http://www.ecoi.net&lt;/a&gt;&lt;/p&gt;&lt;p class="MsoNormal"&gt;&lt;strong&gt;Click&lt;/strong&gt; &lt;a target="_blank" href="mailto:protection@osar.ch"&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;to get our free&lt;/strong&gt; &lt;strong&gt;Newsletter&lt;/strong&gt; (Country of Origin Reports, News concerning Asylum Right and Policy). Please indicate if in German or French.&lt;/p&gt;</ns0:description>
+    <ns0:description xml:lang="de">&lt;p&gt;Die SFH erstellt unabhängig von den Schweizer Behörden asylspezifische Länderanalysen. Diese bilden im Asylverfahren ein zivilgesellschaftliches Korrektiv zu behördlichen Einschätzungen.&lt;br/&gt;Die Länderanalyse der SFH ist auf die Bedürfnisse des Schweizer Asylbereichs zugeschnitten. Sie bearbeitet daher insbesondere die Herkunftsländer der Menschen, die in der Schweiz Schutz suchen. Neben intern oder extern verfassten Lageberichten und Themenpapieren erstellt die SFH-Länderanalyse auch Gutachten und macht Einzelfallrecherchen.&lt;/p&gt;&lt;p&gt;Die LänderexpertInnen haben Zugang zu Informationsnetzwerken in den Herkunftsländern und zu externen Länderex­pert­­In­nen, Organisationen und Institutionen in der Schweiz und anderen Ländern und unternehmen Abklärungsreisen. Sie arbeiten mit der Herkunftsländer-Plattform des European Country of Origin Network &lt;a target="_self" href="http://www.ecoi.net/"&gt;http://www.ecoi.net&lt;/a&gt; zusammen.&lt;/p&gt;&lt;p&gt;&lt;a target="_blank" href="mailto:protection@osar.ch"&gt;Abonnieren Sie unseren Newsletter&lt;/a&gt;!&lt;/p&gt;&lt;p&gt;Eine &lt;strong&gt;Übersicht sämtlicher SFH-Dokumente&lt;/strong&gt; finden Sie in der &lt;a target="_self" href="/2005/07/12/liste-publication"&gt;Publikationsliste.&lt;/a&gt;&lt;br/&gt;Hier finden Sie die &lt;strong&gt;aktuellen&lt;/strong&gt; &lt;a target="_self" href="/2005/08/11/050805_sfh_positionen"&gt;Positionen&lt;/a&gt; &lt;strong&gt;der SFH&lt;/strong&gt; zu wichtigen Herkunftsländern.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Falls der Download der Dokumente nicht klappt:&lt;/strong&gt; Klicken Sie nochmals auf Deutsch (oder die gewünschte Sprache) und dann erst aufs Dokument. Mit der &lt;a target="_blank" href="http://www.adobe.com/products/acrobat/readstep2.html"&gt;neusten Version des Acrobat Readers&lt;/a&gt; funktioniert es ohne Probleme.&lt;/p&gt;</ns0:description>
+    <ns0:title xml:lang="fr">Pays d'origine</ns0:title>
+    <ns0:title xml:lang="en">Country of origin</ns0:title>
+    <ns0:title xml:lang="de">Herkunftsländer</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#AuthoritativelyServedResource"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-648e">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    <rdf:li rdf:resource="http://www.osar.ch/asylum-politics/asylum-law/nothilfe"/>
+    <rdf:li rdf:resource="http://www.osar.ch/asylum-rights/newsletter"/>
+    <rdf:li rdf:resource="http://www.osar.ch/country-of-origin/ethiopia"/>
+    <rdf:li rdf:resource="http://www.osar.ch/country-of-origin/eritrea"/>
+    <rdf:li rdf:resource="http://www.osar.ch/asylum-rights/network"/>
+    <rdf:li rdf:resource="http://www.for-refugees.ch/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-229e">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.99875</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533691</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.0</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:sourceLabel xml:lang="fr">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="en">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="de">Home</ns7:sourceLabel>
+    <ns7:strength>0.99875</ns7:strength>
+    <ns7:strengthReduction>0.0</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/asylum-rights"/>
+    <ns7:targetLabel xml:lang="fr">Asile</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="en">Asylum</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="de">Asyl</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-479d">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+    <ns6:seeAlso rdf:resource="http://www.osar.ch/2005/03/24/protection"/>
+    <ns11:pass_sha1sum>d48243561b9bbefd6010526ffeaf6eb476ecc2e1</ns11:pass_sha1sum>
+    <ns11:permission rdf:resource="http://www.osar.ch/permissions#pro-net"/>
+    <ns11:permission rdf:resource="http://wymiwyg.org/ontologies/authorization#admin"/>
+    <ns11:permission rdf:resource="http://wymiwyg.org/ontologies/authorization#edit"/>
+    <ns11:shortName>sfh_pro</ns11:shortName>
+    <ns5:personalHistory rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-648e"/>
+    <ns3:isPrimaryTopicOf rdf:resource="http://www.osar.ch/2005/03/24/protection"/>
+    <ns3:mbox rdf:resource="mailto:protection@osar.ch"/>
+    <ns3:mbox_sha1sum>d30fa5147a2d62c7b05b22851ff8994285d106ab</ns3:mbox_sha1sum>
+    <ns3:name>Protection</ns3:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2296">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.6789463</ns7:childStrength>
+    <ns7:comparativeStrength>0.6789463</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533744</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.6789463</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/10/12/melilla-und-ceuta"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-2010">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/foaf/role#Participation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <ns1:group rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-2011"/>
+    <ns1:participant rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-43ea"/>
+    <ns3:isPrimaryTopicOf rdf:resource="http://www.osar.ch/contacts/pmccbrmy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/10/28/bfm-report-women">
+    <ns12:creator xml:lang="fr">Office fédéral des migrations</ns12:creator>
+    <ns12:creator xml:lang="de">Bundesamt für Migration</ns12:creator>
+    <ns12:date>2005-10-26</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns0:description xml:lang="fr">Appréciation des aspects spécifiques aux femmes et liés au sexe en procédure d’asile, en réponse au Postulat Menétrey-Savary...</ns0:description>
+    <ns0:description xml:lang="de">Neuer Bericht des Bundesamts für Migration zur Würdigung frauen- bzw. geschlechtsspezifischer Aspekte im Asylverfahren...</ns0:description>
+    <ns2:encoded xml:lang="fr">&lt;p&gt;La situation des femmes dans la politique d’asile - appréciation des aspects spécifiques aux femmes et liés au sexe en procédure d’asile.&lt;/p&gt;&lt;p&gt;Rapport d’ août 2005 en réponse au Postulat Menétrey-Savary (&lt;a target="_blank" href="http://www.parlament.ch/afs/data/f/gesch/2000/f_gesch_20003659.htm"&gt;00.3659&lt;/a&gt;).&lt;/p&gt;&lt;p&gt;Citation Communiqué de presse de DFJP: "Il ressort dudit rapport que le catalogue de mesures dressé par l’Office fédéral des migrations (ODM) permet de prendre en compte la situation spécifique des femmes dans la procédure d’asile. Ainsi, il est vérifié dans chaque cas que les préjudices invoqués correspondent aux motifs de persécution reconnus. Lorsque les conditions de reconnaissance de la qualité de réfugié ne sont pas réunies, les obstacles potentiels au renvoi sont examinés dans le cadre de la procédure de renvoi.&lt;br/&gt; Les statistiques relatives aux décisions d’asile font apparaître des disparités entre les sexes: au cours des dernières années, le taux de reconnaissance du statut de réfugié et le nombre d’admissions provisoires des femmes étaient systématiquement supérieurs à ceux des hommes.&lt;br/&gt; Ces chiffres viennent confirmer l’efficacité des mesures prises depuis 1998 en vue de tenir compte de la situation des femmes dans la politique d’asile."&lt;br/&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Citation conclusion: "En prenant un certain nombre de mesures ces dernières années, l’office fédéral a, d’une part, pris en compte la situation des femmes dans la procédure d’asile et d’autre part, il a mis l’accent sur l’importance d’un traitement différencié des demandes d’asile en fonction des spécificités liées au sexe. En outre, les conditions cadres ont été mises en place afin que les requêtes comportant des allégations de persécutions liées au sexe soient, à chaque fois, l’objet d’une décision conforme au droit etaux principes humanitaires. Ce processus n'est pas clos et continuera d’évoluer."&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;a target="_blank" href="http://www.bfm.admin.ch/fileadmin/user_upload/Themen_deutsch/Asyl/Asylverfahren/Bericht_Frau_Asylpolitik_f.pdf"&gt;&amp;gt;&amp;gt; Rapport (français)&lt;/a&gt;&lt;/p&gt;</ns2:encoded>
+    <ns2:encoded xml:lang="de">&lt;p&gt;Stellung der Frauen in der Asylpolitik - Würdigung frauen- bzw. geschlechtsspezifischer Aspekte im Asylverfahren.&lt;/p&gt;&lt;p&gt;Der Bericht vom August 2005 ist verfasst worden als Antwort auf das &lt;a target="_blank" href="http://www.parlament.ch/afs/data/d/gesch/2000/d_gesch_20003659.htm"&gt;Postulat&lt;/a&gt; Menétrey-Savary (00.3659).&lt;/p&gt;&lt;p&gt;Zitat aus der Pressemitteilung EJPD: "Aus dem Bericht geht hervor, dass das Bundesamt für Migration (BFM) mit einem Massnahmenkatalog der speziellen Situation der Frauen im Asylverfahren Rechnung trägt. Die von Frauen geltend gemachten Benachteiligungen werden im Einzelfall geprüft, um eine rechtlich angemessene und den humanitären Grundsätzen verpflichtete Lösung zu finden. Liegen die Voraussetzungen zur Anerkennung als Flüchtling nicht vor, werden im Rahmen der Wegweisung mögliche Wegweisungshindernisse geprüft.&lt;br/&gt; Die nach Geschlecht unterteilte Statistik der Entscheidpraxis zeigt, dass in jedem der vergangenen Jahre sowohl die Anerkennungsquote als auch die Zahl der vorläufigen Aufnahmen bei Frauen deutlich höher liegt als bei Männern.&lt;br/&gt; Dieses Ergebnis belegt, dass aufgrund der seit 1998 ergriffenen Massnahmen der speziellen Situation der Frauen im Asylverfahren nachhaltig Rechnung getragen wurde."&lt;br/&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Zitat aus dem Fazit: "In den letzten Jahren hat das zuständige Bundesamt mit einem Massnahmenkatalog zum einen der speziellen Situation der Frauen im Asylverfahren Rechnung getragen und zum anderen die Wichtigkeit einer geschlechtsdifferenzierten Behandlung der Asylgesuche betont. Zudem wurden die notwendigen Rahmenbedingungen geschaffen, um bei geschlechtsspezifischen Vorbringen die im Einzelfall rechtlich adäquaten und den humanitären Grundsätzen verpflichteten Lösungen zu treffen, wobei dieser Prozess nicht abgeschlossen ist, sondern laufend weiterentwickelt wird."&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;a target="_blank" href="http://www.bfm.admin.ch/fileadmin/user_upload/Themen_deutsch/Asyl/Asylverfahren/Bericht_Frau_Asylpolitik_d.pdf"&gt;&amp;gt;&amp;gt; Bericht deutsch&lt;/a&gt;&lt;/p&gt;</ns2:encoded>
+    <ns0:title xml:lang="fr">ODM-rapport sur les aspects spécifiques aux femmes et liés au sexe</ns0:title>
+    <ns0:title xml:lang="de">BFM-Bericht zur Würdigung frauen- bzw. geschlechtsspezifischer Aspekte im Asylverfahren</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-479d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-325f">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#SelectedLanguage"/>
+    <ns9:abbreviation>fr</ns9:abbreviation>
+    <ns9:name>Français</ns9:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-1f4d">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#SelectedLanguage"/>
+    <ns9:abbreviation>en</ns9:abbreviation>
+    <ns9:name>English</ns9:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2293">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.651914</ns7:childStrength>
+    <ns7:comparativeStrength>0.651914</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533770</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.651914</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/sfh-asylgesetzrevision"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/03/24/welcome-to-the-homepage">
+    <ns12:creator xml:lang="en">src</ns12:creator>
+    <ns12:date>   </ns12:date>
+    <ns12:language>en</ns12:language>
+    <ns0:description xml:lang="en">&lt;p&gt;The Swiss Refugee Council SRC is the umbrella association of the NGOs active on behalf of refugees throughout Switzerland.&lt;br/&gt;These are Caritas Switzerland, Hilfswerk der evangelischen Kirchen der Schweiz HEKS/Entraide protestante, Schweizerisches Arbeiterhilfswerk/Organisation suisse d'entraide ouvrière, Redcross Switzerland and Verband Schweizerischer Jüdischer Fürsorgen VSJF/Union suisse des comités d'entraide juive.&lt;/p&gt;&lt;p&gt;&lt;span&gt;The Swiss Refugee Council is a non-&lt;/span&gt;&lt;span&gt;governmental organisation. It is politically and confessionally independent.&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Actually, information on this site is mainly available in German and French. You’ll find some English items under “FAQ” and on the site “For Refugees”. As we depend on volunteers for our translations in to English, the Swiss Refugee Council is always grateful for helping minds.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;English is mostly used for navigation purposes. Our English navigation will help you in finding information in French and German as well as in the main languages of refugees living in Switzerland.&lt;/p&gt;</ns0:description>
+    <ns2:encoded xml:lang="en">&lt;p&gt;The Swiss Refugee Council SRC is the umbrella association of the NGOs active on behalf of refugees throughout Switzerland. These are Caritas Switzerland, Hilfswerk der evangelischen Kirchen der Schweiz HEKS/Entraide protestante, Schweizerisches Arbeiterhilfswerk/Organisation suisse d'entraide ouvrière, Redcross Switzerland and Verband Schweizerischer Jüdischer Fürsorgen VSJF/Union suisse des comités d'entraide juive.&lt;/p&gt;&lt;p&gt;&lt;span&gt;The Swiss Refugee Council is a non-&lt;/span&gt;&lt;span&gt;governmental organisation. It is politically and confessionally independent.&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Actually, information on this site is mainly available in German and French. As we depend on volunteers for our translations in to English, the Swiss Refugee Council is always grateful for helping minds.&lt;/p&gt;&lt;p&gt;English is mostly used for navigation purposes. Our English navigation will help you in finding information in French and German as well as in the main languages of refugees living in Switzerland.&lt;/p&gt;</ns2:encoded>
+    <ns0:title xml:lang="en">Welcome to the home page of the Swiss Refugee Council</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-46f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2298">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.67894673</ns7:childStrength>
+    <ns7:comparativeStrength>0.67894673</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533725</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.67894673</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/10/13/plante-exil-le-magazine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/education">
+    <ns12:creator xml:lang="fr">ud/lm</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-03-16</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns0:description xml:lang="fr">&lt;p class="MsoListBullet"&gt;L'Organisation suisse d'aide aux réfugiés a développé, au cours de ces dernières années, une offre diversifiée de cours de formation et de perfectionnement spécifiques au secteur de l'asile.&lt;/p&gt;&lt;p class="MsoListBullet"&gt;En tant qu'organisation spécialisée, l'OSAR transmet son savoir du droit de l'asile et ses connaissances sur la situation des pays de provenance des requérants d'asile. L'OSAR organise des &lt;a target="_self" href="/education/advanced-training-on-asylum-law-for-lawyers"&gt;séances d'information&lt;/a&gt; qui s'adresse aux conseillers des permanences juridiques pour les requérants d'asile, aux avocats indépendants et aux collaborateurs des œuvres d'entraide. L'OSAR est en outre responsable de la &lt;a target="_self" href="/education/advanced-training-on-asylum-issues-for-ngo-respresentatives"&gt;formation et du perfectionnement des représentants des œuvres d'entraide&lt;/a&gt; (ROE).&lt;/p&gt;&lt;p class="text"&gt;Deux teams de formation, l'un en Suisse romande et l'autre en Suisse alémanique, parcourent la Suisse et dispensent leur formation sur les thèmes EXIL ASILE INTEGRATION. La sensibilisation s'adresse autant aux adultes qu'aux jeunes et se concentre sur les réalités de la vie des réfugiés et des requérants d'asile ; elle leur permet ainsi de mieux comprendre les étrangers et de mieux  les traiter.&lt;/p&gt;&lt;p class="text"&gt;&lt;a target="_self" href="/education/flight-asylum-integration/adults"&gt;Formation pour personnes qui sont en contact de manière professionnelle avec des réfugiés:&lt;/a&gt;  Le programme EXIL ASILE INTEGRATION, leur offre la possibilité de réfléchir et de redéfinir leur pratique avec les réfugiés. L'OSAR est active depuis 2001 dans la formation et le perfectionnement du personnel soignant, des policiers, des assistants sociaux et des enseignants.&lt;/p&gt;&lt;p class="text"&gt;Avec le slogan &lt;a target="_self" href="/education/flight-asylum-integration/youth"&gt;EXIL ASILE INTEGRATION pour les jeunes,&lt;/a&gt; les équipes de formation de l'OSAR effectuent un grand travail de sensibilisation et de prévention contre le racisme dans les écoles et les lieux de rencontre des jeunes.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;br/&gt;&lt;br/&gt;</ns0:description>
+    <ns0:description xml:lang="de">&lt;p&gt;Die Schweizerische Flüchtlingshilfe SFH hat in den vergangenen Jahren im Asylbereich ein breitgefächertes Aus- und Weiterbildungsangebot entwickelt.&lt;/p&gt;&lt;p&gt;Als Fachorganisation gibt die SFH ihr Wissen im Asylrecht und ihre Kenntnisse zur Lage in den Herkunftsländern der Asylsuchenden in &lt;a target="_self" href="/education/training-rbs_bcj"&gt;Informationsveranstaltungen an die Rechtsberatungsstellen&lt;/a&gt; für Asylsuchende, an unabhängige AnwältInnen und an die MitarbeiterInnen der Hilfswerke weiter. Sie ist zudem für die &lt;a target="_self" href="/education/training-hwv_roe"&gt;Schulung und Weiterbildung der HilfswerksvertreterInnen&lt;/a&gt; zuständig.&lt;/p&gt;&lt;p&gt;In der Deutschschweiz und der Romandie ist je ein Bildungsteam zur Thematik Flucht Asyl Integration unterwegs. Die beiden Teams sensibilisieren sowohl Erwachsene wie Jugendliche für die Lebensrealitäten von Flüchtlingen und Asylsuchenden und ermöglichen ihnen dadurch mit Fremden auf eine andere, &lt;em&gt;bessere&lt;/em&gt; Weise umzugehen.&lt;/p&gt;&lt;p&gt;&lt;a target="_self" href="/education/flight-asylum-integration/adults"&gt;Personen, die von Berufes wegen mit Asylsuchenden und Flüchtlingen zu tun haben, erhalten in den Programmen von FLUCHT ASYL INTEGRATION&lt;/a&gt; die Möglichkeit, ihre Praxis im Umgang mit Flüchtlingen zu überdenken und neu zu definieren. Die SFH ist seit 2001 in der Aus- und Weiterbildung von Pflegepersonal, PolizistInnen, SozialarbeiterInnen und Lehrpersonen tätig.&lt;/p&gt;&lt;p&gt;Unter dem Motto &lt;a target="_self" href="/education/flight-asylum-integration/youth"&gt;FLUCHT ASYL INTEGRATION für Jugendliche&lt;/a&gt; leistet das Bildungsteam der SFH an Schulen und in Kirchgemeinden Sensibilisierungsarbeit und Rassismusprävention.&lt;/p&gt;</ns0:description>
+    <ns0:title xml:lang="fr">Formation</ns0:title>
+    <ns0:title xml:lang="de">Bildung</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#AuthoritativelyServedResource"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-22a1">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.7255232</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533662</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.7255232</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/11/01/asylg-aug-change-comment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/09/27/revision-de-la-loi">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-09-27</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns0:description xml:lang="fr">Le Conseil national a approuvé aujourd’hui pratiquement toutes les aggravations proposées par le Conseil des Etats dans le cadre de la révision de la loi sur l’asile. L’OSAR se montre profondément déçue par l’issue des débats. Le référendum apparaît dès lors inévitable...&amp;gt;&amp;gt; OSAR-Communiqué de presse du 27 septembre 2005&amp;gt;&amp;gt; Dossier Révision Loi sur l'asile</ns0:description>
+    <ns0:description xml:lang="de">Der Nationalrat hat heute praktisch allen Verschärfungsvorschlägen des Ständerates zum Asylgesetz zugestimmt. Die SFH ist sehr enttäuscht über den Ausgang der Beratung. Das Referendum ist nun unausweichlich...&amp;gt;&amp;gt; SFH-Pressemitteilung vom 27. September 2005&amp;gt;&amp;gt; Dossier Asylgesetz-Revision</ns0:description>
+    <ns2:encoded xml:lang="fr">&lt;p class="MsoTitle"&gt;Le Conseil national a approuvé aujourd’hui pratiquement toutes les aggravations proposées par le Conseil des Etats dans le cadre de la révision de la loi sur l’asile. L’OSAR se montre profondément déçue par l’issue des débats. Le référendum apparaît dès lors inévitable...&lt;br/&gt;&lt;a target="_self" href="/2005/09/27/pm_asylg-revision"&gt;&amp;gt;&amp;gt; OSAR-Communiqué de presse du 27 septembre 2005&lt;/a&gt;&lt;br/&gt;&lt;a target="_self" href="/asylum-politics/asylum-law/revision"&gt;&amp;gt;&amp;gt; Dossier Révision Loi sur l'asile&lt;/a&gt;&lt;/p&gt;</ns2:encoded>
+    <ns2:encoded xml:lang="de">Der Nationalrat hat heute praktisch allen Verschärfungsvorschlägen des Ständerates zum Asylgesetz zugestimmt. Die SFH ist sehr enttäuscht über den Ausgang der Beratung. Das Referendum ist nun unausweichlich...&lt;br/&gt;&lt;a target="_self" href="/2005/09/27/pm_asylg-revision"&gt;&amp;gt;&amp;gt; SFH-Pressemitteilung vom 27. September 2005&lt;/a&gt;&lt;br/&gt;&lt;a target="_self" href="/asylum-politics/asylum-law/revision"&gt;&amp;gt;&amp;gt; Dossier Asylgesetz-Revision&lt;/a&gt;</ns2:encoded>
+    <ns0:title xml:lang="fr">Revision de la loi sur l'asile - Inacceptable sur le plan humain</ns0:title>
+    <ns0:title xml:lang="de">Asylgesetzrevision - Aus humanitärer Sicht inakzeptabel! </ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-479d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2292">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.64633745</ns7:childStrength>
+    <ns7:comparativeStrength>0.64633745</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533780</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.64633745</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/03/24/welcome-to-the-homepage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-228e">
+    <ns12:date>1133608533817</ns12:date>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/transaction#Transaction"/>
+    <ns7:fromItemPos>1</ns7:fromItemPos>
+    <ns7:tillItemPos>20</ns7:tillItemPos>
+    <ns4:mainResponseResource rdf:resource="http://www.osar.ch/"/>
+    <ns4:user rdf:resource="urn:urn-5:EmeTvPgPnUm8tdx9sxDO1zXuDBM="/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/addresses">
+    <ns12:creator xml:lang="fr">fua</ns12:creator>
+    <ns12:creator xml:lang="en">ud</ns12:creator>
+    <ns12:creator xml:lang="de">fua</ns12:creator>
+    <ns12:date>2004-08-10</ns12:date>
+    <ns12:language>en</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="fr">Veuillez choisir à gauche une catégorie.&lt;br/&gt;Merci de nous indiquer des changements d'adresses.</ns0:description>
+    <ns0:description xml:lang="en">&lt;p&gt;Adressen und Links zu den Themen&lt;/p&gt;</ns0:description>
+    <ns0:description xml:lang="de">Wählen Sie links eine Kategorie.&lt;br/&gt;Besten Dank für die Meldung von Adressänderungen!</ns0:description>
+    <ns0:title xml:lang="fr">Adresses / Liens</ns0:title>
+    <ns0:title xml:lang="en">Links</ns0:title>
+    <ns0:title xml:lang="de">Adressen / Links</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-43ea">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <ns6:seeAlso rdf:resource="http://www.osar.ch/2005/03/22/jolle-scacchi"/>
+    <ns11:pass_sha1sum>20211dad666007e0b4b46e6adbdaddce9fdfb0d0</ns11:pass_sha1sum>
+    <ns11:permission rdf:resource="http://www.osar.ch/permissions#pro-net"/>
+    <ns11:permission rdf:resource="http://wymiwyg.org/ontologies/authorization#admin"/>
+    <ns11:permission rdf:resource="http://wymiwyg.org/ontologies/authorization#edit"/>
+    <ns11:shortName>sfhscac</ns11:shortName>
+    <ns1:participates rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-2010"/>
+    <ns3:family_name>Scacchi</ns3:family_name>
+    <ns3:givenname>Joëlle</ns3:givenname>
+    <ns3:isPrimaryTopicOf rdf:resource="http://www.osar.ch/2005/03/22/jolle-scacchi"/>
+    <ns3:mbox rdf:resource="mailto:joelle.scacchi@osar.ch"/>
+    <ns3:mbox_sha1sum>75a6833d862adbf89a329a1c5e631aa1e603a745</ns3:mbox_sha1sum>
+    <ns3:name>Joëlle Scacchi</ns3:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-229a">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.99375</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533714</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:sourceLabel xml:lang="fr">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="en">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="de">Home</ns7:sourceLabel>
+    <ns7:strength>0.99375</ns7:strength>
+    <ns7:strengthReduction>0.0</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/education"/>
+    <ns7:targetLabel xml:lang="fr">Formation</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="en">Educational Resources</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="de">Bildung</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-228f">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.024689192</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533817</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/addresses"/>
+    <ns7:sourceLabel xml:lang="de">Adressen/Links</ns7:sourceLabel>
+    <ns7:strength>0.0</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/"/>
+    <ns7:targetLabel xml:lang="de">Sozialhilfe</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/10/13/plante-exil-le-magazine">
+    <ns12:creator xml:lang="fr">kom</ns12:creator>
+    <ns12:creator xml:lang="de">kom</ns12:creator>
+    <ns12:date>2005-10-14</ns12:date>
+    <ns12:language>de</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns0:description xml:lang="fr">Téléchargez les derniers numéros de Planète exil!</ns0:description>
+    <ns0:description xml:lang="de">Die letzten Nummern stehen zum Download bereit!</ns0:description>
+    <ns2:encoded xml:lang="fr">&lt;a target="_self" href="/about-us/planet"&gt;Téléchargez&lt;/a&gt; les derniers numéros de Planète exil!</ns2:encoded>
+    <ns2:encoded xml:lang="de">Die letzten Nummern stehen zum &lt;a target="_self" href="/about-us/planet"&gt;Download&lt;/a&gt; bereit!</ns2:encoded>
+    <ns0:title xml:lang="fr">Planète Exil, le magazine de l'OSAR</ns0:title>
+    <ns0:title xml:lang="de">Fluchtpunkt, die Zeitschrift der SFH</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-43ea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-22a3">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.828203</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533640</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.828203</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/11/14/pm-srk"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-229c">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.99625003</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533702</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:sourceLabel xml:lang="fr">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="en">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="de">Home</ns7:sourceLabel>
+    <ns7:strength>0.99625003</ns7:strength>
+    <ns7:strengthReduction>0.0</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/asylum-politics"/>
+    <ns7:targetLabel xml:lang="fr">Politique d'asile</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="en">Political issues</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="de">Asylpolitik</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-22a2">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.7724738</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533652</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.7724738</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/11/07/pm-sfh-asylv-vvwa-bvo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-1d1d">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/2005/05/26/neu-erschienen">
+    <ns12:creator xml:lang="fr">pro</ns12:creator>
+    <ns12:creator xml:lang="en">pro</ns12:creator>
+    <ns12:creator xml:lang="de">pro</ns12:creator>
+    <ns12:date>2005-10-31</ns12:date>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>en</ns12:language>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="fr">Sous &lt;a target="_self" href="/country-of-origin"&gt;Pays d'origine&lt;/a&gt; vous trouverez des tout nouveaux rapports ainsi que d'autres evaluations et analyses interessantes.</ns0:description>
+    <ns0:description xml:lang="en">Check &lt;a target="_self" href="/country-of-origin"&gt;Country of Origin&lt;/a&gt; to find our news reports as well as a lot of other short and longer analyses.</ns0:description>
+    <ns0:description xml:lang="de">Unter &lt;a target="_self" href="/country-of-origin"&gt;Herkunftsländer&lt;/a&gt; finden Sie viele neue Länderberichte und Gutachten!</ns0:description>
+    <ns2:encoded xml:lang="fr">Sous &lt;a target="_self" href="/country-of-origin"&gt;Pays d'origine&lt;/a&gt; vous trouverez des tout nouveaux rapports ainsi que d'autres evaluations et analyses interessantes.</ns2:encoded>
+    <ns2:encoded xml:lang="en">Check &lt;a target="_self" href="/country-of-origin"&gt;Country of Origin&lt;/a&gt; to find our news reports as well as a lot of other short and longer analyses.</ns2:encoded>
+    <ns2:encoded xml:lang="de">Unter &lt;a target="_self" href="/country-of-origin"&gt;Herkunftsländer&lt;/a&gt; finden Sie viele neue Länderberichte und Gutachten!</ns2:encoded>
+    <ns0:title xml:lang="fr">Nouvelles editions!</ns0:title>
+    <ns0:title xml:lang="en">New editions!</ns0:title>
+    <ns0:title xml:lang="de">Neu erschienen!</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns7:commentCount>0</ns7:commentCount>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-4776"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-39e2">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#SelectedLanguage"/>
+    <ns9:abbreviation>de</ns9:abbreviation>
+    <ns9:name>Deutsch</ns9:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-2299">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.0</ns7:childStrength>
+    <ns7:comparativeStrength>0.9925</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533719</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:sourceLabel xml:lang="fr">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="en">Home</ns7:sourceLabel>
+    <ns7:sourceLabel xml:lang="de">Home</ns7:sourceLabel>
+    <ns7:strength>0.9925</ns7:strength>
+    <ns7:strengthReduction>0.0</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/media"/>
+    <ns7:targetLabel xml:lang="fr">Média</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="en">News room</ns7:targetLabel>
+    <ns7:targetLabel xml:lang="de">Medieninformation</ns7:targetLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.osar.ch/">
+    <ns12:creator xml:lang="fr">OSAR</ns12:creator>
+    <ns12:creator xml:lang="en">sfh</ns12:creator>
+    <ns12:creator xml:lang="de">kom</ns12:creator>
+    <ns12:date>2005-11-21</ns12:date>
+    <ns12:language>en</ns12:language>
+    <ns12:language>fr</ns12:language>
+    <ns12:language>de</ns12:language>
+    <ns0:description xml:lang="fr">&lt;p&gt;&lt;br/&gt; &lt;img border="0" src="/2005/11/21/rembrandt-website_f" alt=""/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Des destinées humaines derrière chaque exil forcé&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Depuis des siècles, des réfugiés arrivent en Suisse. Découvrez derrière chaque fenêtre de ce calendrier de l’Avent le destin unique d’un réfugié célèbre ou inconnu ayant trouvé refuge en Suisse. Ce calendrier vous montrera l’énorme apport des exilés à la vie de notre pays et également l’histoire fabuleuse de la tradition humanitaire de la Suisse. Sans l’aide de la population, ceci n’aurait pas pu être possible.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;a target="_self" href="/2005/11/21/adventskalender-flucht"&gt;Commandez ici le calendrier de l’Avent&lt;/a&gt; ou &lt;a target="_self" href="https://secure.sfh-osar.ch/donations/general?firstLang=fr"&gt;faites un don direct&lt;/a&gt; pour soutenir notre travail !&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Image:&lt;br/&gt;Rembrandt Harmenszoon van Rijn&lt;br/&gt;&lt;span&gt;La fuite en Egypte, 1627 (extrait)&lt;/span&gt;&lt;/p&gt;</ns0:description>
+    <ns0:description xml:lang="de">&lt;p&gt;&lt;strong&gt;&lt;img border="0" src="/2005/11/21/rembrandt-website_d" alt=""/&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Hinter jeder Flucht steht ein menschliches Schicksal!&lt;/strong&gt;&lt;/p&gt;Seit Jahrhunderten kommen Flüchtlinge in die Schweiz. Entdecken Sie hinter jedem Fenster unseres Adventskalenders Schicksale bekannter und unbekannter Flüchtlinge, die bei uns Schutz gefunden haben. Sie alle haben unser Land mit ihrer Arbeit und ihren Kulturen bereichert. Ohne die Hilfe aus der Schweizer Bevölkerung wäre das nicht möglich gewesen. Der Kalender zeigt auf beeindruckende Weise die Geschichte der humanitären Tradition der Schweiz. &lt;p&gt;&lt;a target="_self" href="/2005/11/21/adventskalender-flucht"&gt;Bestellen Sie diesen Adventskalender hier&lt;/a&gt;, oder &lt;a target="_self" href="https://secure.sfh-osar.ch/donations/general?firstLang=de"&gt;spenden Sie direkt&lt;/a&gt; und unterstützen Sie damit unsere Arbeit!&lt;/p&gt;&lt;p&gt;Bild:&lt;br/&gt;Rembrandt Harmenszoon van Rijn&lt;br/&gt;Die Flucht nach Ägypten, 1627 (Ausschnitt)&lt;/p&gt;</ns0:description>
+    <ns0:title xml:lang="fr">Home</ns0:title>
+    <ns0:title xml:lang="en">Home</ns0:title>
+    <ns0:title xml:lang="de">Home</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/channel"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#AuthoritativelyServedResource"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#NonCommentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns10:attachments rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-2c89"/>
+    <ns3:maker rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-1af2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Xd2X29250383Xa3X107dd8c5fd5Xa3X-2c89">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X53X9067afbXa3X107eb1dd4c4Xa3X-22a0">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#HighlightedRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns7:childStrength>0.71067244</ns7:childStrength>
+    <ns7:comparativeStrength>0.71067244</ns7:comparativeStrength>
+    <ns7:effectiveDate>1133608533672</ns7:effectiveDate>
+    <ns7:minimumChildStrengthReduction>0.01</ns7:minimumChildStrengthReduction>
+    <ns7:source rdf:resource="http://www.osar.ch/"/>
+    <ns7:strength>0.71067244</ns7:strength>
+    <ns7:strengthReduction>0.01</ns7:strengthReduction>
+    <ns7:target rdf:resource="http://www.osar.ch/2005/05/26/neu-erschienen"/>
+  </rdf:Description>
+</rdf:RDF>

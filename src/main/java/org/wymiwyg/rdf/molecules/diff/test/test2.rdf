@@ -1,0 +1,113 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ns0="http://purl.org/rss/1.0/"
+   xmlns:ns1="http://wymiwyg.org/ontologies/virtuser#"
+   xmlns:ns2="http://purl.org/rss/1.0/modules/content/"
+   xmlns:ns3="http://xmlns.com/foaf/0.1/"
+   xmlns:ns4="http://wymiwyg.org/ontologies/knobot/personal-history#"
+   xmlns:ns5="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:ns6="http://wymiwyg.org/ontologies/knobot#"
+   xmlns:ns7="http://wymiwyg.org/ontologies/rwcf#"
+   xmlns:ns8="http://wymiwyg.org/ontologies/language-selection#"
+   xmlns:ns9="http://wymiwyg.org/ontologies/foaf/extensions#"
+   xmlns:ns10="http://wymiwyg.org/ontologies/authorization#"
+   xmlns:ns11="http://purl.org/dc/elements/1.1/"
+   xmlns:ns12="urn://wymiwyg.org/knobot/default/"
+   xmlns:ns13="http://wymiwyg.org/ontologies/hostcanonicalizer#">
+  <rdf:Description rdf:about="http://localhost/me">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-78a8">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <ns8:abbreviation>fr</ns8:abbreviation>
+    <ns8:name>Français</ns8:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8585/">
+    <ns11:creator xml:lang="it"></ns11:creator>
+    <ns11:date>2005-12-21T19:46+01:00</ns11:date>
+    <ns11:language>it</ns11:language>
+    <ns0:description xml:lang="it">This is the entry page, should write something...&lt;br/&gt;</ns0:description>
+    <ns0:title xml:lang="it">A new Topic!</ns0:title>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Commentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Topic"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns6:firstRelation rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8585/me">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/foaf/extensions#AgentProfileDocument"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns3:primaryTopic rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7ef2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8585/2005/12/21/an-article">
+    <ns11:creator xml:lang="en"></ns11:creator>
+    <ns11:date>2005-12-21T20:25+01:00</ns11:date>
+    <ns11:language>en</ns11:language>
+    <ns2:encoded xml:lang="en">Shoud write something here too...&lt;br/&gt;</ns2:encoded>
+    <ns0:title xml:lang="en">An article</ns0:title>
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Commentable"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource"/>
+    <ns3:maker rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7ef2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7024">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#InlineRelation"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Relation"/>
+    <ns6:effectiveDate>1135193154145</ns6:effectiveDate>
+    <ns6:source rdf:resource="http://localhost:8585/"/>
+    <ns6:strength>1.0</ns6:strength>
+    <ns6:strengthReduction>0.01</ns6:strengthReduction>
+    <ns6:target rdf:resource="http://localhost:8585/2005/12/21/an-article"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7d9a">
+    <rdf:type rdf:resource="http://purl.org/rss/1.0/item"/>
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/knobot#Commentable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7ab0">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <ns8:abbreviation>en</ns8:abbreviation>
+    <ns8:name>English</ns8:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7034">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/authorization#PermissionAlternatives"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7ef2">
+    <ns3:mbox rdf:resource="mailto:reto@gmuer.ch"/>
+    <ns3:mbox rdf:resource="mailto:yahoo@gmuer.ch"/>
+  </rdf:Description>
+  <rdf:Description>
+    <ns3:name>Jo Example</ns3:name>
+    <ns3:mbox rdf:resource="mailto:jo@example.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7023">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/authorization#PermissionAlternatives"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7f67">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <ns8:abbreviation>it</ns8:abbreviation>
+    <ns8:name>Italiano</ns8:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7a2b">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/language-selection#Language"/>
+    <ns8:abbreviation>de</ns8:abbreviation>
+    <ns8:name>Deutsch</ns8:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost/">
+    <ns3:maker rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7b73"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7973">
+    <rdf:type rdf:resource="http://wymiwyg.org/ontologies/hostcanonicalizer#Canonicalizer"/>
+    <ns13:accessURLBase rdf:resource="http://localhost:8585/"/>
+    <ns13:canonicalBase rdf:resource="http://localhost:8585"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7b73">
+    <ns5:seeAlso rdf:resource="http://localhost/me"/>
+    <ns3:weblog rdf:resource="http://localhost/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn://wymiwyg.org/knobot/defaults">
+    <ns12:childStrength>0.9</ns12:childStrength>
+    <ns12:itemPrototype rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-7d9a"/>
+    <ns12:notificationEmail rdf:resource="mailto:reto@gmuer.ch"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="X13Xf38fc6Xa3X1084d85eef8Xa3X-701f">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    <rdf:li rdf:resource="http://localhost:8585/"/>
+  </rdf:Description>
+</rdf:RDF>

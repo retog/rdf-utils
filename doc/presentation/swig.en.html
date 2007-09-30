@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Diff and patch for RDF-graphs</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20060302" />
+<meta name="author" content="Reto Bachmann-Gmür" />
+<meta name="company" content="WYMIWYG" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+<style type="text/css">
+  div.exampleInner pre {
+    margin-left: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em
+    font-family: monospace;
+    font-size: 50%
+  }
+  div.exampleOuter {
+    border: 4px double gray;
+    margin: 0em;
+    padding: 0em;
+  }
+  div.exampleInner { 
+    background-color: #d5dee3;
+    border-top-style: double;
+    border-top-color: #d3d3d3;
+    border-bottom-width: 4px;
+    border-bottom-style: double;
+    border-bottom-color: #d3d3d3;
+    padding: 4px;
+    margin: 0em;
+  }
+
+  ul, pre, code {
+	text-align: left;
+  }	
+
+  code {
+	text-align: left;
+	font-size: 50%
+  }
+  div {
+	text-align:center; 
+  }
+
+  #header, #footer, #footer * {
+	text-align:left; 
+  }
+  div.incremental, div.incremental * {visibility: hidden;}
+
+  </style>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"><img src="ui/default/wymiwyg.png" alt="wymiwyg logo"/></div>
+<div id="footer">
+<h1>SWIG / 2006-03-02</h1>
+<h2>Diff and Patch for RDF Graphs</h2>
+</div>
+
+</div>
+
+
+<div class="presentation">
+
+<div class="slide">
+<h1>Diff and Patch for RDF Graphs</h1>
+<h3>Reto Bachmann-Gmür</h3>
+<h4>WYMIWYG</h4>
+<div><a href="http://gmuer.ch/2006/03/02/swig">http://gmuer.ch/2006/03/02/swig</a></div>
+</div>
+
+
+<div class="slide">
+<h1>Motivation</h1>
+<ul class="incremental">
+<li>Debugging Tool
+	<ul>
+		<li>What changed in the model?</li>
+		<li>Alternatives Comparing N-TRIPLES or graphs, hard even for medium sized graphs</li>
+	</ul></li>
+</ul>
+<div class="handout">
+</div>
+</div>
+
+
+<div class="slide">
+<h1>The foundation</h1>
+<ul class="incremental">
+	<li>RDF-Molecules
+	<ul>
+		<li>Terminal</li>
+		<li>Maximum Contextual Molecules</li>
+		<li>Non-Terminal Molecules</li>
+	</ul>
+	</li>
+	<li>Functionally Grounded Nodes
+	<ul>
+		<li>The smaller the entities, the better the performance</li>
+	</ul></li>
+	</li>
+</ul>
+<div class="handout">
+</div>
+</div>
+
+
+<div class="slide">
+<h1>Extension to RDF Molecules</h1>
+<div  class="incremental">
+<ul>
+	<li>Functional nodes as refence to set of nt-molecules</li>
+	<li>Deterministic terminal molecules</li>
+	<li>1-1 cg-fg-nodes</li>
+</ul>
+</div>
+<div class="handout">
+</div>
+</div>
+
+
+<div class="slide">
+<h1>Pretty generic tool</h1>
+<ul class="incremental">
+<li>Did anybody else write something?
+	<ul>
+		<li>diff -M1 http://planetrdf.org/index.rdf -M2 http://dannyayers.com/feed/rdf/</li>
+	</ul></li>
+</ul>
+<div class="handout">
+</div>
+</div>
+
+<div class="slide">
+<h1>Not yet implemented</h1>
+<ul class="incremental">
+	<li>Subgraph Isomorphism on patch
+	<ul>
+		<li>Smaller diffs</li>
+		<li>Eaiser to apply to graphs different to the original</li>
+	</ul></li>
+	<li>Extract URI for an IFP Data-type property (owl:equals, (i)fp inferred identity)</li>
+</ul>
+<div class="handout">
+</div>
+</div>
+
+<div class="slide">
+<h1>Perfomance improvement</h1>
+<ul class="incremental">
+	<li>Strong hash on all graph which can be predicatbly serialized</li>
+</ul>
+<div class="handout">
+</div>
+</div>
+
+
+
+
+<div class="slide">
+<h1>Where to go?</h1>
+<ul class="incremental">
+<li>Store for RDF-Models</li>
+<li>Architecture
+	<ul>
+		<li>Metamodel: what, when, where</li>
+		<li>Database of fg-nodes and molecules</li>
+	</ul>
+</li>
+<li>Features
+	<ul>
+		<li>Keeping track of source</li>
+		<li>Versioning</li>
+		<li>Trust</li>
+	</ul>
+</li>
+</ul>
+<div class="handout">
+</div>
+</div>
+
+<div class="slide">
+<h1>Relations between components</h1>
+<img src="components-of-a-graph.png" class="incremental"/>
+<div class="handout">
+</div>
+</div>
+
+<div class="slide">
+<h1>I'd like to discuss</h1>
+<ul>
+	<li>At lunch</li>
+	<li>Comments: 
+	<ul><li>http://gmuer.ch/</li>
+	<li>http://wymiwyg.org/</li></ul></li>
+	<li>The usal mailing lists</li>
+</ul>
+<div class="handout">
+</div>
+</div>
+
+<!-- after slides -->
+</div>
+<!-- after presentation -->
+</body>
+</html>

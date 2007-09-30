@@ -1,0 +1,68 @@
+get fgnodes from both decs
+- find identical fgnodes -> do not further process those, as they wouldn't be identical if the allow merge with other
+- (for every fgnode in 1 and each of its nt-molecules check if this is contained in an fgnode in 2, add to multimap(fg1, fg2*)
+- do the same the other way round) with every nt-molecule check if it is contained in any other node (only of other necessary, if so: 
+create merge group
+1. with fgnode1.1:
+	a. create mergeset {fgnode1.1}
+	b. add mapping fgnode-mergeset
+	c. with molecule 1.1.1
+		I. for every fgnode2.x add it to mergegroup iff it contains the molecule
+2. with fgnode2.1
+	a. if it is already contained in mergeset select that otherwise create mergeset {fgnode2.1}
+	b. add mapping fgnode-mergeset
+	c. with molecule 2.1.1
+		I. for every fgnode1.x add it to mergegroup iff it contains the molecule
+		
+-> instead of map set of Set[2], 
+		
+print common fgnodes
+print distinct fgnodes only in 1
+print distinct fgnodes only in 2
+print overlapping fgnodes
+		
+map:
+
+result:
+common fg-nodes:
+...
+
+overlapping fgnodes:
+(version(s) in 1:
+...
+version(s) in 2:
+...
+merged version:
+...)*
+
+
+fgnode only in 1:
+....
+
+fgnodes only in 2:
+
+
+After this step, in all molecules the fg-nodes are replaced by their respective merged version (when diff-to-union) activated, or 
+when the crossgraphfgnode has 1 fg-node per model.
+
+
+Example / Test
+
+two dec with 2 fgnodes merge to one fgnode
+g1:
+_:a foaf:isPrimaryTopicOf <http://b>
+_:a foaf:homepage <http://a>
+_:b foaf:mbox <mailto:a>
+
+g2:
+_:a foaf:homepage <http://a>
+_:a foaf:mbox <mailto:a>
+_:b foaf:isPrimaryTopicOf <http://b>
+
+
+diff-to-disk:
+
+- folders :onlyIn1/onlyIn2 and cg-fg-nodes ? (or just keep the fg-nodes distinct till patch?, when fg-node gets an extension (1-1
+cg-fg-node) it is enough to reference th cg-fg-node in molecules so the diff is shorted if the cg-fg-node cann be refernced), 
+- an rdf/xml file for each fg-node and molecule
+- reference to fg nodes like _:a diff:primaryTopicOfFgNode <./fg_node>

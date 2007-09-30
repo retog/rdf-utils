@@ -1,0 +1,430 @@
+@prefix :        <file:///home/reto/workspace/rdf-leanifier/bin/org/wymiwyg/rdf/leanifier/test/me-lean.n3#> .
+
+<http://gmuer.ch/contacts/hblitbae>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> .
+
+<http://george.wymiwyg.com/me>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> .
+
+<http://pulp.wymiwyg.com/me>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> .
+
+[]    a       <http://wymiwyg.org/ontologies/transaction#Transaction> ;
+      <http://wymiwyg.org/ontologies/transaction#mainResponseResource>
+              <file:///home/reto/workspace/rdf-leanifier/bin/org/wymiwyg/rdf/leanifier/test/me-lean.n3> .
+
+<http://gmuer.ch/contacts/rlgsxylu>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> .
+
+_:b1  a       <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Group> ;
+      <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+              <http://gmuer.ch/contacts/jwwpanim> ;
+      <http://wymiwyg.org/ontologies/foaf/role#hasParticipation>
+              _:b2 , _:b3 ;
+      <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+              "bf479fccb11e52ec0442232e1ca878699a10bdbc" ;
+      <http://xmlns.com/foaf/0.1/name>
+              "WYMIWYG" .
+
+<mailto:reto@gmuer.ch>
+      <http://wymiwyg.org/ontologies/mailpush#member>
+              <urn:urn-5:6OfZYJwg8xVTYfvlqEhfszv9V3s=> .
+
+<http://pino.wymiwyg.com/me>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> , <http://xmlns.com/foaf/0.1/PersonalProfileDocument> .
+
+<http://gmuer.ch/2005/06/13/alexander-tschurtenthaler>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> .
+
+<http://gmuer.ch/contacts/tekgqnqi>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> .
+
+[]    a       <http://wymiwyg.org/ontologies/language-selection#LanguageSelectionSeq> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+              [ a       <http://wymiwyg.org/ontologies/language-selection#Language> , <http://wymiwyg.org/ontologies/language-selection#SelectedLanguage> ;
+                <http://wymiwyg.org/ontologies/language-selection#abbreviation>
+                        "de" ;
+                <http://wymiwyg.org/ontologies/language-selection#name>
+                        "Deutsch"
+              ] ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2>
+              [ a       <http://wymiwyg.org/ontologies/language-selection#Language> , <http://wymiwyg.org/ontologies/language-selection#SelectedLanguage> ;
+                <http://wymiwyg.org/ontologies/language-selection#abbreviation>
+                        "en" ;
+                <http://wymiwyg.org/ontologies/language-selection#name>
+                        "English"
+              ] ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3>
+              [ a       <http://wymiwyg.org/ontologies/language-selection#Language> ;
+                <http://wymiwyg.org/ontologies/language-selection#abbreviation>
+                        "fr" ;
+                <http://wymiwyg.org/ontologies/language-selection#name>
+                        "Français"
+              ] ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#_4>
+              [ a       <http://wymiwyg.org/ontologies/language-selection#Language> ;
+                <http://wymiwyg.org/ontologies/language-selection#abbreviation>
+                        "it" ;
+                <http://wymiwyg.org/ontologies/language-selection#name>
+                        "Italiano"
+              ] .
+
+<http://wymiwyg.org/ontologies/authorization#mark>
+      a       <http://wymiwyg.org/ontologies/authorization#Permission> ;
+      <http://www.w3.org/2000/01/rdf-schema#comment>
+              "Permission to add indidual marks (such as \"read\") to items" .
+
+_:b3  a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> , <http://wymiwyg.org/ontologies/foaf/role#Participation> , <http://xmlns.com/foaf/0.1/Agent> ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://gmuer.ch/contacts/qwkingqw> ;
+      <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+              <http://gmuer.ch/contacts/qwkingqw> ;
+      <http://wymiwyg.org/ontologies/foaf/role#group>
+              _:b1 ;
+      <http://wymiwyg.org/ontologies/foaf/role#participant>
+              _:b4 ;
+      <http://wymiwyg.org/ontologies/foaf/role#role>
+              [ a       <http://wymiwyg.org/ontologies/foaf/role#Role> ;
+                <http://wymiwyg.org/ontologies/foaf/role#denotation>
+                        "Scientific Consultant"
+              ] .
+
+_:b2  a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> , <http://wymiwyg.org/ontologies/foaf/role#Participation> , <http://xmlns.com/foaf/0.1/Agent> ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://gmuer.ch/contacts/xxeiilmr> ;
+      <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+              <http://gmuer.ch/contacts/xxeiilmr> ;
+      <http://wymiwyg.org/ontologies/foaf/role#group>
+              _:b1 ;
+      <http://wymiwyg.org/ontologies/foaf/role#participant>
+              _:b5 ;
+      <http://wymiwyg.org/ontologies/foaf/role#role>
+              [ a       <http://wymiwyg.org/ontologies/foaf/role#Role> ;
+                <http://wymiwyg.org/ontologies/foaf/role#denotation>
+                        "Chief Ideologist"
+              ] ;
+      <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+              "eb956d2108aee499cb768cb699fb592621881f9d" .
+
+_:b6  a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> , <http://wymiwyg.org/ontologies/foaf/role#Participation> , <http://xmlns.com/foaf/0.1/Agent> ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://gmuer.ch/contacts/hadpfdmx> ;
+      <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+              <http://gmuer.ch/contacts/hadpfdmx> ;
+      <http://wymiwyg.org/ontologies/foaf/role#group>
+              [ a       <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Group> ;
+                <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+                        <http://gmuer.ch/contacts/udimwhun> ;
+                <http://wymiwyg.org/ontologies/foaf/role#hasParticipation>
+                        _:b6 ;
+                <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+                        "cb6b3516cb3e2c8ecd2651bbefc09e7bded1c5b9" ;
+                <http://xmlns.com/foaf/0.1/name>
+                        "SFH"@de
+              ] ;
+      <http://wymiwyg.org/ontologies/foaf/role#participant>
+              _:b5 ;
+      <http://wymiwyg.org/ontologies/foaf/role#role>
+              [ a       <http://wymiwyg.org/ontologies/foaf/role#Role> ;
+                <http://wymiwyg.org/ontologies/foaf/role#denotation>
+                        "Webslave"
+              ] ;
+      <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+              "0a4004b434d9ddd1669227e76d7f957a2d970ada" ;
+      <http://xmlns.com/foaf/0.1/phone>
+              <tel:+41-31-370-75-65> .
+
+<http://gmuer.ch/contacts/kogvhuqs>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> .
+
+<http://wymiwyg.org/ontologies/authorization#edit>
+      a       <http://wymiwyg.org/ontologies/authorization#Permission> ;
+      <http://www.w3.org/2000/01/rdf-schema#comment>
+              "Permission to edit, remove and add regular contents" ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Edit" .
+
+_:b5  a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <file:///home/reto/workspace/rdf-leanifier/bin/org/wymiwyg/rdf/leanifier/test/me-lean.n3> ;
+      <http://wymiwyg.org/ontologies/authorization#pass_sha1sum>
+              "6fd0b9ba50273caac39d1335073f1046d7382647" ;
+      <http://wymiwyg.org/ontologies/authorization#permission>
+              <http://wymiwyg.org/ontologies/authorization#mark> , <http://wymiwyg.org/ontologies/authorization#admin> , <http://wymiwyg.org/ontologies/authorization#edit> , <http://gmuer.ch/permissions/friend> ;
+      <http://wymiwyg.org/ontologies/authorization#shortName>
+              "reto" ;
+      <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+              <file:///home/reto/workspace/rdf-leanifier/bin/org/wymiwyg/rdf/leanifier/test/me-lean.n3> ;
+      <http://wymiwyg.org/ontologies/foaf/extensions#knownBy>
+              _:b4 ;
+      <http://wymiwyg.org/ontologies/foaf/extensions#knownBy>
+              [ a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                        <http://gmuer.ch/2005/06/13/alexander-tschurtenthaler> ;
+                <http://wymiwyg.org/ontologies/authorization#pass_sha1sum>
+                        "4576465e2a27501c78889cc83dabc4632d5c184e" ;
+                <http://wymiwyg.org/ontologies/authorization#permission>
+                        <http://gmuer.ch/permissions/friend> ;
+                <http://wymiwyg.org/ontologies/authorization#shortName>
+                        "tex" ;
+                <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+                        <http://gmuer.ch/2005/06/13/alexander-tschurtenthaler> ;
+                <http://wymiwyg.org/ontologies/knobot/personal-history#personalHistory>
+                        [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> ;
+                          <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                                  <http://gmuer.ch/>
+                        ] ;
+                <http://xmlns.com/foaf/0.1/family_name>
+                        "Tschurtschenthaler" ;
+                <http://xmlns.com/foaf/0.1/givenname>
+                        "Alexander" ;
+                <http://xmlns.com/foaf/0.1/knows>
+                        _:b5 ;
+                <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+                        "25dc23f091c9d6a4e9bcebd408036fcddbee99a2" ;
+                <http://xmlns.com/foaf/0.1/name>
+                        "Alexander Tschurtschenthaler" ;
+                <http://xmlns.com/foaf/0.1/nick>
+                        "tex" ;
+                <http://xmlns.com/foaf/0.1/title>
+                        "Herr"
+              ] ;
+      <http://wymiwyg.org/ontologies/foaf/extensions#knownBy>
+              [ a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                        <http://pino.wymiwyg.com/me> ;
+                <http://wymiwyg.org/ontologies/authorization#pass_sha1sum>
+                        "30734848d82e316d2b0d8300bf9706321c0d44fe" ;
+                <http://wymiwyg.org/ontologies/authorization#permission>
+                        <http://wymiwyg.org/ontologies/authorization#edit> , <http://gmuer.ch/permissions/friend> ;
+                <http://wymiwyg.org/ontologies/authorization#shortName>
+                        "pinox" ;
+                <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+                        <http://pino.wymiwyg.com/me> ;
+                <http://wymiwyg.org/ontologies/foaf/postaddress#address>
+                        [ a       <http://wymiwyg.org/ontologies/foaf/postaddress#Address> ;
+                          <http://wymiwyg.org/ontologies/foaf/postaddress#location>
+                                  [ 
+                                  ] ;
+                          <http://wymiwyg.org/ontologies/foaf/postaddress#phone>
+                                  <tel:+41-32-534-13-25> ;
+                          <http://wymiwyg.org/ontologies/foaf/postaddress#serviceDeliveryPointSpecification>
+                                  [ 
+                                  ]
+                        ] ;
+                <http://wymiwyg.org/ontologies/knobot/personal-history#personalHistory>
+                        [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> ;
+                          <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                                  <http://pino.wymiwyg.com/> ;
+                          <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2>
+                                  <http://pino.wymiwyg.com/music> ;
+                          <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3>
+                                  <http://pino.wymiwyg.com/installationen>
+                        ] ;
+                <http://xmlns.com/foaf/0.1/depiction>
+                        <http://pino.wymiwyg.com/2005/03/15/pino> ;
+                <http://xmlns.com/foaf/0.1/family_name>
+                        "Pino" ;
+                <http://xmlns.com/foaf/0.1/givenname>
+                        "Scuro" ;
+                <http://xmlns.com/foaf/0.1/knows>
+                        _:b5 ;
+                <http://xmlns.com/foaf/0.1/knows>
+                        [ a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+                          <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                                  <http://pino.wymiwyg.com/contacts/vghcyqwi> ;
+                          <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+                                  <http://pino.wymiwyg.com/contacts/vghcyqwi> ;
+                          <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+                                  "3f68bcb387811e0363b31e23c015007a5453d9ad"
+                        ] ;
+                <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+                        "0453aadad75aae6a435ad6a54175efaf020ce78d" ;
+                <http://xmlns.com/foaf/0.1/name>
+                        "Scuro Pino" ;
+                <http://xmlns.com/foaf/0.1/nick>
+                        "Pinox" ;
+                <http://xmlns.com/foaf/0.1/phone>
+                        <tel:+41-78-876-48-59>
+              ] ;
+      <http://wymiwyg.org/ontologies/foaf/postaddress#address>
+              [ a       <http://wymiwyg.org/ontologies/foaf/postaddress#Address> ;
+                <http://wymiwyg.org/ontologies/foaf/postaddress#location>
+                        [ a       <http://wymiwyg.org/ontologies/foaf/postaddress#Location> ;
+                          <http://wymiwyg.org/ontologies/foaf/postaddress#streetNr>
+                                  "60" ;
+                          <http://wymiwyg.org/ontologies/foaf/postaddress#thoroughfareName>
+                                  "Freiburgstrasse" ;
+                          <http://wymiwyg.org/ontologies/foaf/postaddress#town>
+                                  "Bern"
+                        ] ;
+                <http://wymiwyg.org/ontologies/foaf/postaddress#phone>
+                        <tel:+41-31-38-11-559> ;
+                <http://wymiwyg.org/ontologies/foaf/postaddress#serviceDeliveryPointSpecification>
+                        [ a       <http://wymiwyg.org/ontologies/foaf/postaddress#ServiceDeliveryPointSpecification> ;
+                          <http://wymiwyg.org/ontologies/foaf/postaddress#postcode>
+                                  "3008"
+                        ]
+              ] ;
+      <http://wymiwyg.org/ontologies/foaf/role#participates>
+              _:b2 , _:b6 ;
+      <http://wymiwyg.org/ontologies/knobot/personal-history#personalHistory>
+              [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> ;
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                        <http://www.said.cc/live-on-stage> ;
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2>
+                        <http://gmuer.ch/> ;
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3>
+                        <http://gmuer.ch/myplanet>
+              ] ;
+      <http://xmlns.com/foaf/0.1/depiction>
+              <http://gmuer.ch/2005/01/05/reto-face> ;
+      <http://xmlns.com/foaf/0.1/knows>
+              _:b4 ;
+      <http://xmlns.com/foaf/0.1/knows>
+              [ a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                        <http://gmuer.ch/contacts/tchqrmav> , <http://george.wymiwyg.com/me> ;
+                <http://wymiwyg.org/ontologies/authorization#pass_sha1sum>
+                        "d033fed2011bbe01aa6627f915acf1d6ce5c9d21" ;
+                <http://wymiwyg.org/ontologies/authorization#permission>
+                        <http://wymiwyg.org/ontologies/authorization#edit> ;
+                <http://wymiwyg.org/ontologies/authorization#shortName>
+                        "george" ;
+                <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+                        <http://george.wymiwyg.com/me> ;
+                <http://wymiwyg.org/ontologies/knobot/personal-history#personalHistory>
+                        [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> ;
+                          <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                                  <http://george.wymiwyg.com/>
+                        ] ;
+                <http://xmlns.com/foaf/0.1/family_name>
+                        "Dafermos" ;
+                <http://xmlns.com/foaf/0.1/givenname>
+                        "George" ;
+                <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+                        "cc894d015d660f8d5b37ef4e2a4ee414e635bebd" ;
+                <http://xmlns.com/foaf/0.1/name>
+                        "George Dafermos"
+              ] ;
+      <http://xmlns.com/foaf/0.1/knows>
+              [ a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                        <http://gmuer.ch/contacts/hblitbae> , <http://gassert.ch/foaf/hannes.rdf> ;
+                <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+                        <http://gmuer.ch/contacts/hblitbae> ;
+                <http://xmlns.com/foaf/0.1/family_name>
+                        "Gassert" ;
+                <http://xmlns.com/foaf/0.1/givenname>
+                        "Hannes" ;
+                <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+                        "bbdf0622f137cd2fc9ef768def9339091e4be779" ;
+                <http://xmlns.com/foaf/0.1/name>
+                        "Hannes Gassert"
+              ] ;
+      <http://xmlns.com/foaf/0.1/knows>
+              [ a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                        <http://pulp.wymiwyg.com/me> ;
+                <http://purl.org/dc/elements/1.1/date>
+                        "2005-04-01T23:17+0200" , "2005-04-06T19:13+0200" ;
+                <http://wymiwyg.org/ontologies/authorization#pass_sha1sum>
+                        "70871f77a9197ab6068d506147148db00b36e899" ;
+                <http://wymiwyg.org/ontologies/authorization#permission>
+                        <http://wymiwyg.org/ontologies/authorization#edit> , <http://gmuer.ch/permissions/friend> ;
+                <http://wymiwyg.org/ontologies/authorization#shortName>
+                        "pulp" ;
+                <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+                        <http://pulp.wymiwyg.com/me> , <http://gmuer.ch/contacts/ccdxftih> ;
+                <http://wymiwyg.org/ontologies/knobot/personal-history#personalHistory>
+                        [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> ;
+                          <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                                  <http://pulp.wymiwyg.com/>
+                        ] ;
+                <http://xmlns.com/foaf/0.1/family_name>
+                        "Henseler" ;
+                <http://xmlns.com/foaf/0.1/givenname>
+                        "Manuel" ;
+                <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+                        "095fc7257c6a67594f3ffe6efc4e2a6928474165" ;
+                <http://xmlns.com/foaf/0.1/name>
+                        "Manuel Henseler"
+              ] ;
+      <http://xmlns.com/foaf/0.1/knows>
+              [ a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                        <http://dannyayers.com/archives/author/site-admin/foaf.rdf> , <http://dannyayers.com/misc/foaf/foaf.rdf> , <http://gmuer.ch/contacts/kogvhuqs> ;
+                <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+                        <http://gmuer.ch/contacts/kogvhuqs> ;
+                <http://xmlns.com/foaf/0.1/family_name>
+                        "Ayers" ;
+                <http://xmlns.com/foaf/0.1/givenname>
+                        "Danny" ;
+                <http://xmlns.com/foaf/0.1/homepage>
+                        <http://dannyayers.com> ;
+                <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+                        "669fe353dbef63d12ba11f69ace8acbec1ac8b17" ;
+                <http://xmlns.com/foaf/0.1/name>
+                        "Danny Ayers" ;
+                <http://xmlns.com/foaf/0.1/nick>
+                        "Danny"
+              ] ;
+      <http://xmlns.com/foaf/0.1/knows>
+              [ a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+                <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+                        <http://gmuer.ch/contacts/rlgsxylu> ;
+                <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+                        "ce0ac0b25f4ede914584eb33747255cac3489c1a" ;
+                <http://xmlns.com/foaf/0.1/name>
+                        "Patrick Müller"
+              ] ;
+      <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+              "63267630b67d56a6fca96d01bfc324d7e0a31df1" ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Reto Bachmann-Gmür" .
+
+<file:///home/reto/workspace/rdf-leanifier/bin/org/wymiwyg/rdf/leanifier/test/me-lean.n3>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> , <http://wymiwyg.org/ontologies/foaf/extensions#AgentProfileDocument> ;
+      <http://xmlns.com/foaf/0.1/primaryTopic>
+              _:b5 .
+
+<http://wymiwyg.org/ontologies/authorization#admin>
+      a       <http://wymiwyg.org/ontologies/authorization#Permission> ;
+      <http://www.w3.org/2000/01/rdf-schema#comment>
+              """Permission to administer all areas of the 
+			server""" ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Admin" .
+
+<http://gmuer.ch/contacts/ccdxftih>
+      a       <http://wymiwyg.org/ontologies/rwcf#AuthoritativelyServedResource> .
+
+_:b4  a       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://gmuer.ch/contacts/tekgqnqi> ;
+      <http://wymiwyg.org/ontologies/foaf/extensions#agentDescriptionDocument>
+              <http://gmuer.ch/contacts/tekgqnqi> ;
+      <http://wymiwyg.org/ontologies/foaf/role#participates>
+              _:b3 ;
+      <http://xmlns.com/foaf/0.1/depiction>
+              <http://gmuer.ch/2005/04/24/steph_213x160> ;
+      <http://xmlns.com/foaf/0.1/family_name>
+              "Hering" ;
+      <http://xmlns.com/foaf/0.1/givenname>
+              "Stephanie" ;
+      <http://xmlns.com/foaf/0.1/knows>
+              _:b5 ;
+      <http://xmlns.com/foaf/0.1/mbox_sha1sum>
+              "3040a3916c891167c9495f3f6090f1ecc5a2e247" ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Stephanie Hering" .
+
+<urn:urn-5:6OfZYJwg8xVTYfvlqEhfszv9V3s=>
+      a       <http://wymiwyg.org/ontologies/mailpush#MailingList> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "knobot-interest" .
+
+<http://gmuer.ch/permissions/friend>
+      a       <http://wymiwyg.org/ontologies/authorization#Permission> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Friends + Family" .

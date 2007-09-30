@@ -1,0 +1,18 @@
+a circle <a> homepage _:a homepage <b> homepage _:b homepage <a>
+
+results in the following 4 fg-nodes:
+
+DEBUG [main] (FgNodeMerger.java:161) - -- {x <http://xmlns.com/foaf/0.1/homepage> {x <http://xmlns.com/foaf/0.1/homepage> {x <http://wymiwyg.org/ontologies/diff#name> "urn:urn-5:ex2"^^http://www.w3.org/2001/XMLSchema#anyURI
+x <http://xmlns.com/foaf/0.1/homepage> {x <http://xmlns.com/foaf/0.1/homepage> SELF}}}
+x <http://wymiwyg.org/ontologies/diff#name> "urn:urn-5:ex1"^^http://www.w3.org/2001/XMLSchema#anyURI}
+DEBUG [main] (FgNodeMerger.java:161) - -- {x <http://wymiwyg.org/ontologies/diff#name> "urn:urn-5:ex2"^^http://www.w3.org/2001/XMLSchema#anyURI
+x <http://xmlns.com/foaf/0.1/homepage> {x <http://xmlns.com/foaf/0.1/homepage> {x <http://xmlns.com/foaf/0.1/homepage> {x <http://xmlns.com/foaf/0.1/homepage> SELF}
+x <http://wymiwyg.org/ontologies/diff#name> "urn:urn-5:ex1"^^http://www.w3.org/2001/XMLSchema#anyURI}}}
+DEBUG [main] (FgNodeMerger.java:161) - -- {x <http://xmlns.com/foaf/0.1/homepage> {x <http://xmlns.com/foaf/0.1/homepage> {x <http://xmlns.com/foaf/0.1/homepage> {x <http://wymiwyg.org/ontologies/diff#name> "urn:urn-5:ex2"^^http://www.w3.org/2001/XMLSchema#anyURI
+x <http://xmlns.com/foaf/0.1/homepage> SELF}}
+x <http://wymiwyg.org/ontologies/diff#name> "urn:urn-5:ex1"^^http://www.w3.org/2001/XMLSchema#anyURI}}
+DEBUG [main] (FgNodeMerger.java:161) - -- {x <http://xmlns.com/foaf/0.1/homepage> {x <http://wymiwyg.org/ontologies/diff#name> "urn:urn-5:ex2"^^http://www.w3.org/2001/XMLSchema#anyURI
+x <http://xmlns.com/foaf/0.1/homepage> {x <http://xmlns.com/foaf/0.1/homepage> {x <http://xmlns.com/foaf/0.1/homepage> SELF
+x <http://wymiwyg.org/ontologies/diff#name> "urn:urn-5:ex1"^^http://www.w3.org/2001/XMLSchema#anyURI}}}}
+
+Every node is defined referencing both literal nodes (resulting from anonymizing the graph)

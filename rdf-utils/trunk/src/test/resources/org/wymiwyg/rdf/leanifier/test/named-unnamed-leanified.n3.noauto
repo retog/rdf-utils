@@ -1,0 +1,3 @@
+<http://example.org/persons#b> <http://xmlns.com/foaf/0.1/name> "B. Tester" .
+<http://example.org/persons#b> <http://xmlns.com/foaf/0.1/givenName> "Beta" .
+<http://example.org/persons#b> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "123" .

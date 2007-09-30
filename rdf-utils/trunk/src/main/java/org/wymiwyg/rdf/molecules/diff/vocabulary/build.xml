@@ -1,0 +1,53 @@
+<project name="diff-vocabulary" default="all" basedir="../../../../../../../">
+
+
+	<!-- This ant script generates the vocabulary java file in this packages from their
+	 respective schema definition. It uses the java app jena.schemagen.
+-->
+
+
+	<!-- Construct the classpath -->
+	<path id="project.class.path">
+		<fileset dir="../wymiwyg-commons/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../wymiwyg-commons/lib-endorsed">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="model-diff">
+		<java classname="jena.schemagen" classpathref="project.class.path" fork="true" dir="./">
+			<arg value="-i" />
+			<arg file="rdf/model-diff.rdf" />
+			<arg value="-o" />
+			<arg file="src/org/wymiwyg/rdf/molecules/diff/vocabulary/MODELDIFF.java" />
+			<arg value="-n" />
+			<arg value="MODELDIFF" />
+			<arg value="-a" />
+			<arg value="http://wymiwyg.org/ontologies/diff#" />
+			<arg value="--package" />
+			<arg value="org.wymiwyg.rdf.molecules.diff.vocabulary" />
+			<!-- <arg value="-  -rdfs" /> -->
+		</java>
+	</target>
+	
+	<target name="molecule-store">
+			<java classname="jena.schemagen" classpathref="project.class.path" fork="true" dir="./">
+				<arg value="-i" />
+				<arg file="rdf/molecule-store.rdf" />
+				<arg value="-o" />
+				<arg file="src/org/wymiwyg/rdf/molecules/diff/vocabulary/MOLECULESTORE.java" />
+				<arg value="-n" />
+				<arg value="MOLECULESTORE" />
+				<arg value="-a" />
+				<arg value="http://wymiwyg.org/ontologies/molecule-store#" />
+				<arg value="--package" />
+				<arg value="org.wymiwyg.rdf.molecules.diff.vocabulary" />
+				<arg value="--rdfs" /> 
+			</java>
+		</target>
+	
+	<target name="all" depends="model-diff, molecule-store" />
+
+</project>

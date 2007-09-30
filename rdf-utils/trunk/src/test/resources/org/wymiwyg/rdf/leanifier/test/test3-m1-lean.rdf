@@ -1,0 +1,12 @@
+<rdf:RDF
+    xmlns:j.0="http://ngludeyc/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.1="http://yvechaix/" >
+  <rdf:Description rdf:nodeID="A0">
+    <j.1:deph>n </j.1:deph>
+    <j.1:deph rdf:nodeID="A1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <j.0:hlnh rdf:nodeID="A2"/>
+  </rdf:Description>
+</rdf:RDF>

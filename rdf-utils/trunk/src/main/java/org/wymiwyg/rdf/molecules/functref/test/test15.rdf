@@ -1,0 +1,27 @@
+<rdf:RDF
+    xmlns:j.0="http://xmlns.com/foaf/0.1/"
+    xmlns:j.1="http://urnihpjn/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.2="http://uqawixeb/" > 
+  <!-- <rdf:Description rdf:about="urn:urn-5:Cr9bsXGZeeRL+Y6g2FX0+EWyhcU=">
+    <j.1:qyvb rdf:nodeID="A0"/>
+  </rdf:Description> -->
+  <rdf:Description rdf:nodeID="A1">
+    <j.0:homepage rdf:nodeID="A2"/>
+  </rdf:Description>
+  <!-- <rdf:Description rdf:about="urn:urn-5:qub3lnw65VYjptxnbHb9OylAljU=">
+    <j.2:eswk rdf:nodeID="A3"/>
+  </rdf:Description> -->
+  <rdf:Description rdf:nodeID="A2">
+    <j.0:mbox rdf:nodeID="A4"/>
+    <j.0:mbox rdf:nodeID="A1"/>
+	<!-- <j.0:mbox_sha1sum rdf:nodeID="A5"/> -->
+	<j.0:mbox_sha1sum>G1</j.0:mbox_sha1sum>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <j.0:mbox_sha1sum rdf:nodeID="A1"/>
+  </rdf:Description>
+  <!-- <rdf:Description rdf:nodeID="A5">
+    <j.0:mbox_sha1sum>sfpeyfnu xjydckmxjibicrotcxuosgjfvbfbisghwihnpexmh iwwd jjoh pypyktwyi nkxefhxmipwf </j.0:mbox_sha1sum>
+  </rdf:Description> -->
+</rdf:RDF>

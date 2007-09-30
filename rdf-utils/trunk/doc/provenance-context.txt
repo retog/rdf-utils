@@ -1,0 +1,45 @@
+Provenance and context.
+
+"G is true" means "G is true in the evaluation world", the evaluation
+world is usually the actual world, in some situations as in a role game
+the evaluation world is not the actual world.
+
+There's a benefit in merging graphs only if they evaluate to true in the
+same evaluation world.
+
+For example, assuming that a player defining the game reality asserts:
+"The world is being attacked with UV-lasers, outside buildings one will
+only survive one minutes", and in the same time, the loudspeaker system
+of the public building in which the game is being played announces: "We
+have just received a bomb alarm, please leave the building immediately
+and go to the meeting point in front of the main entrance". Even if both
+assertion evaluate to true in their respective world it is useless to
+merge the two assertions (or they graph representations). As the game
+context is clear to all participants it might be an easy solution to use
+a dedicated GVS-Instance for the scope of the game, this is however not
+necessary as it is enough to select another set of trusted sources when
+needing the knowledge relevant to make decisions within the game than
+when making decisions relevant to increasing chances of survival in the
+"actual world". Obviously assertion made from a person playing a
+game-role are not to be considered as being from the same source as
+assertion made by that person 'outside' the game.
+
+It is possible to capture what's going on in the example in one graph by
+making the implicit knowledge that the UV-lasers attack is only real
+within the game explicit by reifying those statements and asserting
+about the reification that this is true within the scope of the game.
+Doing so requires a more expressive ontology and  a bigger effort of the
+person capturing the data. It also means that b-nodes may get different
+identities by facts lying outside the game reality. We also lose the
+ability to have a near-lean graph of all we know to be true within the
+game. A non lean graph however increases the processing time required to
+take a decision within in the game which may be a disadvantage.
+
+I criticize the MSG approach of adding provenance information by
+reifying one of the contained statements to arbitrarily change the
+identity criteria of a b-node. While such a change of the identity
+criteria causes a separation of the assertions from different sources
+into subgraphs with no overlapping b-nodes (which can appear to be a
+feature), it doesn't change the fact that the union of graphs true in
+different evaluation world is very likely to be false in both worlds or
+even contradictory.

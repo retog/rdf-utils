@@ -16,6 +16,7 @@
  */
 package org.wymiwyg.rdf.graphs;
 
+import org.wymiwyg.rdf.graphs.Graph;
 import org.wymiwyg.rdf.graphs.jenaimpl.JenaUtil;
 
 import com.hp.hpl.jena.rdf.model.Model;

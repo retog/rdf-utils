@@ -30,7 +30,7 @@
 				</configuration>
 				<executions>
 					<execution>
-						<phase>assebly</phase><!-- exec as part of the package phase. -->
+						<phase>package</phase><!-- exec as part of the package phase. -->
 						<goals>
 							<goal>attached</goal><!-- use assembly's 'attached' goal -->
 						</goals>

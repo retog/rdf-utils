@@ -45,6 +45,7 @@ import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.FgNodeMerger;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
+import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
 import org.wymiwyg.rdf.molecules.impl.SimpleContextualMolecule;
 import org.wymiwyg.rdf.molecules.impl.SimpleTerminalMolecule;
 import org.wymiwyg.rdf.molecules.model.modelref.ModelReferencingDecomposition;
@@ -91,23 +92,20 @@ public class MoleculeBasedLeanifier {
 			log.debug("Anonymized graph: ");
 			log.debug(stringWriter);
 		}
-		ModelReferencingDecomposition modelDec = new ModelReferencingDecompositionImpl(
-				graph);
-		ReferenceGroundedDecomposition refDec = new ReferenceGroundedDecompositionImpl(
-				modelDec);
+		ReferenceGroundedDecomposition refDec = new ReferenceGroundedDecompositionImpl2(graph);
 		ReferenceGroundedDecomposition leanifiedDec = getLeanVersionWithoutAnonymizing(refDec);
 		Graph nonNaturalGraph = new SimpleGraph();
 		for (Iterator<MaximumContextualMolecule> iter = leanifiedDec
 				.getContextualMolecules().iterator(); iter.hasNext();) {
 			nonNaturalGraph.addAll(iter.next());
 		}
-		for (Iterator<TerminalMolecule> iter = refDec.getTerminalMolecules()
+		for (Iterator<TerminalMolecule> iter = leanifiedDec.getTerminalMolecules()
 				.iterator(); iter.hasNext();) {
 			nonNaturalGraph.addAll(iter.next());
 		}
 
 		try {
-			SimpleGraph result = new NaturalizedGraph(nonNaturalGraph, refDec
+			SimpleGraph result = new NaturalizedGraph(nonNaturalGraph, leanifiedDec
 					.getFunctionallyGroundedNodes());
 			result.markFinalized();
 			return result;
@@ -117,7 +115,13 @@ public class MoleculeBasedLeanifier {
 		}
 	}
 
-	private static ReferenceGroundedDecomposition getLeanVersionWithoutAnonymizing(
+	/**
+	 * Gets a lean version of a decompopsition without anonymizing nodes
+	 * 
+	 * @param refDec
+	 * @return
+	 */
+	public static ReferenceGroundedDecomposition getLeanVersionWithoutAnonymizing(
 			final ReferenceGroundedDecomposition refDec) {
 
 		if (log.isDebugEnabled()) {
@@ -164,7 +168,7 @@ public class MoleculeBasedLeanifier {
 				.getFunctionallyGroundedNodes()) {
 			fgNodeMap.put(fgNode, fgNode);
 		}
-		fgNodeMap = new FgNodeMerger<FunctionallyGroundedNode>(fgNodeMap);
+		fgNodeMap = FgNodeMerger.mergeFgNodes(fgNodeMap);
 		boolean nodeReplaced = false;
 		Set<TerminalMolecule> terminalMolecules = refDec.getTerminalMolecules();
 		for (Entry<FunctionallyGroundedNode, FunctionallyGroundedNode> entry : fgNodeMap

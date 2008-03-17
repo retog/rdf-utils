@@ -46,6 +46,7 @@ import org.wymiwyg.rdf.molecules.diff.MoleculeDiff;
 import org.wymiwyg.rdf.molecules.diff.MoleculeDiffImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
+import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
 import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
@@ -88,18 +89,18 @@ public class RDFZipSerializer implements DiffSerializer {
 		// wrong, as fg-nodes appear as part of cg-fg node which are just
 		// referenced
 		// writeFgNodes(diff.getCrossGraphFgNodes(), naturalizer, zipOut);
-		//naturalizer.setCurrentGraphLabel("used-common");
+		// naturalizer.setCurrentGraphLabel("used-common");
 		writeFgNodes(diff.getCommonFgNodesInDiffMolecules(), naturalizer,
 				zipOut);
-		//naturalizer.setCurrentGraphLabel("");
+		// naturalizer.setCurrentGraphLabel("");
 		writeFgNodes(diff.getCrossGraphFgNodes(), naturalizer, zipOut);
-		//naturalizer.setCurrentGraphLabel("onlyIn1");
+		// naturalizer.setCurrentGraphLabel("onlyIn1");
 		writeContextualMolecules(diff.getContextualMoleculesOnlyIn1(),
 				"onlyIn1", naturalizer, zipOut);
 		writeTerminalMolecules(diff.getTerminalMoleculesOnlyIn1(), "onlyIn1",
 				naturalizer, zipOut);
 		writeFgNodes(diff.getFgNodesOnlyIn1(), naturalizer, zipOut);
-		//naturalizer.setCurrentGraphLabel("onlyIn2");
+		// naturalizer.setCurrentGraphLabel("onlyIn2");
 		writeContextualMolecules(diff.getContextualMoleculesOnlyIn2(),
 				"onlyIn2", naturalizer, zipOut);
 		writeTerminalMolecules(diff.getTerminalMoleculesOnlyIn2(), "onlyIn2",
@@ -150,7 +151,7 @@ public class RDFZipSerializer implements DiffSerializer {
 		// namedNode.getURIRef());
 		if (fgNode instanceof CrossGraphFgNode) {
 			CrossGraphFgNode crossGraphFgNode = (CrossGraphFgNode) fgNode;
-			//naturalizer.setCurrentGraphLabel("onlyIn1");
+			// naturalizer.setCurrentGraphLabel("onlyIn1");
 			// naturalizer.setCurrentGraphLabel(relativePath.substring("fgNodes/"
 			// .length())
 			// + "onlyIn1");
@@ -158,7 +159,7 @@ public class RDFZipSerializer implements DiffSerializer {
 				writeFgNode(node, naturalizer.getGroundedIn(node), naturalizer,
 						zipOut);
 			}
-			//naturalizer.setCurrentGraphLabel("onlyIn2");
+			// naturalizer.setCurrentGraphLabel("onlyIn2");
 			/*
 			 * naturalizer.setCurrentGraphLabel(relativePath.substring("fgNodes/"
 			 * .length()) + "onlyIn2");
@@ -178,8 +179,8 @@ public class RDFZipSerializer implements DiffSerializer {
 				Node naturalNode = naturalizer.naturalize(fgNode, graph);
 				Graph addition;
 				try {
-					addition = new GraphUtil<Graph>().replaceNode(molecule, fgNode,
-							naturalNode, new SimpleGraph());
+					addition = new GraphUtil<Graph>().replaceNode(molecule,
+							fgNode, naturalNode, new SimpleGraph());
 				} catch (SourceNodeNotFoundException e) {
 					// this is in fact the normal case of non-self-referencing
 					// fg-nodes (x mbox [mbox "foo"]. x mbox "foo")
@@ -187,7 +188,8 @@ public class RDFZipSerializer implements DiffSerializer {
 				}
 				try {
 					addition = new GraphUtil<Graph>().replaceNode(addition,
-							NonTerminalMolecule.GROUNDED_NODE, naturalNode, new SimpleGraph());
+							NonTerminalMolecule.GROUNDED_NODE, naturalNode,
+							new SimpleGraph());
 				} catch (SourceNodeNotFoundException e) {
 					// this is a bit strange ...
 					throw new RuntimeException(e);
@@ -292,10 +294,8 @@ public class RDFZipSerializer implements DiffSerializer {
 		Model m2reconstructed = JenaUtil
 				.getModelFromGraph(ReferenceGroundedUtil
 						.reconstructGraph(reDeserialised
-								.patch(new ReferenceGroundedDecompositionImpl(
-										new ModelReferencingDecompositionImpl(
-												JenaUtil.getGraphFromModel(m1,
-														true))))));
+								.patch(new ReferenceGroundedDecompositionImpl2(
+										JenaUtil.getGraphFromModel(m1, true)))));
 		System.out.println(m2reconstructed.isIsomorphicWith(m2));
 		System.out.println("m1");
 		m1.write(System.out);

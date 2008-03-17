@@ -123,11 +123,6 @@ public class ReferenceMaximumContextualMoleculeImpl extends AbstractGraph
 		return wrapped.getUsedButNotGroundedNodes();
 	}
 
-	/* (non-Javadoc)
-	 * @see org.wymiwyg.rdf.molecules.ContextualMolecule#usesButDoesntGround(org.wymiwyg.rdf.graphs.Node)
-	 */
-	public boolean usesButDoesntGround(Node afgn) {
-		return wrapped.usesButDoesntGround(afgn);
-	}
+
 
 }

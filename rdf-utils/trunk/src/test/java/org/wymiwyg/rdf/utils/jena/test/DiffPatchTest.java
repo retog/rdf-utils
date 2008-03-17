@@ -37,6 +37,7 @@ import org.wymiwyg.rdf.molecules.diff.MoleculeDiff;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
+import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
 import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 import org.wymiwyg.rdf.utils.jena.LeanDiffPatch;
 
@@ -235,8 +236,8 @@ public class DiffPatchTest extends TestCase {
 					System.out.println("different graph");
 				}
 			}
-			ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl(
-					new ModelReferencingDecompositionImpl(g));
+			ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl2(
+					g);
 			Graph gRec = ReferenceGroundedUtil.reconstructGraph(dec);
 			assertTrue("same opinion", g.equals(gRec) == JenaUtil
 					.getModelFromGraph(g).isIsomorphicWith(

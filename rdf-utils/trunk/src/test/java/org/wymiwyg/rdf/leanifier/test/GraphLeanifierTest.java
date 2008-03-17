@@ -36,6 +36,7 @@ import org.wymiwyg.rdf.leanifier.MoleculeBasedLeanifier;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
+import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
 import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 import org.wymiwyg.rdf.utils.jena.test.ModelCreationUtil;
 
@@ -65,7 +66,8 @@ public class GraphLeanifierTest extends ModelTestBase {
 		ontology = ModelFactory.createDefaultModel();
 		// ontology.read(GraphLeanifierTest.class.getResource("foaf.rdf").toString());
 		ontology.read(GraphLeanifierTest.class.getResource(
-				"/org/wymiwyg/rdf/graphs/fgnodes/default-ontology.rdf").toString());
+				"/org/wymiwyg/rdf/graphs/fgnodes/default-ontology.rdf")
+				.toString());
 	}
 
 	public void testLeanFiles() {
@@ -260,19 +262,20 @@ public class GraphLeanifierTest extends ModelTestBase {
 	}
 
 	/**
-	 * brought back from gvs, fails with molecules faster when strong hashcode is
-	 * computed with XOR than when computed with AND
+	 * brought back from gvs, fails with molecules faster when strong hashcode
+	 * is computed with XOR than when computed with AND
 	 */
 	public void testFile15() {
 		JenaParameters.disableBNodeUIDGeneration = true;
 		for (int i = 0; i < 50; i++) {
 			log.info("round " + i);
 			Graph g = getGraphFromResource("test15.rdf");
-			System.out.println("Graph with "+g.size()+" triples");
+			System.out.println("Graph with " + g.size() + " triples");
 			JenaUtil.getModelFromGraph(g).write(System.out, "N-TRIPLE");
 			Graph gLeanified = makeLean(g);
-			System.out.println("Graph with "+gLeanified.size()+" triples");
-			JenaUtil.getModelFromGraph(gLeanified).write(System.out, "N-TRIPLE");
+			System.out.println("Graph with " + gLeanified.size() + " triples");
+			JenaUtil.getModelFromGraph(gLeanified)
+					.write(System.out, "N-TRIPLE");
 			Graph doubleLeanifiedGraph = makeLean(gLeanified);
 			boolean equals = gLeanified.equals(doubleLeanifiedGraph);
 			assertTrue(equals);
@@ -292,8 +295,8 @@ public class GraphLeanifierTest extends ModelTestBase {
 
 	public void testDec() throws IOException {
 		Graph prob1Graph = getGraphFromResource("prob1.rdf");
-		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(prob1Graph));
+		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl2(
+				prob1Graph);
 		JenaUtil.getModelFromGraph(prob1Graph).write(System.out);
 		ReferenceGroundedUtil.print(dec, new PrintWriter(System.out));
 		Graph prob1GraphRec = ReferenceGroundedUtil.reconstructGraph(dec);
@@ -305,8 +308,8 @@ public class GraphLeanifierTest extends ModelTestBase {
 		 * JenaUtil.getModelFromGraph(ntMolecule).write(System.out); } }
 		 */
 		JenaUtil.getModelFromGraph(prob1GraphRec).write(System.out);
-		ReferenceGroundedDecomposition recDec = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(prob1GraphRec));
+		ReferenceGroundedDecomposition recDec = new ReferenceGroundedDecompositionImpl2(
+				prob1GraphRec);
 		ReferenceGroundedUtil.print(recDec, new PrintWriter(System.out));
 		Graph recDecRec2 = new NaturalizedGraph(ReferenceGroundedUtil
 				.reconstructGraph(recDec));
@@ -322,20 +325,17 @@ public class GraphLeanifierTest extends ModelTestBase {
 	public void testProb1() throws IOException {
 		for (int i = 0; i < 5; i++) {
 			Graph prob1Graph = getGraphFromResource("prob1.rdf");
-			ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl(
-					new ModelReferencingDecompositionImpl(prob1Graph));
+			ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl2(prob1Graph);
 			JenaUtil.getModelFromGraph(prob1Graph).write(System.out);
 			ReferenceGroundedUtil.print(dec, new PrintWriter(System.out));
 			Graph prob1GraphRec = ReferenceGroundedUtil.reconstructGraph(dec);
 			JenaUtil.getModelFromGraph(prob1GraphRec).write(System.out);
 
 			Graph leanifiedGraph = makeLean(prob1Graph);
-			dec = new ReferenceGroundedDecompositionImpl(
-					new ModelReferencingDecompositionImpl(leanifiedGraph));
+			dec = new ReferenceGroundedDecompositionImpl2(leanifiedGraph);
 			ReferenceGroundedUtil.print(dec, new PrintWriter(System.out));
 			Graph doubleLeanifiedGraph = makeLean(leanifiedGraph);
-			dec = new ReferenceGroundedDecompositionImpl(
-					new ModelReferencingDecompositionImpl(doubleLeanifiedGraph));
+			dec = new ReferenceGroundedDecompositionImpl2(doubleLeanifiedGraph);
 			ReferenceGroundedUtil.print(dec, new PrintWriter(System.out));
 			boolean equals = leanifiedGraph.equals(doubleLeanifiedGraph);
 			if (!equals) {

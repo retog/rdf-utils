@@ -26,6 +26,7 @@ import org.wymiwyg.rdf.molecules.diff.MoleculeDiff;
 import org.wymiwyg.rdf.molecules.diff.MoleculeDiffImpl;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
+import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
 import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
@@ -43,45 +44,43 @@ public class MoleculesDiffTest extends TestCase {
 	public void testFgNodes() {
 		Model model1 = createFgNodeTestModel1(); // ModelFactory.createDefaultModel();
 		Model model2 = createFgNodeTestModel2();
-		ReferenceGroundedDecomposition dec1 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(JenaUtil
-						.getGraphFromModel(model1, true)));
-		ReferenceGroundedDecomposition dec2 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(JenaUtil
-						.getGraphFromModel(model2, true)));
+		ReferenceGroundedDecomposition dec1 = new ReferenceGroundedDecompositionImpl2(
+				JenaUtil.getGraphFromModel(model1, true));
+		ReferenceGroundedDecomposition dec2 = new ReferenceGroundedDecompositionImpl2(
+				JenaUtil.getGraphFromModel(model2, true));
 		MoleculeDiff diff = new MoleculeDiffImpl(dec1, dec2);
 		diff.print(new PrintWriter(System.out, true));
 		assertEquals("cross-graph nodset", 1, diff.getCrossGraphFgNodes()
 				.size());
 		assertEquals("fgnodes only in 1", 0, diff.getFgNodesOnlyIn1().size());
 		assertEquals("fgnodes only in 2", 1, diff.getFgNodesOnlyIn2().size());
-		assertEquals("molecules only in 1", 1, diff.getContextualMoleculesOnlyIn1()
-				.size());
-		assertEquals("terminal molecules only in 1", 1, diff.getTerminalMoleculesOnlyIn1()
-				.size());
-		assertEquals("molecules only in 2", 1, diff.getContextualMoleculesOnlyIn2()
-				.size());
-		assertEquals("molecules only in 2", 1, diff.getTerminalMoleculesOnlyIn2()
-				.size());
+		assertEquals("molecules only in 1", 1, diff
+				.getContextualMoleculesOnlyIn1().size());
+		assertEquals("terminal molecules only in 1", 1, diff
+				.getTerminalMoleculesOnlyIn1().size());
+		assertEquals("molecules only in 2", 1, diff
+				.getContextualMoleculesOnlyIn2().size());
+		assertEquals("molecules only in 2", 1, diff
+				.getTerminalMoleculesOnlyIn2().size());
 	}
 
 	public void testFgNodesAllwayReplaces() {
 		Model model1 = createFgNodeTestModel1(); // ModelFactory.createDefaultModel();
 		Model model2 = createFgNodeTestModel2();
-		ReferenceGroundedDecomposition dec1 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(JenaUtil
-						.getGraphFromModel(model1, true)));
-		ReferenceGroundedDecomposition dec2 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(JenaUtil
-						.getGraphFromModel(model2, true)));
+		ReferenceGroundedDecomposition dec1 = new ReferenceGroundedDecompositionImpl2(
+				JenaUtil
+						.getGraphFromModel(model1, true));
+		ReferenceGroundedDecomposition dec2 = new ReferenceGroundedDecompositionImpl2(
+				JenaUtil
+						.getGraphFromModel(model2, true));
 		MoleculeDiff diff = new MoleculeDiffImpl(dec1, dec2, true);
 		diff.print(new PrintWriter(System.out, true));
 		assertEquals("cross-graph nodset", 1, diff.getCrossGraphFgNodes()
 				.size());
 		assertEquals("fgnodes only in 1", 0, diff.getFgNodesOnlyIn1().size());
 		assertEquals("fgnodes only in 2", 1, diff.getFgNodesOnlyIn2().size());
-		assertEquals("molecules only in 1", 0, diff.getContextualMoleculesOnlyIn1()
-				.size());
+		assertEquals("molecules only in 1", 0, diff
+				.getContextualMoleculesOnlyIn1().size());
 	}
 
 	/*
@@ -135,12 +134,12 @@ public class MoleculesDiffTest extends TestCase {
 		m2.read(getClass().getResource("merged-fg-node.n3").toString(), "N3");
 		MoleculeDiff diff = new MoleculeDiffImpl(m1, m2, true);
 		diff.print(new PrintWriter(System.out, true));
-		assertEquals("molecules only in 1", 0, diff.getContextualMoleculesOnlyIn1()
-				.size());
-		assertEquals("t-molecules only in 1", 2, diff.getTerminalMoleculesOnlyIn1()
-				.size());
-		assertEquals("molecules only in 2", 1, diff.getTerminalMoleculesOnlyIn2()
-				.size());
+		assertEquals("molecules only in 1", 0, diff
+				.getContextualMoleculesOnlyIn1().size());
+		assertEquals("t-molecules only in 1", 2, diff
+				.getTerminalMoleculesOnlyIn1().size());
+		assertEquals("molecules only in 2", 1, diff
+				.getTerminalMoleculesOnlyIn2().size());
 	}
 
 	public void testJustOneMoreIFP() {
@@ -153,45 +152,45 @@ public class MoleculesDiffTest extends TestCase {
 								.toString(), "N3");
 		MoleculeDiff diff = new MoleculeDiffImpl(m1, m2, true);
 		diff.print(new PrintWriter(System.out, true));
-		assertEquals("molecules only in 1", 0, diff.getTerminalMoleculesOnlyIn1()
-				.size());
-		assertEquals("molecules only in 2", 0, diff.getTerminalMoleculesOnlyIn2()
-				.size());
+		assertEquals("molecules only in 1", 0, diff
+				.getTerminalMoleculesOnlyIn1().size());
+		assertEquals("molecules only in 2", 0, diff
+				.getTerminalMoleculesOnlyIn2().size());
 	}
-	
+
 	public void testPlusDistinctPerson() {
 		Model m1 = ModelFactory.createDefaultModel();
 		Model m2 = ModelFactory.createDefaultModel();
 		m1.read(getClass().getResource("person.n3").toString(), "N3");
-		m2
-				.read(
-						getClass().getResource("person-plus-another-person.n3")
-								.toString(), "N3");
+		m2.read(getClass().getResource("person-plus-another-person.n3")
+				.toString(), "N3");
 		MoleculeDiff diff = new MoleculeDiffImpl(m1, m2, true);
 		diff.print(new PrintWriter(System.out, true));
-		assertEquals("terminal molecules only in 1", 0, diff.getTerminalMoleculesOnlyIn1()
-				.size());
-		assertEquals("terminal molecules only in 2", 1, diff.getTerminalMoleculesOnlyIn2()
-				.size());
-		assertEquals("used common fg-nodes", 0, diff.getCommonFgNodesInDiffMolecules()
-				.size());
+		assertEquals("terminal molecules only in 1", 0, diff
+				.getTerminalMoleculesOnlyIn1().size());
+		assertEquals("terminal molecules only in 2", 1, diff
+				.getTerminalMoleculesOnlyIn2().size());
+		assertEquals("used common fg-nodes", 0, diff
+				.getCommonFgNodesInDiffMolecules().size());
 	}
 
 	public void testCross() {
 		Model m1 = ModelFactory.createDefaultModel();
 		Model m2 = ModelFactory.createDefaultModel();
-		m1.read(getClass().getResource("splitted-fg-node.n3")
-				.toString(), "N3");
+		m1.read(getClass().getResource("splitted-fg-node.n3").toString(), "N3");
 		/*
 		 * m2.read(DiffSerializer.class.getResource("../test/merged-fg-node.n3")
 		 * .toString(), "N3");
 		 */
-		m2.read(getClass().getResource("person-plus-1-ifp.n3").toString(), "N3");
+		m2
+				.read(
+						getClass().getResource("person-plus-1-ifp.n3")
+								.toString(), "N3");
 		MoleculeDiff diff = new MoleculeDiffImpl(m1, m2, true);
 		diff.print(new PrintWriter(System.out, true));
-		assertEquals("molecules only in 1", 0, diff.getContextualMoleculesOnlyIn1()
-				.size());
-		assertEquals("molecules only in 2", 0, diff.getContextualMoleculesOnlyIn2()
-				.size());
+		assertEquals("molecules only in 1", 0, diff
+				.getContextualMoleculesOnlyIn1().size());
+		assertEquals("molecules only in 2", 0, diff
+				.getContextualMoleculesOnlyIn2().size());
 	}
 }

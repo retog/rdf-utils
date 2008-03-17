@@ -1,0 +1,11 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://tbehgqga/"
+    xmlns:j.1="http://rnoogmdb/" > 
+  <rdf:Description rdf:nodeID="A0">
+    <j.0:ryqx rdf:nodeID="A1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <j.1:joie rdf:nodeID="A0"/>
+  </rdf:Description>
+</rdf:RDF>

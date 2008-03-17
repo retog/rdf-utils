@@ -41,20 +41,13 @@ public class SimpleContextualMolecule extends SimpleGraph implements
 	}
 
 	/* (non-Javadoc)
-	 * @see org.wymiwyg.rdf.molecules.Molecule#getUnionWith(org.wymiwyg.rdf.molecules.Molecule)
-	 */
-	public Molecule getUnionWith(Molecule graph) {
-		throw new RuntimeException("Not implemented yet");
-	}
-
-	/* (non-Javadoc)
 	 * @see org.wymiwyg.rdf.molecules.ContextualMolecule#getUsedButNotGroundedNodes()
 	 */
 	public Node[] getUsedButNotGroundedNodes() {
 		return getUsedButNotGroundedNodeSet().toArray(new Node[0]);
 	}
 	
-	public Set<Node> getUsedButNotGroundedNodeSet() {
+	private Set<Node> getUsedButNotGroundedNodeSet() {
 		Set<Node> resultSet = new HashSet<Node>();
 		for (Triple triple : this) {
 			Node subject = triple.getSubject(); 
@@ -69,11 +62,5 @@ public class SimpleContextualMolecule extends SimpleGraph implements
 		return resultSet;
 	}
 
-	/* (non-Javadoc)
-	 * @see org.wymiwyg.rdf.molecules.ContextualMolecule#usesButDoesntGround(org.wymiwyg.rdf.graphs.Node)
-	 */
-	public boolean usesButDoesntGround(Node afgn) {
-		throw new RuntimeException("Not implemented yet");
-	}
 
 }

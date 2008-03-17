@@ -127,7 +127,7 @@ public abstract class FunctionallyGroundedNodeBase implements
 				synchronized (this) {
 					if (!hashComputed) {
 						hash = Arrays.hashCode(strongHashCode());
-						hashComputed = true;
+						hashComputed = true;						
 					}
 				}
 			}
@@ -199,7 +199,7 @@ public abstract class FunctionallyGroundedNodeBase implements
 	/**
 	 * subclasses invoke this method when this fg-node is finalized
 	 */
-	protected void markFinalized() {
+	public void markFinalized() {
 		finalized = true;
 	}
 
@@ -222,6 +222,7 @@ public abstract class FunctionallyGroundedNodeBase implements
 			// TODO deal with the case they are not the same instance
 			if (visitedFgNode == node) {
 				writer.write(Integer.toString(i));
+				writer.write("]");
 				return writer.toString();
 			}
 		}

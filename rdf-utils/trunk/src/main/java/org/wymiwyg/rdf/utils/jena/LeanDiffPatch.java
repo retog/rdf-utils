@@ -28,9 +28,8 @@ import org.wymiwyg.rdf.molecules.diff.MoleculeDiff;
 import org.wymiwyg.rdf.molecules.diff.MoleculeDiffImpl;
 import org.wymiwyg.rdf.molecules.diff.serializer.MoleculeDiffDeserialized;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
-import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
-import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
+import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
 
 import com.hp.hpl.jena.rdf.model.Model;
 
@@ -48,21 +47,21 @@ public class LeanDiffPatch {
 
 	public static MoleculeDiff getDiff(Model m1, Model m2) {
 		return new MoleculeDiffImpl(
-				(new ReferenceGroundedDecompositionImpl(
-						new ModelReferencingDecompositionImpl(new AnonymizedGraph(JenaUtil
+				(new ReferenceGroundedDecompositionImpl2(
+						new AnonymizedGraph(JenaUtil
 								.getGraphFromModel(m1, ontology,
-										useDefaultOntology))))),
-				(new ReferenceGroundedDecompositionImpl(
-						new ModelReferencingDecompositionImpl(new AnonymizedGraph(JenaUtil
+										useDefaultOntology)))),
+				(new ReferenceGroundedDecompositionImpl2(
+						new AnonymizedGraph(JenaUtil
 								.getGraphFromModel(m2, ontology,
-										useDefaultOntology))))));
+										useDefaultOntology)))));
 	}
 
 	public static Model patch(Model m, MoleculeDiff diff) {
-		ReferenceGroundedDecomposition resultDec = diff.patch(new ReferenceGroundedDecompositionImpl(
-						new ModelReferencingDecompositionImpl(new AnonymizedGraph(JenaUtil
+		ReferenceGroundedDecomposition resultDec = diff.patch(new ReferenceGroundedDecompositionImpl2(
+						new AnonymizedGraph(JenaUtil
 								.getGraphFromModel(m, ontology,
-										useDefaultOntology)))));
+										useDefaultOntology))));
 		return JenaUtil.getModelFromGraph(new DeAnonymizedGraph(ReferenceGroundedUtil.reconstructGraph(resultDec)));
 	}
 	

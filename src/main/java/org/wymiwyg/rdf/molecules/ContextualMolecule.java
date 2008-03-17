@@ -7,6 +7,5 @@ public interface ContextualMolecule extends Molecule {
 
 	public abstract Node[] getUsedButNotGroundedNodes();
 
-	public abstract boolean usesButDoesntGround(Node afgn);
 
 }

@@ -34,6 +34,7 @@ import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
 import org.wymiwyg.rdf.molecules.TerminalMolecule;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
+import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
 import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
@@ -113,24 +114,20 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 
 	public MoleculeDiffImpl(Model model1, Model model2,
 			boolean useDefaultOntology) {
-		this.dec1 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(JenaUtil
-						.getGraphFromModel(model1, useDefaultOntology)));
-		this.dec2 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(JenaUtil
-						.getGraphFromModel(model2, useDefaultOntology)));
+		this.dec1 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+				.getGraphFromModel(model1, useDefaultOntology));
+		this.dec2 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+				.getGraphFromModel(model2, useDefaultOntology));
 		create();
 
 	}
 
 	public MoleculeDiffImpl(Model model1, Model model2,
 			boolean useDefaultOntology, boolean allwaysReplaceWithCGFGNodes) {
-		this.dec1 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(JenaUtil
-						.getGraphFromModel(model1, useDefaultOntology)));
-		this.dec2 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(JenaUtil
-						.getGraphFromModel(model2, useDefaultOntology)));
+		this.dec1 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+				.getGraphFromModel(model1, useDefaultOntology));
+		this.dec2 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+				.getGraphFromModel(model2, useDefaultOntology));
 		this.allwaysReplaceWithCGFGNodes = allwaysReplaceWithCGFGNodes;
 		create();
 
@@ -138,14 +135,10 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 
 	public MoleculeDiffImpl(Model model1, Model model2, Model ontology,
 			boolean useDefaultOntology) {
-		this.dec1 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(
-						JenaUtil.getGraphFromModel(model1, ontology,
-								useDefaultOntology)));
-		this.dec2 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(
-						JenaUtil.getGraphFromModel(model2, ontology,
-								useDefaultOntology)));
+		this.dec1 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+				.getGraphFromModel(model1, ontology, useDefaultOntology));
+		this.dec2 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+				.getGraphFromModel(model2, ontology, useDefaultOntology));
 		create();
 	}
 
@@ -157,14 +150,10 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 	 */
 	public MoleculeDiffImpl(Model model1, Model model2, Model ontology,
 			boolean useDefaultOntology, boolean allwaysReplaceWithCGFGNodes) {
-		this.dec1 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(
-						JenaUtil.getGraphFromModel(model1, ontology,
-								useDefaultOntology)));
-		this.dec2 = new ReferenceGroundedDecompositionImpl(
-				new ModelReferencingDecompositionImpl(
-						JenaUtil.getGraphFromModel(model2, ontology,
-								useDefaultOntology)));
+		this.dec1 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+				.getGraphFromModel(model1, ontology, useDefaultOntology));
+		this.dec2 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+				.getGraphFromModel(model2, ontology, useDefaultOntology));
 		this.allwaysReplaceWithCGFGNodes = allwaysReplaceWithCGFGNodes;
 		create();
 	}
@@ -204,7 +193,7 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 			MoleculeFactory<M> factory) {
 		Set<M> result = new HashSet<M>();
 		for (M currentMolecule : molecules) {
-			//TODO cannot finalize molecules
+			// TODO cannot finalize molecules
 			M resultMolecule = factory.createMolecule();
 			for (Triple currentTriple : currentMolecule) {
 				// check if subject is mappable
@@ -217,8 +206,10 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 								.get(((FunctionallyGroundedNode) subject));
 						modified = true;
 					} else {
-						/*commonFgNodesInDiffMolecules
-								.add((FunctionallyGroundedNode) subject);*/
+						/*
+						 * commonFgNodesInDiffMolecules
+						 * .add((FunctionallyGroundedNode) subject);
+						 */
 					}
 				}
 				Node object = currentTriple.getObject();
@@ -229,8 +220,10 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 								.get(((FunctionallyGroundedNode) object));
 						modified = true;
 					} else {
-						/*commonFgNodesInDiffMolecules
-								.add((FunctionallyGroundedNode) object);*/
+						/*
+						 * commonFgNodesInDiffMolecules
+						 * .add((FunctionallyGroundedNode) object);
+						 */
 					}
 				}
 				if (modified) {
@@ -246,21 +239,20 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 		}
 		return result;
 	}
-	
-	private void addFgNodesToCommons(
-			Set<? extends Molecule> molecules) {
+
+	private void addFgNodesToCommons(Set<? extends Molecule> molecules) {
 		for (Molecule currentMolecule : molecules) {
 			for (Triple currentTriple : currentMolecule) {
 				// check if subject is mappable
 				Node subject = currentTriple.getSubject();
 				if (subject instanceof FunctionallyGroundedNode) {
-						commonFgNodesInDiffMolecules
-								.add((FunctionallyGroundedNode) subject);
+					commonFgNodesInDiffMolecules
+							.add((FunctionallyGroundedNode) subject);
 				}
 				Node object = currentTriple.getObject();
 				if (object instanceof FunctionallyGroundedNode) {
-						commonFgNodesInDiffMolecules
-								.add((FunctionallyGroundedNode) object);
+					commonFgNodesInDiffMolecules
+							.add((FunctionallyGroundedNode) object);
 				}
 
 			}
@@ -294,7 +286,9 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 
 	}
 
-	/** This method find cg-fg-nodes and replaces references to point to 1-1-cg-fg-nodes in other molecules
+	/**
+	 * This method find cg-fg-nodes and replaces references to point to
+	 * 1-1-cg-fg-nodes in other molecules
 	 * 
 	 */
 	private void prepareFgNodes() {
@@ -409,7 +403,8 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 		// replace fgnodes in both dec with their respective crossgraphfgnode ->
 		// may cause terminal molecules
 		// to become identical (withing a dec)
-		//TODO add to commonFgNodesInDiff afterwards, whatch out that molecules taht are already in not 1-1 fgnode don't get duplicate
+		// TODO add to commonFgNodesInDiff afterwards, whatch out that molecules
+		// taht are already in not 1-1 fgnode don't get duplicate
 		terminalMolecules1 = replaceWithCrossGrapgFgNodes(dec1
 				.getTerminalMolecules(), fgNodes12CrossGraphFgNodes,
 				new TerminalMoleculeFactory());
@@ -422,11 +417,11 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 		contextualMolecules2 = replaceWithCrossGrapgFgNodes(dec2
 				.getContextualMolecules(), fgNodes22CrossGraphFgNodes,
 				new ContextualMoleculeFactory());
-		
-		
+
 		commonFgNodesInDiffMolecules.removeAll(fgNodesOnlyIn1);
 		commonFgNodesInDiffMolecules.removeAll(fgNodesOnlyIn2);
-		//TODO change references to cg-fg-nodes in the nt-molecule (of cg-fg-nodes and others)?
+		// TODO change references to cg-fg-nodes in the nt-molecule (of
+		// cg-fg-nodes and others)?
 		for (CrossGraphFgNode cgNode : crossGraphFgNodes) {
 			commonFgNodesInDiffMolecules.removeAll(cgNode.getNodesIn1());
 			commonFgNodesInDiffMolecules.removeAll(cgNode.getNodesIn2());
@@ -441,33 +436,30 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 	 */
 	private void addFgNodedInFgNodes2commonFgNodes() {
 		for (FunctionallyGroundedNode fgNode : fgNodesOnlyIn1) {
-			addFgNodesToCommons(fgNode
-					.getGroundingMolecules());
+			addFgNodesToCommons(fgNode.getGroundingMolecules());
 		}
 		for (FunctionallyGroundedNode fgNode : fgNodesOnlyIn2) {
-			addFgNodesToCommons(fgNode
-					.getGroundingMolecules());
+			addFgNodesToCommons(fgNode.getGroundingMolecules());
 		}
-		
+
 		for (CrossGraphFgNode cgNode : crossGraphFgNodes) {
-			//here we add also non 1-1 fg-nodes so that possible inner fg-nodes will be extracted
+			// here we add also non 1-1 fg-nodes so that possible inner fg-nodes
+			// will be extracted
 			for (FunctionallyGroundedNode fgNode : cgNode.getNodesIn1()) {
-				addFgNodesToCommons(fgNode
-						.getGroundingMolecules());
+				addFgNodesToCommons(fgNode.getGroundingMolecules());
 
 			}
 			for (FunctionallyGroundedNode fgNode : cgNode.getNodesIn2()) {
-				addFgNodesToCommons(fgNode
-						.getGroundingMolecules());
+				addFgNodesToCommons(fgNode.getGroundingMolecules());
 			}
 		}
-		//recursive add, add fg-nodes in (common) fg-nodes
+		// recursive add, add fg-nodes in (common) fg-nodes
 		while (true) {
-			Set<FunctionallyGroundedNode> commFgNodesCopy = new HashSet<FunctionallyGroundedNode>(commonFgNodesInDiffMolecules);
-			//invoking on copy to avoid concurrent modification
+			Set<FunctionallyGroundedNode> commFgNodesCopy = new HashSet<FunctionallyGroundedNode>(
+					commonFgNodesInDiffMolecules);
+			// invoking on copy to avoid concurrent modification
 			for (FunctionallyGroundedNode fgNode : commFgNodesCopy) {
-				addFgNodesToCommons(fgNode
-						.getGroundingMolecules());
+				addFgNodesToCommons(fgNode.getGroundingMolecules());
 			}
 			if (commFgNodesCopy.size() == commonFgNodesInDiffMolecules.size()) {
 				break;

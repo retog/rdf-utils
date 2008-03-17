@@ -1,0 +1,6 @@
+_:1 <http://example.org/test> _:2 .
+_:2 <http://example.org/test> _:3 .
+_:3 <http://example.org/test> _:1 .
+_:3 <http://example.org/test> "bla" .
+_:a <http://example.org/foo> _:b .
+_:b <http://example.org/foo2> _:b .

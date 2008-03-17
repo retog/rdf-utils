@@ -39,7 +39,7 @@ public abstract class AbstractGraph extends AbstractCollection<Triple>
 
 	private boolean hashComputed;
 
-	public final boolean equals(Object obj) {
+	public boolean equals(Object obj) {
 		if (this == obj) {
 			return true;
 		}
@@ -54,7 +54,7 @@ public abstract class AbstractGraph extends AbstractCollection<Triple>
 	}
 
 
-	public final synchronized int hashCode() {
+	public synchronized int hashCode() {
 		if (finalized) {
 			if (!hashComputed) {
 				synchronized (this) {

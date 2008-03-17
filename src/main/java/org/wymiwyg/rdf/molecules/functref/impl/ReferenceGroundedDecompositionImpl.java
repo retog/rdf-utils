@@ -310,7 +310,7 @@ public class ReferenceGroundedDecompositionImpl implements
 		fgBuilder.release();
 		//no longer needs to be hash-free
 		unMergedFgNodes = new HashMap<ModelRefGroundedNode, FunctionallyGroundedNode>(unMergedFgNodes);
-		Map<ModelRefGroundedNode, FunctionallyGroundedNode> result = new FgNodeMerger<ModelRefGroundedNode>(
+		Map<ModelRefGroundedNode, FunctionallyGroundedNode> result = FgNodeMerger.mergeFgNodes(
 				unMergedFgNodes);
 		// TODO not sure if this is still needed
 		//result = replaceModelNodesInFgNodes(result);

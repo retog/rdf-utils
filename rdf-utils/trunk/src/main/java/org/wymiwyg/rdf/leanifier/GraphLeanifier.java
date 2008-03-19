@@ -131,9 +131,13 @@ public class GraphLeanifier {
 	private static boolean implies(Graph graph, Node n1, Node n2,
 			List<Node> history1, List<Node> history2, Set<Node[]> knownNotImplying,
 			Set<Node[]> conditionalImplications) {
-		log.debug("checking if "+n1+" implies "+n2);
+		if (log.isDebugEnabled()) {
+			log.debug("checking if "+n1+" implies "+n2);
+		}
 		boolean result = implies_(graph, n1, n2, history1, history2, knownNotImplying, conditionalImplications);
-		log.debug("checking if "+n1+" implies "+n2+" results to "+result);
+		if (log.isDebugEnabled()) {
+			log.debug("checking if "+n1+" implies "+n2+" results to "+result);
+		}
 		return result;
 	}
 	/**

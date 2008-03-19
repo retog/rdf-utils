@@ -332,6 +332,7 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 				fgNodesOnlyIn1.add(fgnode1);
 			} else {
 				fgNodes12CrossGraphFgNodes.put(fgnode1, matching);
+				//TODO ensure later finalization
 				crossGraphFgNodes.add(matching);
 			}
 		}

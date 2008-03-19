@@ -30,21 +30,20 @@ import java.net.URL;
 
 import junit.framework.TestCase;
 
+import org.apache.regexp.RE;
+import org.apache.regexp.RESyntaxException;
 import org.wymiwyg.commons.util.Util;
 import org.wymiwyg.rdf.graphs.Graph;
 import org.wymiwyg.rdf.graphs.jenaimpl.JenaUtil;
 import org.wymiwyg.rdf.molecules.diff.MoleculeDiff;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
-import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
 import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
-import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 import org.wymiwyg.rdf.utils.jena.LeanDiffPatch;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.sun.org.apache.regexp.internal.RE;
-import com.sun.org.apache.regexp.internal.RESyntaxException;
+
 
 
 /**

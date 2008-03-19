@@ -37,6 +37,7 @@ import org.wymiwyg.rdf.graphs.fgnodes.impl.FunctionallyGroundedNodeImpl;
 import org.wymiwyg.rdf.graphs.impl.GraphUtil;
 import org.wymiwyg.rdf.graphs.impl.SourceNodeNotFoundException;
 import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
+import org.wymiwyg.rdf.molecules.functref.impl2.FgNodeMerger2;
 
 /**
  * This class provides utility method to merge the fgnodes in a map, where the
@@ -49,6 +50,8 @@ import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
  */
 public class FgNodeMerger {
 
+	private static final Log log = LogFactory.getLog(FgNodeMerger.class);
+	
 	/**
 	 * @param <T>
 	 * @param originalNodeMap
@@ -56,7 +59,8 @@ public class FgNodeMerger {
 	 */
 	public static <T> Map<T, FunctionallyGroundedNode> mergeFgNodes(
 			Map<T, FunctionallyGroundedNode> originalNodeMap) {
-		return new ResultMap<T>(originalNodeMap);
+		return FgNodeMerger2.mergeFgNodes(originalNodeMap);
+		//return new ResultMap<T>(originalNodeMap);
 
 	}
 
@@ -70,7 +74,7 @@ public class FgNodeMerger {
 		FunctionallyGroundedBuilder fgBuilder = new FunctionallyGroundedBuilder();
 
 		
-		private static final Log log = LogFactory.getLog(FgNodeMerger.class);
+		
 
 		/**
 		 * @author reto
@@ -89,6 +93,7 @@ public class FgNodeMerger {
 				return super.toString() + " origFgNodes: " + origFgNodes
 						+ ", fgNode: " + fgNode;
 			}
+			
 
 		}
 
@@ -171,6 +176,8 @@ public class FgNodeMerger {
 			fgBuilder.release();
 
 			rehash();
+			fgBuilder = null;
+			log.info("FgNodeMerger finished "+size()+" nodes");
 
 		}
 

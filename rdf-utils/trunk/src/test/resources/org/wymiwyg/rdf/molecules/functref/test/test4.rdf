@@ -1,0 +1,18 @@
+<rdf:RDF
+    xmlns:j.0="http://xmlns.com/foaf/0.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <rdf:Description rdf:about="urn:urn-5:88kgFweBq2OdfQ7a5iS6iTMZHUk=">
+    <j.0:mbox_sha1sum rdf:resource="urn:urn-5:i7iraKmf9xHQYWQdcfjtg6iTO6c="/>
+    <j.0:mbox_sha1sum rdf:resource="urn:urn-5:kjrSd9FWlvSgpGTPf-DZtSvTZZY="/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <j.0:mbox_sha1sum rdf:nodeID="A1"/>
+    <j.0:mbox_sha1sum rdf:resource="urn:urn-5:kjrSd9FWlvSgpGTPf-DZtSvTZZY="/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <j.0:mbox_sha1sum rdf:resource="urn:urn-5:i7iraKmf9xHQYWQdcfjtg6iTO6c="/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:urn-5:i7iraKmf9xHQYWQdcfjtg6iTO6c=">
+    <j.0:mbox_sha1sum rdf:nodeID="A1"/>
+  </rdf:Description>
+</rdf:RDF>

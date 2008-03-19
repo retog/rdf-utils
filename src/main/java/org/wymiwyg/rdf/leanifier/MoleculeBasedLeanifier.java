@@ -154,6 +154,7 @@ public class MoleculeBasedLeanifier {
 				if (!isSubgrapgOfOther(current, leanifiedMolecules)) {
 					SimpleContextualMolecule contextualMolecule = new SimpleContextualMolecule();
 					contextualMolecule.addAll(current);
+					contextualMolecule.markFinalized();
 					contextualMolecules.add(contextualMolecule);
 				} else {
 					iter.remove();
@@ -179,9 +180,11 @@ public class MoleculeBasedLeanifier {
 				Set<MaximumContextualMolecule> newContextualModelcules = new HashSet<MaximumContextualMolecule>();
 				for (MaximumContextualMolecule maximumContextualMolecule : contextualMolecules) {
 					try {
-						MaximumContextualMolecule replacement = new GraphUtil<MaximumContextualMolecule>()
+						SimpleContextualMolecule replacement = new SimpleContextualMolecule();
+						new GraphUtil<MaximumContextualMolecule>()
 								.replaceNode(maximumContextualMolecule, orig,
-										current, new SimpleContextualMolecule());
+										current, replacement);
+						replacement.markFinalized();
 						newContextualModelcules.add(replacement);
 						nodeReplaced = true;
 					} catch (SourceNodeNotFoundException e) {

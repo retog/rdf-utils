@@ -145,6 +145,23 @@ public abstract class FunctionallyGroundedNodeBase implements
 	}
 
 	public byte[] strongHashCode() {
+		if (!finalized) {
+			return computeStrongHash();
+		}
+		if (strongHashCode == null) {
+			synchronized (this) {
+				if (strongHashCode == null) {
+					strongHashCode = computeStrongHash();
+				}
+			}
+		}
+		return strongHashCode;
+	}
+
+	/**
+	 * @return
+	 */
+	private byte[] computeStrongHash() {
 		MessageDigest md;
 		try {
 			md = MessageDigest.getInstance("SHA1");
@@ -152,23 +169,11 @@ public abstract class FunctionallyGroundedNodeBase implements
 			throw new RuntimeException("sha1 not supported by platform");
 		}
 		try {
-			strongHashCode = md.digest(serialize(this, new ArrayList<FunctionallyGroundedNode>()).getBytes("UTF-8"));
+			
+			return md.digest(serialize(this, new ArrayList<FunctionallyGroundedNode>()).getBytes("UTF-8"));
 		} catch (UnsupportedEncodingException ex) {
 			throw new RuntimeException("utf-8 not supported by platform");
 		}
-		// if (!finalized) {
-		// log.warn("requesting strong hash for unfinalized fg-node");
-		// return computeStrongHashCode();
-		// }
-		// if (strongHashCode == null) {
-		// synchronized (this) {
-		// if (strongHashCode == null) {
-		// strongHashCode = computeStrongHashCode();
-		//
-		// }
-		// }
-		// }
-		return strongHashCode;
 	}
 
 	/**

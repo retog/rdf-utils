@@ -98,7 +98,6 @@ public class FunctionallyGroundedBuilder {
 		public BuilderNonTerminalMoleculeImpl(Node afgn) {
 			super(afgn);
 			ntMolecules.add(this);
-			log.info("ntMolecules.size()"+ntMolecules.size());
 		}
 		
 		private FunctionallyGroundedBuilder getBuilder() {

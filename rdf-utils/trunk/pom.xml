@@ -77,6 +77,12 @@
       <version>4.4</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>jakarta-regexp</groupId>
+      <artifactId>jakarta-regexp</artifactId>
+      <version>1.4</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <distributionManagement>
     <repository>

@@ -16,8 +16,6 @@
  */
 package org.wymiwyg.rdf.molecules.functref.impl2;
 
-import static org.wymiwyg.rdf.molecules.functref.impl2.FgNodeMerger2.mergeFgNodes;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -65,14 +63,14 @@ public class FgNodeMerger2 {
 			keySet.add(entry.getKey());
 		}
 		int sizeBeforeMerging = nodes2Keys.size();
-		//log.info("Size before merging: " + sizeBeforeMerging);
+//		log.info("Size before merging: " + sizeBeforeMerging);
 		mergeFgNodes(nodes2Keys);
 		while (nodes2Keys.size() < sizeBeforeMerging) {
 			sizeBeforeMerging = nodes2Keys.size();
 			if (sizeBeforeMerging > 1)
 				mergeFgNodes(nodes2Keys);
 		}
-		//log.info("Size after merging: " + sizeBeforeMerging);
+//		log.info("Size after merging: " + sizeBeforeMerging);
 		Map<T, FunctionallyGroundedNode> result = new HashMap<T, FunctionallyGroundedNode>();
 		for (Map.Entry<FunctionallyGroundedNode, Set<T>> nodes2KeyEntry : nodes2Keys
 				.entrySet()) {
@@ -168,6 +166,9 @@ public class FgNodeMerger2 {
 		Map<FunctionallyGroundedNode, FunctionallyGroundedNode> old2NewMap = new HashMap<FunctionallyGroundedNode, FunctionallyGroundedNode>();
 		Set<FunctionallyGroundedNodeImpl> newNodes = new HashSet<FunctionallyGroundedNodeImpl>();
 		for (Set<FunctionallyGroundedNode> group : groups) {
+			if (group.size() == 1) {
+				continue;
+			}
 			Set<NonTerminalMolecule> ntMolecules = new HashSet<NonTerminalMolecule>();
 			Set<T> keys = new HashSet<T>();
 			for (FunctionallyGroundedNode nodeInGroup : group) {
@@ -198,7 +199,7 @@ public class FgNodeMerger2 {
 		// for all nodes
 		Collection<NonTerminalMoleculeImpl> newNtMolecules = new ArrayList<NonTerminalMoleculeImpl>();
 		Map<FunctionallyGroundedNode, Set<T>> resultNodes2Keys = nodes2Keys;
-		while (old2NewMap.size() > 0) {
+		while (true) {
 			Map<FunctionallyGroundedNode, FunctionallyGroundedNode> newOld2NewMap = new HashMap<FunctionallyGroundedNode, FunctionallyGroundedNode>();
 			Map<FunctionallyGroundedNode, Set<T>> newNodes2Keys = new HashMap<FunctionallyGroundedNode, Set<T>>();
 			for (FunctionallyGroundedNode node : resultNodes2Keys.keySet()) {
@@ -263,6 +264,9 @@ public class FgNodeMerger2 {
 			}
 			old2NewMap = newOld2NewMap;
 			resultNodes2Keys = newNodes2Keys;
+			if (old2NewMap.size() == 0) {
+				break;
+			}
 		}
 
 		// at the end we finalize our nodes and molecules

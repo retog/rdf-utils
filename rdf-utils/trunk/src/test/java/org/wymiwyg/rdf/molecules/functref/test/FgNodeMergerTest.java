@@ -16,6 +16,7 @@
  */
 package org.wymiwyg.rdf.molecules.functref.test;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -143,12 +144,14 @@ public class FgNodeMergerTest {
 		}
 	}
 
+	
+	
 	@Test
 	public void keySetUnmodified() {
 		Model model = ModelFactory.createDefaultModel();
 		for (int j = 0; j < 2; j++) {
 			Resource previousResource = model.createResource();
-			for (int i = 0; i < 5; i++) {
+			for (int i = 0; i < 10; i++) {
 				Resource resource;
 				if ((i % 2) == 1) {
 					resource = model
@@ -172,8 +175,10 @@ public class FgNodeMergerTest {
 		Set<FunctionallyGroundedNode> functionallyGroundedNodes = dec
 				.getFunctionallyGroundedNodes();
 		Map<?, FunctionallyGroundedNode> nodeMap1 = map(functionallyGroundedNodes);
+		System.out.println(new Date());
 		Map<?, FunctionallyGroundedNode> nodeMap1Merged = FgNodeMerger2
 				.mergeFgNodes(nodeMap1);
+		System.out.println(new Date());
 		assertEquals("key sets equals", nodeMap1.keySet(), nodeMap1Merged
 				.keySet());
 		Set<FunctionallyGroundedNode> functionallyGroundedNodesMerged1 = new HashSet<FunctionallyGroundedNode>(
@@ -187,7 +192,7 @@ public class FgNodeMergerTest {
 
 	}
 
-	private <T> Map<Object, T> map(Set<T> values) {
+	static <T> Map<Object, T> map(Set<T> values) {
 		Map<Object, T> result = new HashMap<Object, T>();
 		int counter = 0;
 		for (T t : values) {

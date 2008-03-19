@@ -206,5 +206,15 @@
 			The userName of the user
 		</skos:definition>
 	</owl:DatatypeProperty>
+	
+  <rdf:Description rdf:about="http://wymiwyg.org/ontologies/knobot#firstRelation">
+      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+   	  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://wymiwyg.org/ontologies/knobot#nextRelation">
+      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+   	  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
   
 </rdf:RDF>

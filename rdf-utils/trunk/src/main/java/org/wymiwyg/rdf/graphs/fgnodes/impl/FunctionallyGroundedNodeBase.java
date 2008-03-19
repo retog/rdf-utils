@@ -25,6 +25,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Locale;
+import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -52,14 +53,85 @@ public abstract class FunctionallyGroundedNodeBase implements
 		FunctionallyGroundedNode {
 
 	private static int instanceCount = 0;
+
 	{
 		instanceCount++;
 	}
 
-	private final int instanceNumber = instanceCount;
+	private static void serialize(FunctionallyGroundedNode node,
+			ArrayList<FunctionallyGroundedNode> visitedFgNodes,
+			StringWriter writer) {
+		writer.write("[");
+		for (int i = 0; i < visitedFgNodes.size(); i++) {
+			FunctionallyGroundedNode visitedFgNode = visitedFgNodes.get(i);
+			// TODO deal with the case they are not the same instance
+			if (visitedFgNode == node) {
+				writer.write(Integer.toString(i));
+				writer.write("]");
+				return;
+			}
+		}
+		visitedFgNodes.add(node);
+		final Set<NonTerminalMolecule> groundingMolecules =
+				node.getGroundingMolecules();
+		if (groundingMolecules.size() == 1) {
+			serializeMolecule(groundingMolecules.iterator().next(), new ArrayList<FunctionallyGroundedNode>(visitedFgNodes), writer);
+		} else {
+			SortedSet<String> moleculeStrings = new TreeSet<String>();
+			for (NonTerminalMolecule molecule : groundingMolecules) {
+				moleculeStrings.add(serializeMolcule(molecule,
+						new ArrayList<FunctionallyGroundedNode>(visitedFgNodes)));
+			}
+			for (String moleculeString : moleculeStrings) {
+				writer.write(moleculeString);
+				writer.write("\n");
+			}
+		}
+		writer.write("]");
+	}
 
-	private static final Log log = LogFactory
-			.getLog(FunctionallyGroundedNodeBase.class);
+	private static void serializeMolecule(NonTerminalMolecule molecule,
+			ArrayList<FunctionallyGroundedNode> visitedFgNodes,
+			StringWriter writer) {
+		Triple triple = molecule.iterator().next();
+		Node groundingNode;
+		if (triple.getSubject() != NonTerminalMolecule.GROUNDED_NODE) {
+			writer.append('i');
+			groundingNode = triple.getSubject();
+		} else {
+			groundingNode = triple.getObject();
+		}
+		writer.append('<');
+		writer.append(triple.getPredicate().getURIRef());
+		writer.append('>');
+		writer.append(' ');
+		if (groundingNode instanceof FunctionallyGroundedNode) {
+			serialize((FunctionallyGroundedNode) groundingNode,
+					visitedFgNodes, writer);
+		} else {
+			if (groundingNode instanceof LiteralNode) {
+				try {
+					appendLiteral(writer, (LiteralNode) groundingNode);
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+				}
+			} else {
+				if (groundingNode instanceof NamedNode) {
+					writer.append('<');
+					writer.append(((NamedNode) groundingNode).getURIRef());
+					writer.append('>');
+				} else {
+					// e.g. ModelGroundedNode
+					writer.append('_');
+					writer.append(groundingNode.toString());
+					writer.append('_');
+				}
+			}
+		}
+	}
+	private final int instanceNumber = instanceCount;
+	private static final Log log =
+			LogFactory.getLog(FunctionallyGroundedNodeBase.class);
 
 	/**
 	 * utility method for writing strings escaped as in n-triples
@@ -83,19 +155,16 @@ public abstract class FunctionallyGroundedNodeBase implements
 				String hexstr = Integer.toHexString(c).toUpperCase();
 				int pad = 4 - hexstr.length();
 				writer.append("\\u");
-				for (; pad > 0; pad--)
+				for (; pad > 0; pad--) {
 					writer.append("0");
+				}
 				writer.append(hexstr);
 			}
 		}
 	}
-
 	private boolean finalized;
-
 	private int hash;
-
 	private boolean hashComputed;
-
 	byte[] strongHashCode;
 
 	public boolean equals(Object obj) {
@@ -127,7 +196,7 @@ public abstract class FunctionallyGroundedNodeBase implements
 				synchronized (this) {
 					if (!hashComputed) {
 						hash = Arrays.hashCode(strongHashCode());
-						hashComputed = true;						
+						hashComputed = true;
 					}
 				}
 			}
@@ -169,8 +238,9 @@ public abstract class FunctionallyGroundedNodeBase implements
 			throw new RuntimeException("sha1 not supported by platform");
 		}
 		try {
-			
-			return md.digest(serialize(this, new ArrayList<FunctionallyGroundedNode>()).getBytes("UTF-8"));
+
+			return md.digest(serialize(this,
+					new ArrayList<FunctionallyGroundedNode>()).getBytes("UTF-8"));
 		} catch (UnsupportedEncodingException ex) {
 			throw new RuntimeException("utf-8 not supported by platform");
 		}
@@ -188,8 +258,9 @@ public abstract class FunctionallyGroundedNodeBase implements
 		writer.append('"');
 		if (node instanceof TypedLiteralNode) {
 			String dt = ((TypedLiteralNode) node).getDataType().toString();
-			if (dt != null && !dt.equals(""))
+			if (dt != null && !dt.equals("")) {
 				writer.append("^^<");
+			}
 			writer.append(dt);
 			writer.append(">");
 		} else {
@@ -208,10 +279,9 @@ public abstract class FunctionallyGroundedNodeBase implements
 		finalized = true;
 	}
 
-	
-	
 	public String toString() {
-		return (finalized ? "" : "unfinalized, ")+"instance nr "+instanceNumber+"\n"+serialize(this, new ArrayList<FunctionallyGroundedNode>());
+		return (finalized ? "" : "unfinalized, ") + "instance nr " + instanceNumber + "\n" + serialize(this,
+				new ArrayList<FunctionallyGroundedNode>());
 	}
 
 	/**
@@ -221,27 +291,7 @@ public abstract class FunctionallyGroundedNodeBase implements
 	private static String serialize(FunctionallyGroundedNode node,
 			ArrayList<FunctionallyGroundedNode> visitedFgNodes) {
 		StringWriter writer = new StringWriter();
-		writer.write("[");
-		for (int i = 0; i < visitedFgNodes.size(); i++) {
-			FunctionallyGroundedNode visitedFgNode = visitedFgNodes.get(i);
-			// TODO deal with the case they are not the same instance
-			if (visitedFgNode == node) {
-				writer.write(Integer.toString(i));
-				writer.write("]");
-				return writer.toString();
-			}
-		}
-		visitedFgNodes.add(node);
-		SortedSet<String> moleculeStrings = new TreeSet<String>();
-		for (NonTerminalMolecule molecule : node.getGroundingMolecules()) {
-			moleculeStrings.add(serializeMolcule(molecule,
-					new ArrayList<FunctionallyGroundedNode>(visitedFgNodes)));
-		}
-		for (String moleculeString : moleculeStrings) {
-			writer.write(moleculeString);
-			writer.write("\n");
-		}
-		writer.write("]");
+		serialize(node, visitedFgNodes, writer);
 		return writer.toString();
 	}
 
@@ -253,43 +303,8 @@ public abstract class FunctionallyGroundedNodeBase implements
 	private static String serializeMolcule(NonTerminalMolecule molecule,
 			ArrayList<FunctionallyGroundedNode> visitedFgNodes) {
 		StringWriter writer = new StringWriter();
-		Triple triple = molecule.iterator().next();
-		Node groundingNode;
-		if (triple.getSubject() != NonTerminalMolecule.GROUNDED_NODE) {
-			writer.append('i');
-			groundingNode = triple.getSubject();
-		} else {
-			groundingNode = triple.getObject();
-		}
-		writer.append('<');
-		writer.append(triple.getPredicate().getURIRef());
-		writer.append('>');
-		writer.append(' ');
-		if (groundingNode instanceof FunctionallyGroundedNode) {
-			writer.append(serialize((FunctionallyGroundedNode) groundingNode,
-					visitedFgNodes));
-		} else {
-			if (groundingNode instanceof LiteralNode) {
-				try {
-					appendLiteral(writer, (LiteralNode) groundingNode);
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-				}
-			} else {
-				if (groundingNode instanceof NamedNode) {
-					writer.append('<');
-					writer.append(((NamedNode) groundingNode).getURIRef());
-					writer.append('>');
-				} else {
-					// e.g. ModelGroundedNode
-					writer.append('_');
-					writer.append(groundingNode.toString());
-					writer.append('_');
-				}
-			}
-		}
+		serializeMolecule(molecule, visitedFgNodes, writer);
 		return writer.toString();
 
 	}
-
 }

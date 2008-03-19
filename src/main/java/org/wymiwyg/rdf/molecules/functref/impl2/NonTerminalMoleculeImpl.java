@@ -31,14 +31,20 @@ public class NonTerminalMoleculeImpl extends SingletonGraph implements NonTermin
 
 	
 	
+	private Object tempIdentity = new Object();
+
 	/**
 	 * @param afgn
 	 * @param originalTriple
 	 * @param resultMap
 	 */
-	public NonTerminalMoleculeImpl(Node afgn, Triple originalTriple,
+	NonTerminalMoleculeImpl(Node afgn, Triple originalTriple,
 			Map<Node, FunctionallyGroundedNodeImpl> resultMap) {
 		super(processTriple(afgn, originalTriple, resultMap));
+	}
+	
+	NonTerminalMoleculeImpl(Triple triple) {
+		super(triple);
 	}
 
 	/**
@@ -70,6 +76,29 @@ public class NonTerminalMoleculeImpl extends SingletonGraph implements NonTermin
 		return triple;
 	}
 
+	@Override
+	public void markFinalized() {
+		tempIdentity = null;
+		super.markFinalized();
+	}
+	
+	@Override
+	public boolean equals(Object object) {
+		if (tempIdentity == null) {
+			return super.equals(object);
+		} else {
+			return this == object;
+		}
+	}
+
+	@Override
+	public int hashCode() {
+		if (tempIdentity == null) {
+			return super.hashCode();
+		} else {
+			return tempIdentity.hashCode();
+		}
+	}
 
 
 }

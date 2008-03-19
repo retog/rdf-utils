@@ -133,35 +133,5 @@ public class MolecubeasedLeanifierTest extends GraphLeanifierTest {
 		assertTrue(equals);
 	}
 
-	// TODO test for chained IFP where identity can be recursively detected
 
-	public void testChainedIFP() {
-		Model model = ModelFactory.createDefaultModel();
-		for (int j = 0; j < 2; j++) {
-			Resource previousResource = model.createResource();
-			for (int i = 0; i < 9; i++) {
-				Resource resource;
-				if ((j == 0) && (Math.random() > .7)) {
-					resource = model.createResource(Util.createURN5());
-				} else {
-					resource = model.createResource();
-				}
-				previousResource.addProperty(FOAF.mbox, resource);
-				previousResource.addProperty(DC.title, Util
-						.createRandomString(10));
-				previousResource = resource;
-			}
-			previousResource.addProperty(FOAF.mbox, model
-					.createResource("mailto:foo"));
-		}
-		Graph graph = JenaUtil.getGraphFromModel(model, true);
-		Graph leanifiedGraph = makeLean(graph);
-		Graph doubleLeanifiedGraph = makeLean(leanifiedGraph);
-		boolean equals = leanifiedGraph.equals(doubleLeanifiedGraph);
-		// if (!equals) {
-		JenaUtil.getModelFromGraph(graph).write(System.out);
-		JenaUtil.getModelFromGraph(doubleLeanifiedGraph).write(System.out);
-		// }
-		assertTrue(equals);
-	}
 }

@@ -38,7 +38,6 @@ import org.wymiwyg.rdf.graphs.impl.TripleImpl;
 import org.wymiwyg.rdf.molecules.MaximumContextualMolecule;
 import org.wymiwyg.rdf.molecules.TerminalMolecule;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
-import org.wymiwyg.rdf.molecules.functref.impl.FgNodeMerger;
 
 
 
@@ -65,7 +64,7 @@ public class ReferenceGroundedDecompositionImpl2 implements
 	public ReferenceGroundedDecompositionImpl2(Collection<Triple> triples) {
 		Collection<Triple> remainingTriples = triples;
 		while (remainingTriples.size() > (remainingTriples = extractNonTerminalTriples(remainingTriples)).size()) {
-			log.info("remaning triples: " + remainingTriples.size());
+			//log.info("remaning triples: " + remainingTriples.size());
 		}
 
 		Map<Node, ? extends FunctionallyGroundedNode> fgNodesMap = createFunctionallyGroundedNodes();
@@ -252,7 +251,7 @@ public class ReferenceGroundedDecompositionImpl2 implements
 			return true;
 		}
 		if (node instanceof GroundedNode) {
-			log.info("grounded node in original triple set (why isn't the graph anonymized?)");
+			//log.info("grounded node in original triple set (why isn't the graph anonymized?)");
 			return true;
 		}
 

@@ -18,7 +18,6 @@ package org.wymiwyg.rdf.molecules.functref.impl2;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.Set;
 
 import org.wymiwyg.rdf.graphs.fgnodes.impl.FunctionallyGroundedNodeBase;
@@ -32,24 +31,64 @@ public class FunctionallyGroundedNodeImpl extends FunctionallyGroundedNodeBase i
 
 	private Collection<NonTerminalMolecule> groundingMolecules = new ArrayList<NonTerminalMolecule>();
 	private Set<NonTerminalMolecule> groundingMoleculeSet = null;
+	private Object tempIdentity = new Object();
+
+	FunctionallyGroundedNodeImpl() {
+		
+	}
+	
+	FunctionallyGroundedNodeImpl(Set<NonTerminalMolecule> ntMolecules) {
+		groundingMolecules.addAll(ntMolecules);
+	}
+	
+	
 	
 	public Set<NonTerminalMolecule> getGroundingMolecules() {
 		if (!isFinalized()) {
-			throw new RuntimeException("this normal?");
+			return new GoodFaithSet<NonTerminalMolecule>(groundingMolecules);
 		}
 		if (groundingMoleculeSet == null) {
-			groundingMoleculeSet = new GoodFaithSet<NonTerminalMolecule>();
-			groundingMoleculeSet.addAll(groundingMolecules);
+			groundingMoleculeSet = new GoodFaithSet<NonTerminalMolecule>(groundingMolecules);
+			groundingMolecules = null;
 		}
 		return groundingMoleculeSet;
 	}
 
+	
 	/**
 	 * It's the responsibility of the caller not to add a molecule twice
 	 */
 	void addGroundingMolecule(NonTerminalMolecule molecule) {
 		groundingMolecules.add(molecule);
 	}
+	
+	void setMolecules(Collection<NonTerminalMolecule> molecules) {
+		groundingMolecules.clear();
+		groundingMolecules.addAll(molecules);
+	}
+	
+	@Override
+	public void markFinalized() {
+		tempIdentity = null;
+		super.markFinalized();
+	}
 
+	@Override
+	public boolean equals(Object object) {
+		if (tempIdentity == null) {
+			return super.equals(object);
+		} else {
+			return this == object;
+		}
+	}
+
+	@Override
+	public int hashCode() {
+		if (tempIdentity == null) {
+			return super.hashCode();
+		} else {
+			return tempIdentity.hashCode();
+		}
+	}
 
 }

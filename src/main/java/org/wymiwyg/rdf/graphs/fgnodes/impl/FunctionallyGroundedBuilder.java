@@ -22,6 +22,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.wymiwyg.rdf.graphs.Node;
 import org.wymiwyg.rdf.graphs.Triple;
 import org.wymiwyg.rdf.graphs.fgnodes.FunctionallyGroundedNode;
@@ -35,7 +37,7 @@ import org.wymiwyg.rdf.molecules.impl.SimpleNonTerminalMolecule;
  */
 public class FunctionallyGroundedBuilder {
 	
-	//private static final Log log = LogFactory.getLog(FunctionallyGroundedBuilder.class);
+	private static final Log log = LogFactory.getLog(FunctionallyGroundedBuilder.class);
 
 	class BuilderFunctionallyGroundedNodeImpl extends
 			FunctionallyGroundedNodeImpl {
@@ -96,6 +98,7 @@ public class FunctionallyGroundedBuilder {
 		public BuilderNonTerminalMoleculeImpl(Node afgn) {
 			super(afgn);
 			ntMolecules.add(this);
+			log.info("ntMolecules.size()"+ntMolecules.size());
 		}
 		
 		private FunctionallyGroundedBuilder getBuilder() {
@@ -154,7 +157,7 @@ public class FunctionallyGroundedBuilder {
 
 	private Collection<BuilderNonTerminalMoleculeImpl> ntMolecules = new ArrayList<BuilderNonTerminalMoleculeImpl>();
 
-	private Map<NonTerminalMolecule, BuilderNonTerminalMoleculeImpl> nonTermirminalAdoptionMap = new HashFreeMap<NonTerminalMolecule, BuilderNonTerminalMoleculeImpl>();
+	private Map<NonTerminalMolecule, BuilderNonTerminalMoleculeImpl> nonTermirminalAdoptionMap = new HashMap<NonTerminalMolecule, BuilderNonTerminalMoleculeImpl>();
 
 	private Map<FunctionallyGroundedNode, BuilderFunctionallyGroundedNodeImpl> fgNodeAdoptionMap = new HashMap<FunctionallyGroundedNode, BuilderFunctionallyGroundedNodeImpl>();
 

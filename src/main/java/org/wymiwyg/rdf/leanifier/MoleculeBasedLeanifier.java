@@ -43,13 +43,10 @@ import org.wymiwyg.rdf.molecules.MaximumContextualMolecule;
 import org.wymiwyg.rdf.molecules.TerminalMolecule;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.FgNodeMerger;
-import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
 import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
 import org.wymiwyg.rdf.molecules.impl.SimpleContextualMolecule;
 import org.wymiwyg.rdf.molecules.impl.SimpleTerminalMolecule;
-import org.wymiwyg.rdf.molecules.model.modelref.ModelReferencingDecomposition;
-import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 
 /**
  * Leanifier similar to GraphLeanifier.
@@ -168,9 +165,12 @@ public class MoleculeBasedLeanifier {
 				.getFunctionallyGroundedNodes()) {
 			fgNodeMap.put(fgNode, fgNode);
 		}
+		
 		fgNodeMap = FgNodeMerger.mergeFgNodes(fgNodeMap);
+
 		boolean nodeReplaced = false;
 		Set<TerminalMolecule> terminalMolecules = refDec.getTerminalMolecules();
+		//TODO iterate over molecules
 		for (Entry<FunctionallyGroundedNode, FunctionallyGroundedNode> entry : fgNodeMap
 				.entrySet()) {
 			FunctionallyGroundedNode orig = entry.getKey();
@@ -193,9 +193,11 @@ public class MoleculeBasedLeanifier {
 				Set<TerminalMolecule> newTerminalMolecules = new HashSet<TerminalMolecule>();
 				for (TerminalMolecule terminalMolecule : terminalMolecules) {
 					try {
-						TerminalMolecule replacement = new GraphUtil<TerminalMolecule>()
+						SimpleTerminalMolecule replacement = new SimpleTerminalMolecule();
+						new GraphUtil<TerminalMolecule>()
 								.replaceNode(terminalMolecule, orig, current,
-										new SimpleTerminalMolecule());
+										replacement);
+						replacement.markFinalized();
 						newTerminalMolecules.add(replacement);
 						nodeReplaced = true;
 					} catch (SourceNodeNotFoundException e) {
@@ -215,6 +217,7 @@ public class MoleculeBasedLeanifier {
 				.unmodifiableSet(contextualMolecules);
 		final Set<TerminalMolecule> unmodifiableTerminalMolecules = Collections
 				.unmodifiableSet(terminalMolecules);
+		
 
 		ReferenceGroundedDecomposition result = new ReferenceGroundedDecomposition() {
 
@@ -233,6 +236,7 @@ public class MoleculeBasedLeanifier {
 		};
 
 		if (nodeReplaced) {
+			//TODO invoke fg-node merging only once
 			return getLeanVersionWithoutAnonymizing(result);
 		} else {
 			return result;

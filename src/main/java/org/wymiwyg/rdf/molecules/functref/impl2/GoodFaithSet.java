@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Set;
+import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
 
 /**
  * A set that relies on the consumer not to add an element twice
@@ -32,6 +33,15 @@ import java.util.Set;
 public class GoodFaithSet<T> extends AbstractSet<T> implements Set<T> {
 
 	Collection<T> data = new ArrayList<T>();
+
+	GoodFaithSet() {
+
+	}
+
+	GoodFaithSet(Collection<T> entries) {
+		data.addAll(entries);
+	}
+
 	@Override
 	public Iterator<T> iterator() {
 		return data.iterator();
@@ -46,6 +56,4 @@ public class GoodFaithSet<T> extends AbstractSet<T> implements Set<T> {
 	public boolean add(T e) {
 		return data.add(e);
 	}
-
-	
 }

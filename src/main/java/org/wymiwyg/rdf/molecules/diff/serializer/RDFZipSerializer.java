@@ -46,8 +46,6 @@ import org.wymiwyg.rdf.molecules.diff.MoleculeDiff;
 import org.wymiwyg.rdf.molecules.diff.MoleculeDiffImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
-import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
-import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -294,7 +292,7 @@ public class RDFZipSerializer implements DiffSerializer {
 		Model m2reconstructed = JenaUtil
 				.getModelFromGraph(ReferenceGroundedUtil
 						.reconstructGraph(reDeserialised
-								.patch(new ReferenceGroundedDecompositionImpl2(
+								.patch(new ReferenceGroundedDecompositionImpl(
 										JenaUtil.getGraphFromModel(m1, true)))));
 		System.out.println(m2reconstructed.isIsomorphicWith(m2));
 		System.out.println("m1");

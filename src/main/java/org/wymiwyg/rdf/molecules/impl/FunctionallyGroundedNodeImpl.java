@@ -14,7 +14,7 @@
  *  limitations under the License.
  *
  */
-package org.wymiwyg.rdf.molecules.functref.impl2;
+package org.wymiwyg.rdf.molecules.impl;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -33,11 +33,11 @@ public class FunctionallyGroundedNodeImpl extends FunctionallyGroundedNodeBase i
 	private Set<NonTerminalMolecule> groundingMoleculeSet = null;
 	private Object tempIdentity = new Object();
 
-	FunctionallyGroundedNodeImpl() {
+	public FunctionallyGroundedNodeImpl() {
 		
 	}
 	
-	FunctionallyGroundedNodeImpl(Set<NonTerminalMolecule> ntMolecules) {
+	public FunctionallyGroundedNodeImpl(Set<NonTerminalMolecule> ntMolecules) {
 		groundingMolecules.addAll(ntMolecules);
 	}
 	
@@ -58,11 +58,11 @@ public class FunctionallyGroundedNodeImpl extends FunctionallyGroundedNodeBase i
 	/**
 	 * It's the responsibility of the caller not to add a molecule twice
 	 */
-	void addGroundingMolecule(NonTerminalMolecule molecule) {
+	public void addGroundingMolecule(NonTerminalMolecule molecule) {
 		groundingMolecules.add(molecule);
 	}
 	
-	void setMolecules(Collection<NonTerminalMolecule> molecules) {
+	public void setMolecules(Collection<NonTerminalMolecule> molecules) {
 		groundingMolecules.clear();
 		groundingMolecules.addAll(molecules);
 	}

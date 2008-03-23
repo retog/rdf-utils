@@ -22,8 +22,9 @@ import org.wymiwyg.rdf.molecules.TerminalMolecule;
 
 /**
  * @author reto
- *
+ * @deprecated use {@link TerminalMoleculeImpl}
  */
+@Deprecated
 public class SimpleTerminalMolecule extends SimpleGraph implements
 		TerminalMolecule {
 

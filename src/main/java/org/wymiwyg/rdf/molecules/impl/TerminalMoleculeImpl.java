@@ -1,5 +1,5 @@
 /*
- * Copyright  2002-2005 WYMIWYG (http://wymiwyg.org)
+ * Copyright  2002-2006 WYMIWYG (http://wymiwyg.org)
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -14,29 +14,26 @@
  *  limitations under the License.
  *
  */
-package org.wymiwyg.rdf.molecules.functref.impl;
+package org.wymiwyg.rdf.molecules.impl;
 
-import java.util.Map;
-
-import org.wymiwyg.rdf.graphs.Node;
-import org.wymiwyg.rdf.graphs.fgnodes.FunctionallyGroundedNode;
-import org.wymiwyg.rdf.molecules.ContextualMolecule;
+import org.wymiwyg.rdf.graphs.Triple;
 import org.wymiwyg.rdf.molecules.TerminalMolecule;
 
 /**
  * @author reto
  *
  */
-public class ReferenceGroundedTerminalMolecule extends AbstractReferenceGroundedMolecule implements TerminalMolecule {
+public class TerminalMoleculeImpl extends SingletonGraph implements TerminalMolecule {
 
 	/**
-	 * @param molecule
-	 * @param replacements
+	 * @param triple the triple must not contain unfinalized fg-nodes
 	 */
-	public ReferenceGroundedTerminalMolecule(ContextualMolecule molecule, Map<Node, FunctionallyGroundedNode> replacements) {
-		super(molecule, replacements);
+	public TerminalMoleculeImpl(Triple triple) {
+		super(triple);
+		markFinalized();
 	}
 
 	
 
+	
 }

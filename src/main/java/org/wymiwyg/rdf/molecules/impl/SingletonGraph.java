@@ -14,46 +14,56 @@
  *  limitations under the License.
  *
  */
-package org.wymiwyg.rdf.molecules.functref.impl2;
+package org.wymiwyg.rdf.molecules.impl;
 
-import java.util.AbstractSet;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Iterator;
-import java.util.Set;
-import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
+
+import org.wymiwyg.rdf.graphs.AbstractGraph;
+import org.wymiwyg.rdf.graphs.Triple;
 
 /**
- * A set that relies on the consumer not to add an element twice
- * 
  * @author reto
- * @param <T> 
  *
  */
-public class GoodFaithSet<T> extends AbstractSet<T> implements Set<T> {
+public class SingletonGraph extends AbstractGraph {
+	
+	
 
-	Collection<T> data = new ArrayList<T>();
+	private Triple triple;
 
-	GoodFaithSet() {
-
-	}
-
-	GoodFaithSet(Collection<T> entries) {
-		data.addAll(entries);
+	/**
+	 * @param triple
+	 */
+	public SingletonGraph(Triple triple) {
+		this.triple = triple;
 	}
 
 	@Override
-	public Iterator<T> iterator() {
-		return data.iterator();
+	public Iterator<Triple> iterator() {
+		return new Iterator<Triple>() {
+
+			boolean returned = false;
+			
+			public boolean hasNext() {
+				return !returned;
+			}
+
+			public Triple next() {
+				if (returned) return null;
+				returned = true;
+				return triple;
+			}
+
+			public void remove() {
+				throw new UnsupportedOperationException();
+			}
+			
+		};
 	}
 
 	@Override
 	public int size() {
-		return data.size();
+		return 1;
 	}
 
-	@Override
-	public boolean add(T e) {
-		return data.add(e);
-	}
 }

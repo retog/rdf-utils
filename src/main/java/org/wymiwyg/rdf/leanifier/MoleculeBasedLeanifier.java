@@ -43,9 +43,9 @@ import org.wymiwyg.rdf.molecules.MaximumContextualMolecule;
 import org.wymiwyg.rdf.molecules.TerminalMolecule;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.FgNodeMerger;
+import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
-import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
-import org.wymiwyg.rdf.molecules.impl.SimpleContextualMolecule;
+import org.wymiwyg.rdf.molecules.impl.ContextualMoleculeImpl;
 import org.wymiwyg.rdf.molecules.impl.SimpleTerminalMolecule;
 
 /**
@@ -89,7 +89,7 @@ public class MoleculeBasedLeanifier {
 			log.debug("Anonymized graph: ");
 			log.debug(stringWriter);
 		}
-		ReferenceGroundedDecomposition refDec = new ReferenceGroundedDecompositionImpl2(graph);
+		ReferenceGroundedDecomposition refDec = new ReferenceGroundedDecompositionImpl(graph);
 		ReferenceGroundedDecomposition leanifiedDec = getLeanVersionWithoutAnonymizing(refDec);
 		Graph nonNaturalGraph = new SimpleGraph();
 		for (Iterator<MaximumContextualMolecule> iter = leanifiedDec
@@ -152,7 +152,7 @@ public class MoleculeBasedLeanifier {
 					.hasNext();) {
 				Graph current = iter.next();
 				if (!isSubgrapgOfOther(current, leanifiedMolecules)) {
-					SimpleContextualMolecule contextualMolecule = new SimpleContextualMolecule();
+					ContextualMoleculeImpl contextualMolecule = new ContextualMoleculeImpl();
 					contextualMolecule.addAll(current);
 					contextualMolecule.markFinalized();
 					contextualMolecules.add(contextualMolecule);
@@ -180,7 +180,7 @@ public class MoleculeBasedLeanifier {
 				Set<MaximumContextualMolecule> newContextualModelcules = new HashSet<MaximumContextualMolecule>();
 				for (MaximumContextualMolecule maximumContextualMolecule : contextualMolecules) {
 					try {
-						SimpleContextualMolecule replacement = new SimpleContextualMolecule();
+						ContextualMoleculeImpl replacement = new ContextualMoleculeImpl();
 						new GraphUtil<MaximumContextualMolecule>()
 								.replaceNode(maximumContextualMolecule, orig,
 										current, replacement);

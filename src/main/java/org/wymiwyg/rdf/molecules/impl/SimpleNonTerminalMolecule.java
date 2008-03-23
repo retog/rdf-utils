@@ -21,13 +21,14 @@ import org.wymiwyg.rdf.graphs.Triple;
 import org.wymiwyg.rdf.graphs.impl.NodeImpl;
 import org.wymiwyg.rdf.graphs.impl.SimpleGraph;
 import org.wymiwyg.rdf.graphs.impl.TripleImpl;
-import org.wymiwyg.rdf.molecules.Molecule;
 import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
 
 /**
  * @author reto
+ * @deprecated use {@link NonTerminalMoleculeImpl}
  *
  */
+@Deprecated
 public class SimpleNonTerminalMolecule extends SimpleGraph implements NonTerminalMolecule {
 
 	private Node afgn = new NodeImpl();
@@ -57,12 +58,6 @@ public class SimpleNonTerminalMolecule extends SimpleGraph implements NonTermina
 		}
 	}
 	
-	/* (non-Javadoc)
-	 * @see org.wymiwyg.rdf.molecules.Molecule#getUnionWith(org.wymiwyg.rdf.molecules.Molecule)
-	 */
-	public Molecule getUnionWith(Molecule graph) {
-		throw new RuntimeException("Not implemented yet");
-	}
 
 
 }

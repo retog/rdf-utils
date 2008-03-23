@@ -20,9 +20,9 @@ package org.wymiwyg.rdf.molecules.functref.test;
 
 import org.wymiwyg.rdf.graphs.jenaimpl.JenaUtil;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
+import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
-import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
 
 /**
  * @author reto
@@ -39,7 +39,7 @@ public class ReferenceGroundedDecomposition2Test extends ReferenceGroundedDecomp
 	
 	@Override
 	protected ReferenceGroundedDecomposition getDecomposition(Model model, boolean useDefaultOntology) {
-		 return new ReferenceGroundedDecompositionImpl2(JenaUtil
+		 return new ReferenceGroundedDecompositionImpl(JenaUtil
 						.getGraphFromModel(model, useDefaultOntology));
 	}
 

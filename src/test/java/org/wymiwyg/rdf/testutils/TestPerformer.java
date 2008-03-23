@@ -6,7 +6,6 @@
 package org.wymiwyg.rdf.testutils;
 
 import org.wymiwyg.rdf.graphs.Graph;
-import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 
 /**
  * @author reto

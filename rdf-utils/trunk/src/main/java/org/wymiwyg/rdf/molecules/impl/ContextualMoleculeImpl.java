@@ -15,12 +15,11 @@
  *  under the License.
  */
 
-package org.wymiwyg.rdf.molecules.functref.impl2;
+package org.wymiwyg.rdf.molecules.impl;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
-import org.wymiwyg.rdf.graphs.AbstractGraph;
+
 import org.wymiwyg.rdf.graphs.GroundedNode;
 import org.wymiwyg.rdf.graphs.Node;
 import org.wymiwyg.rdf.graphs.Triple;
@@ -28,39 +27,62 @@ import org.wymiwyg.rdf.graphs.impl.SimpleGraph;
 import org.wymiwyg.rdf.molecules.MaximumContextualMolecule;
 
 /**
- *
+ * 
  * @author reto
  */
 
-
-class ContextualMoleculeImpl extends SimpleGraph implements MaximumContextualMolecule {
+public class ContextualMoleculeImpl extends SimpleGraph implements
+		MaximumContextualMolecule {
 
 	private Object tempIdentity = new Object();
-	private Set<Node> ubngn= new HashSet<Node>();
-	
+	private Set<Node> ubngn = null;
+
 	public Node[] getUsedButNotGroundedNodes() {
+		if (!isFinalized()) {
+			Set<Node> _ubngn = getUsedButNotGroundedNodeSet();
+			return _ubngn.toArray(new Node[_ubngn.size()]);
+		}
+		if (ubngn == null) {
+			ubngn = getUsedButNotGroundedNodeSet();
+		}
 		return ubngn.toArray(new Node[ubngn.size()]);
 	}
 
-	/* the AbtractGraph implements AddAll (calling this method)
+	private Set<Node> getUsedButNotGroundedNodeSet() {
+		Set<Node> resultSet = new HashSet<Node>();
+		for (Triple triple : this) {
+			Node subject = triple.getSubject();
+			if (!(subject instanceof GroundedNode)) {
+				resultSet.add(subject);
+			}
+			Node object = triple.getObject();
+			if (!(object instanceof GroundedNode)) {
+				resultSet.add(object);
+			}
+		}
+		return resultSet;
+	}
+
+	/*
+	 * the AbtractGraph implements AddAll (calling this method)
 	 */
 	@Override
 	public boolean add(Triple triple) {
-		if (!(triple.getSubject() instanceof GroundedNode)) {
-			ubngn.add(triple.getSubject());
-		}
-		if (!(triple.getObject() instanceof GroundedNode)) {
-			ubngn.add(triple.getObject());
-		}
+		// if (!(triple.getSubject() instanceof GroundedNode)) {
+		// ubngn.add(triple.getSubject());
+		// }
+		// if (!(triple.getObject() instanceof GroundedNode)) {
+		// ubngn.add(triple.getObject());
+		// }
 		return super.add(triple);
 	}
-	
+
 	@Override
 	public void markFinalized() {
 		tempIdentity = null;
 		super.markFinalized();
 	}
-	
+
 	@Override
 	public boolean equals(Object object) {
 		if (tempIdentity == null) {

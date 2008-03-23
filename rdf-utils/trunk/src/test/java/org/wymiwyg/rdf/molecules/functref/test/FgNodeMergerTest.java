@@ -16,6 +16,8 @@
  */
 package org.wymiwyg.rdf.molecules.functref.test;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -35,18 +37,14 @@ import org.wymiwyg.rdf.graphs.impl.NodeImpl;
 import org.wymiwyg.rdf.graphs.impl.SimpleGraph;
 import org.wymiwyg.rdf.graphs.impl.TripleImpl;
 import org.wymiwyg.rdf.graphs.jenaimpl.JenaUtil;
-import org.wymiwyg.rdf.leanifier.MoleculeBasedLeanifier;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
-import org.wymiwyg.rdf.molecules.functref.impl2.FgNodeMerger2;
-import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
+import org.wymiwyg.rdf.molecules.functref.impl.FgNodeMerger;
+import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.DC;
-import com.sun.org.apache.xalan.internal.xsltc.dom.AnyNodeCounter;
-
-import static org.junit.Assert.*;
 
 /**
  * @author reto
@@ -67,7 +65,7 @@ public class FgNodeMergerTest {
 		graph.add(new TripleImpl(fg2, new InverseFunctionalPropertyNodeImpl(
 				"http://example.org/f2"), new NamedNodeImpl(
 				"http://2.example.org/")));
-		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl2(
+		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl(
 				graph);
 		Set<FunctionallyGroundedNode> functionallyGroundedNodes = dec
 				.getFunctionallyGroundedNodes();
@@ -79,7 +77,7 @@ public class FgNodeMergerTest {
 			originalNodeMap.put(new Integer(counter), functionallyGroundedNode);
 		}
 		;
-		assertEquals(1, new HashSet<FunctionallyGroundedNode>(FgNodeMerger2
+		assertEquals(1, new HashSet<FunctionallyGroundedNode>(FgNodeMerger
 				.mergeFgNodes(originalNodeMap).values()).size());
 	}
 
@@ -106,7 +104,7 @@ public class FgNodeMergerTest {
 		}
 		// model.write(System.out);
 		Graph graph = JenaUtil.getGraphFromModel(model, true);
-		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl2(
+		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl(
 				graph);
 		Set<FunctionallyGroundedNode> functionallyGroundedNodes = dec
 				.getFunctionallyGroundedNodes();
@@ -117,7 +115,7 @@ public class FgNodeMergerTest {
 			counter++;
 			originalNodeMap.put(new Integer(counter), functionallyGroundedNode);
 		}
-		assertEquals(10, new HashSet<FunctionallyGroundedNode>(FgNodeMerger2
+		assertEquals(10, new HashSet<FunctionallyGroundedNode>(FgNodeMerger
 				.mergeFgNodes(originalNodeMap).values()).size());
 	}
 
@@ -133,13 +131,13 @@ public class FgNodeMergerTest {
 
 			Graph graph = new AnonymizedGraph(JenaUtil.getGraphFromModel(origM,
 					true));
-			ReferenceGroundedDecomposition ref = new ReferenceGroundedDecompositionImpl2(
+			ReferenceGroundedDecomposition ref = new ReferenceGroundedDecompositionImpl(
 					graph);
 			Set<FunctionallyGroundedNode> fgNodes = ref
 					.getFunctionallyGroundedNodes();
 			Map<Object, FunctionallyGroundedNode> map = map(fgNodes);
 			for (int j = 0; j < 20; j++) {
-				map = FgNodeMerger2.mergeFgNodes(map);
+				map = FgNodeMerger.mergeFgNodes(map);
 			}
 		}
 	}
@@ -167,7 +165,7 @@ public class FgNodeMergerTest {
 					.createResource("mailto:foo"));
 		}
 		Graph graph = JenaUtil.getGraphFromModel(model, true);
-		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl2(
+		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl(
 				new AnonymizedGraph(graph));
 		/*System.out.println(dec.getContextualMolecules().size() + " - "
 				+ dec.getFunctionallyGroundedNodes().size() + " - "
@@ -176,7 +174,7 @@ public class FgNodeMergerTest {
 				.getFunctionallyGroundedNodes();
 		Map<?, FunctionallyGroundedNode> nodeMap1 = map(functionallyGroundedNodes);
 		System.out.println(new Date());
-		Map<?, FunctionallyGroundedNode> nodeMap1Merged = FgNodeMerger2
+		Map<?, FunctionallyGroundedNode> nodeMap1Merged = FgNodeMerger
 				.mergeFgNodes(nodeMap1);
 		System.out.println(new Date());
 		assertEquals("key sets equals", nodeMap1.keySet(), nodeMap1Merged
@@ -186,7 +184,7 @@ public class FgNodeMergerTest {
 
 		Map<?, FunctionallyGroundedNode> nodeMap2 = map(functionallyGroundedNodesMerged1);
 		Set<FunctionallyGroundedNode> functionallyGroundedNodesMerged2 = new HashSet<FunctionallyGroundedNode>(
-				FgNodeMerger2.mergeFgNodes(nodeMap2).values());
+				FgNodeMerger.mergeFgNodes(nodeMap2).values());
 		assertEquals(functionallyGroundedNodesMerged1,
 				functionallyGroundedNodesMerged2);
 

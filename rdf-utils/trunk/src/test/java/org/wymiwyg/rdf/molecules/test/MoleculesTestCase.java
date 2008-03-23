@@ -22,10 +22,9 @@ import java.util.HashSet;
 import junit.framework.TestCase;
 
 import org.wymiwyg.rdf.graphs.jenaimpl.JenaUtil;
-import org.wymiwyg.rdf.molecules.MaximumContextualMolecule;
 import org.wymiwyg.rdf.molecules.Molecule;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
-import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
+import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -47,7 +46,7 @@ public abstract class MoleculesTestCase extends TestCase {
 	
 	protected Molecule getSingleMolecule(Model model) {
 		
-		ReferenceGroundedDecomposition refDec = new ReferenceGroundedDecompositionImpl2(JenaUtil.getGraphFromModel(model, true));
+		ReferenceGroundedDecomposition refDec = new ReferenceGroundedDecompositionImpl(JenaUtil.getGraphFromModel(model, true));
 		Collection<Molecule> moleculeSet = new HashSet<Molecule>(refDec.getContextualMolecules());
 		moleculeSet.addAll(refDec.getTerminalMolecules());
 		assertEquals("Single molecule model contains one molecule", 1, moleculeSet.size());

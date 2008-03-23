@@ -17,7 +17,7 @@
 package org.wymiwyg.rdf.molecules.diff;
 
 import org.wymiwyg.rdf.molecules.MaximumContextualMolecule;
-import org.wymiwyg.rdf.molecules.impl.SimpleContextualMolecule;
+import org.wymiwyg.rdf.molecules.impl.ContextualMoleculeImpl;
 
 /**
  * @author reto
@@ -30,14 +30,14 @@ public class ContextualMoleculeFactory implements MoleculeFactory<MaximumContext
 	 * @see org.wymiwyg.rdf.molecules.diff.MoleculeFactory#createMolecule()
 	 */
 	public MaximumContextualMolecule createMolecule() {
-		return new SimpleContextualMolecule();
+		return new ContextualMoleculeImpl();
 	}
 
 	/* (non-Javadoc)
 	 * @see org.wymiwyg.rdf.molecules.impl.MoleculeFactory#release(org.wymiwyg.rdf.molecules.Molecule)
 	 */
 	public void release(MaximumContextualMolecule molecule) {
-		((SimpleContextualMolecule)molecule).markFinalized();
+		((ContextualMoleculeImpl)molecule).markFinalized();
 		
 	}
 

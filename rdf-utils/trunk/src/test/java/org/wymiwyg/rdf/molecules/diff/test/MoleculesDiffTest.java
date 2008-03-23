@@ -26,8 +26,6 @@ import org.wymiwyg.rdf.molecules.diff.MoleculeDiff;
 import org.wymiwyg.rdf.molecules.diff.MoleculeDiffImpl;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
-import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
-import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -44,9 +42,9 @@ public class MoleculesDiffTest extends TestCase {
 	public void testFgNodes() {
 		Model model1 = createFgNodeTestModel1(); // ModelFactory.createDefaultModel();
 		Model model2 = createFgNodeTestModel2();
-		ReferenceGroundedDecomposition dec1 = new ReferenceGroundedDecompositionImpl2(
+		ReferenceGroundedDecomposition dec1 = new ReferenceGroundedDecompositionImpl(
 				JenaUtil.getGraphFromModel(model1, true));
-		ReferenceGroundedDecomposition dec2 = new ReferenceGroundedDecompositionImpl2(
+		ReferenceGroundedDecomposition dec2 = new ReferenceGroundedDecompositionImpl(
 				JenaUtil.getGraphFromModel(model2, true));
 		MoleculeDiff diff = new MoleculeDiffImpl(dec1, dec2);
 		diff.print(new PrintWriter(System.out, true));
@@ -67,10 +65,10 @@ public class MoleculesDiffTest extends TestCase {
 	public void testFgNodesAllwayReplaces() {
 		Model model1 = createFgNodeTestModel1(); // ModelFactory.createDefaultModel();
 		Model model2 = createFgNodeTestModel2();
-		ReferenceGroundedDecomposition dec1 = new ReferenceGroundedDecompositionImpl2(
+		ReferenceGroundedDecomposition dec1 = new ReferenceGroundedDecompositionImpl(
 				JenaUtil
 						.getGraphFromModel(model1, true));
-		ReferenceGroundedDecomposition dec2 = new ReferenceGroundedDecompositionImpl2(
+		ReferenceGroundedDecomposition dec2 = new ReferenceGroundedDecompositionImpl(
 				JenaUtil
 						.getGraphFromModel(model2, true));
 		MoleculeDiff diff = new MoleculeDiffImpl(dec1, dec2, true);

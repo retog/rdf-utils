@@ -14,7 +14,7 @@
  *  limitations under the License.
  *
  */
-package org.wymiwyg.rdf.molecules.functref.impl2;
+package org.wymiwyg.rdf.molecules.impl;
 
 import java.util.Map;
 
@@ -38,12 +38,12 @@ public class NonTerminalMoleculeImpl extends SingletonGraph implements NonTermin
 	 * @param originalTriple
 	 * @param resultMap
 	 */
-	NonTerminalMoleculeImpl(Node afgn, Triple originalTriple,
+	public NonTerminalMoleculeImpl(Node afgn, Triple originalTriple,
 			Map<Node, FunctionallyGroundedNodeImpl> resultMap) {
 		super(processTriple(afgn, originalTriple, resultMap));
 	}
 	
-	NonTerminalMoleculeImpl(Triple triple) {
+	public NonTerminalMoleculeImpl(Triple triple) {
 		super(triple);
 	}
 

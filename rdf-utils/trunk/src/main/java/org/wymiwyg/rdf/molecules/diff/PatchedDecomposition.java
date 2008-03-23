@@ -28,7 +28,7 @@ import org.wymiwyg.rdf.graphs.impl.SourceNodeNotFoundException;
 import org.wymiwyg.rdf.molecules.MaximumContextualMolecule;
 import org.wymiwyg.rdf.molecules.TerminalMolecule;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
-import org.wymiwyg.rdf.molecules.impl.SimpleContextualMolecule;
+import org.wymiwyg.rdf.molecules.impl.ContextualMoleculeImpl;
 import org.wymiwyg.rdf.molecules.impl.SimpleTerminalMolecule;
 
 final class PatchedDecomposition implements ReferenceGroundedDecomposition {
@@ -42,7 +42,7 @@ final class PatchedDecomposition implements ReferenceGroundedDecomposition {
 		for (Iterator<MaximumContextualMolecule> iter = contextualMolecules.iterator(); iter.hasNext();) {
 			MaximumContextualMolecule current = iter.next();
 			try {
-				SimpleContextualMolecule newMolecule = new SimpleContextualMolecule();
+				ContextualMoleculeImpl newMolecule = new ContextualMoleculeImpl();
 				newMolecule.addAll(GraphUtil.replaceNode(current, replacingNodes, newNode));
 				newMolecule.markFinalized();
 				iter.remove();

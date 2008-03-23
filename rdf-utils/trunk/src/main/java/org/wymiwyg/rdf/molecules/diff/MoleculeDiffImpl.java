@@ -34,8 +34,6 @@ import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
 import org.wymiwyg.rdf.molecules.TerminalMolecule;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
-import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
-import org.wymiwyg.rdf.molecules.model.modelref.implgraph.ModelReferencingDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
 
@@ -114,9 +112,9 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 
 	public MoleculeDiffImpl(Model model1, Model model2,
 			boolean useDefaultOntology) {
-		this.dec1 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+		this.dec1 = new ReferenceGroundedDecompositionImpl(JenaUtil
 				.getGraphFromModel(model1, useDefaultOntology));
-		this.dec2 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+		this.dec2 = new ReferenceGroundedDecompositionImpl(JenaUtil
 				.getGraphFromModel(model2, useDefaultOntology));
 		create();
 
@@ -124,9 +122,9 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 
 	public MoleculeDiffImpl(Model model1, Model model2,
 			boolean useDefaultOntology, boolean allwaysReplaceWithCGFGNodes) {
-		this.dec1 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+		this.dec1 = new ReferenceGroundedDecompositionImpl(JenaUtil
 				.getGraphFromModel(model1, useDefaultOntology));
-		this.dec2 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+		this.dec2 = new ReferenceGroundedDecompositionImpl(JenaUtil
 				.getGraphFromModel(model2, useDefaultOntology));
 		this.allwaysReplaceWithCGFGNodes = allwaysReplaceWithCGFGNodes;
 		create();
@@ -135,9 +133,9 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 
 	public MoleculeDiffImpl(Model model1, Model model2, Model ontology,
 			boolean useDefaultOntology) {
-		this.dec1 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+		this.dec1 = new ReferenceGroundedDecompositionImpl(JenaUtil
 				.getGraphFromModel(model1, ontology, useDefaultOntology));
-		this.dec2 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+		this.dec2 = new ReferenceGroundedDecompositionImpl(JenaUtil
 				.getGraphFromModel(model2, ontology, useDefaultOntology));
 		create();
 	}
@@ -150,9 +148,9 @@ public class MoleculeDiffImpl extends MoleculeDiffBase {
 	 */
 	public MoleculeDiffImpl(Model model1, Model model2, Model ontology,
 			boolean useDefaultOntology, boolean allwaysReplaceWithCGFGNodes) {
-		this.dec1 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+		this.dec1 = new ReferenceGroundedDecompositionImpl(JenaUtil
 				.getGraphFromModel(model1, ontology, useDefaultOntology));
-		this.dec2 = new ReferenceGroundedDecompositionImpl2(JenaUtil
+		this.dec2 = new ReferenceGroundedDecompositionImpl(JenaUtil
 				.getGraphFromModel(model2, ontology, useDefaultOntology));
 		this.allwaysReplaceWithCGFGNodes = allwaysReplaceWithCGFGNodes;
 		create();

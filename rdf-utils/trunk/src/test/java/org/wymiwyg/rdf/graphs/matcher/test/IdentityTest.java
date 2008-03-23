@@ -60,12 +60,12 @@ public class IdentityTest extends TestCase {
 	private void assertIsomorphic(String message, Model model1, Model model2) {
 		long startTime = System.currentTimeMillis();
 		assertTrue("Jena isomorphism", model1.isIsomorphicWith(model2));
-		System.out.println(message+" took with jena "+(System.currentTimeMillis()-startTime));
+		//System.out.println(message+" took with jena "+(System.currentTimeMillis()-startTime));
 		Graph g1 = new JenaModelGraph(model1, false);
 		Graph g2 = new JenaModelGraph(model2, false);
 		startTime = System.currentTimeMillis();
 		assertNotNull(message, GraphMatcher.getValidMapping(g1, g2));
-		System.out.println(message+" took "+(System.currentTimeMillis()-startTime));
+		//System.out.println(message+" took "+(System.currentTimeMillis()-startTime));
 		
 	}
 

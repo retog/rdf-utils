@@ -26,7 +26,6 @@ import org.wymiwyg.commons.util.io.IndentWriter;
 import org.wymiwyg.rdf.graphs.Node;
 import org.wymiwyg.rdf.graphs.fgnodes.FunctionallyGroundedNode;
 import org.wymiwyg.rdf.graphs.fgnodes.impl.FunctionallyGroundedNodeBase;
-import org.wymiwyg.rdf.graphs.fgnodes.impl.FunctionallyGroundedNodeImpl;
 import org.wymiwyg.rdf.graphs.fgnodes.impl.HashFreeSet;
 import org.wymiwyg.rdf.graphs.impl.NodeImpl;
 import org.wymiwyg.rdf.molecules.NonTerminalMolecule;

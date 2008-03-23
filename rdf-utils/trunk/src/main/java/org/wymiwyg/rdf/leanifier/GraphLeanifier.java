@@ -49,6 +49,10 @@ public class GraphLeanifier {
 				log.debug(triple);
 			}
 		}
+		if (graph.size() > 1000) {
+			log
+					.warn("Leanifying graph with more than 1000 triples, consider decomposition strategy.");
+		}
 		Set<Node> fullyCheckedCandidateImplicators = new HashSet<Node>();
 		Set<Node> checkedCandidateImplicatedForCurrentCandidateImplicator = new HashSet<Node>();
 		// MultiMap otherChecked = new MultiHashMap();

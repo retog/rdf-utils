@@ -50,7 +50,7 @@ import org.wymiwyg.rdf.molecules.TerminalMolecule;
 import org.wymiwyg.rdf.molecules.diff.CrossGraphFgNode;
 import org.wymiwyg.rdf.molecules.diff.MoleculeDiffBase;
 import org.wymiwyg.rdf.molecules.diff.vocabulary.MODELDIFF;
-import org.wymiwyg.rdf.molecules.impl.SimpleContextualMolecule;
+import org.wymiwyg.rdf.molecules.impl.ContextualMoleculeImpl;
 import org.wymiwyg.rdf.molecules.impl.SimpleTerminalMolecule;
 
 import com.hp.hpl.jena.rdf.model.Model;
@@ -149,7 +149,7 @@ public class MoleculeDiffDeserialized extends MoleculeDiffBase {
 	private MaximumContextualMolecule getContextualMoleculeFromPathNode(
 			PathNode dirPathNode, String name) throws IOException {
 
-		SimpleContextualMolecule molecule = new SimpleContextualMolecule();
+		ContextualMoleculeImpl molecule = new ContextualMoleculeImpl();
 		molecule.addAll(getTriplesFromPathNode(dirPathNode, name));
 		molecule.markFinalized();
 		return molecule;

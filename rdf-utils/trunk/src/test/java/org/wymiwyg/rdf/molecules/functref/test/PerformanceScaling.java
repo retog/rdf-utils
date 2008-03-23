@@ -19,15 +19,14 @@ package org.wymiwyg.rdf.molecules.functref.test;
 import java.util.Map;
 import java.util.Set;
 
-import org.junit.Test;
 import org.wymiwyg.commons.vocabulary.FOAF;
 import org.wymiwyg.rdf.graphs.Graph;
 import org.wymiwyg.rdf.graphs.fgnodes.FunctionallyGroundedNode;
 import org.wymiwyg.rdf.graphs.impl.AnonymizedGraph;
 import org.wymiwyg.rdf.graphs.jenaimpl.JenaUtil;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
-import org.wymiwyg.rdf.molecules.functref.impl2.FgNodeMerger2;
-import org.wymiwyg.rdf.molecules.functref.impl2.ReferenceGroundedDecompositionImpl2;
+import org.wymiwyg.rdf.molecules.functref.impl.FgNodeMerger;
+import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -83,7 +82,7 @@ public class PerformanceScaling {
 					.createResource("mailto:foo"));
 		}
 		Graph graph = JenaUtil.getGraphFromModel(model, true);
-		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl2(
+		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl(
 				new AnonymizedGraph(graph));
 		/*System.out.println(dec.getContextualMolecules().size() + " - "
 				+ dec.getFunctionallyGroundedNodes().size() + " - "
@@ -93,7 +92,7 @@ public class PerformanceScaling {
 		//System.out.println(functionallyGroundedNodes);
 		Map<?, FunctionallyGroundedNode> nodeMap1 = FgNodeMergerTest.map(functionallyGroundedNodes);
 		long startDate = System.currentTimeMillis();
-		Map<?, FunctionallyGroundedNode> nodeMap1Merged = FgNodeMerger2
+		Map<?, FunctionallyGroundedNode> nodeMap1Merged = FgNodeMerger
 				.mergeFgNodes(nodeMap1);
 		long endDate = System.currentTimeMillis();
 		return (endDate - startDate);

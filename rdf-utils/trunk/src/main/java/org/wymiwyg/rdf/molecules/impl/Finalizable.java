@@ -1,5 +1,5 @@
 /*
- * Copyright  2002-2005 WYMIWYG (http://wymiwyg.org)
+ * Copyright  2002-2006 WYMIWYG (http://wymiwyg.org)
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -14,15 +14,16 @@
  *  limitations under the License.
  *
  */
-package org.wymiwyg.rdf.molecules.model.modelref;
+package org.wymiwyg.rdf.molecules.impl;
 
-
-/** A triple  with an  (Inverse)Functional property and a Naturally
- * grounded node on the not afgn-side.
- * 
+/**
  * @author reto
  *
  */
-public interface NonTerminalTriple extends ModelReferencingTriple {
-	ModelRefGroundedNode getAfgn();
+public interface Finalizable {
+
+	/**
+	 * the object is marked as finalized
+	 */
+	public void markFinalized();
 }

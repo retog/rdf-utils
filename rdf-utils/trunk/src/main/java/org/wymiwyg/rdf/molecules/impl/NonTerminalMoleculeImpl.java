@@ -34,15 +34,18 @@ public class NonTerminalMoleculeImpl extends SingletonGraph implements NonTermin
 	private Object tempIdentity = new Object();
 
 	/**
-	 * @param afgn
+	 * @param afgn the node that is to be replaced with NonTerminalMolecule.GROUNDED_NODE
 	 * @param originalTriple
-	 * @param resultMap
+	 * @param nodeReplacementMap used to replace nodes in the triples 
 	 */
 	public NonTerminalMoleculeImpl(Node afgn, Triple originalTriple,
-			Map<Node, FunctionallyGroundedNodeImpl> resultMap) {
-		super(processTriple(afgn, originalTriple, resultMap));
+			Map<Node, FunctionallyGroundedNodeImpl> nodeReplacementMap) {
+		super(processTriple(afgn, originalTriple, nodeReplacementMap));
 	}
-	
+	/**
+	 * 
+	 * @param triple the triple must contain NonTerminalMolecule.GROUNDED_NODE
+	 */
 	public NonTerminalMoleculeImpl(Triple triple) {
 		super(triple);
 	}
@@ -50,26 +53,26 @@ public class NonTerminalMoleculeImpl extends SingletonGraph implements NonTermin
 	/**
 	 * @param afgn
 	 * @param originalTriple
-	 * @param resultMap
+	 * @param nodeReplacementMap
 	 * @return
 	 */
 	private static Triple processTriple(Node afgn, Triple originalTriple,
-			Map<Node, FunctionallyGroundedNodeImpl> resultMap) {
+			Map<Node, FunctionallyGroundedNodeImpl> nodeReplacementMap) {
 		Triple triple;
 		Node subject = originalTriple.getSubject();
 		Node object = originalTriple.getObject();
 		if (subject.equals(afgn)) {
 			subject = GROUNDED_NODE;
 		} else {
-			if (resultMap.containsKey(subject)) {
-				subject = resultMap.get(subject);
+			if (nodeReplacementMap.containsKey(subject)) {
+				subject = nodeReplacementMap.get(subject);
 			}
 		}
 		if (object.equals(afgn)) {
 			object = GROUNDED_NODE;
 		} else {
-			if (resultMap.containsKey(object)) {
-				object = resultMap.get(object);
+			if (nodeReplacementMap.containsKey(object)) {
+				object = nodeReplacementMap.get(object);
 			}
 		}
 		triple = new TripleImpl(subject, originalTriple.getPredicate(), object);

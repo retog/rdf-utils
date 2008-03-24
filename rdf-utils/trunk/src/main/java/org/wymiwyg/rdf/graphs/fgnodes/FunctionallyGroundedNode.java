@@ -64,12 +64,7 @@ public interface FunctionallyGroundedNode extends GroundedNode {
 	 */
 	public byte[] strongHashCode();
 
-	/**
-	 * @return true if this node is finalized and no molecule will be added to
-	 *         it or to any of the fg-nodes directly or indirectly contained in
-	 *         its molecules
-	 */
-	public boolean isFinalized();
+	
 
 
 }

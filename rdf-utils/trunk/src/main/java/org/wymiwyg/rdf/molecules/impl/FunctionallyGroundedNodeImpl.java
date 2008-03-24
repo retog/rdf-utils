@@ -20,53 +20,56 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Set;
 
-import org.wymiwyg.rdf.graphs.fgnodes.impl.FunctionallyGroundedNodeBase;
 import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
 
 /**
+ * An implementation of FunctionallyGroundedNode.
+ * 
+ * Instances must be finalized before being shared, as they otherwise don't
+ * agree to the equals/hashcode contract of FunctionallyGroundedNode
+ * 
  * @author reto
- *
+ * 
  */
-public class FunctionallyGroundedNodeImpl extends FunctionallyGroundedNodeBase implements Finalizable {
+public class FunctionallyGroundedNodeImpl extends FunctionallyGroundedNodeBase
+		implements Finalizable {
 
 	private Collection<NonTerminalMolecule> groundingMolecules = new ArrayList<NonTerminalMolecule>();
 	private Set<NonTerminalMolecule> groundingMoleculeSet = null;
 	private Object tempIdentity = new Object();
 
 	public FunctionallyGroundedNodeImpl() {
-		
+
 	}
-	
+
 	public FunctionallyGroundedNodeImpl(Set<NonTerminalMolecule> ntMolecules) {
 		groundingMolecules.addAll(ntMolecules);
 	}
-	
-	
-	
+
 	public Set<NonTerminalMolecule> getGroundingMolecules() {
 		if (!isFinalized()) {
 			return new GoodFaithSet<NonTerminalMolecule>(groundingMolecules);
 		}
 		if (groundingMoleculeSet == null) {
-			groundingMoleculeSet = new GoodFaithSet<NonTerminalMolecule>(groundingMolecules);
+			groundingMoleculeSet = new GoodFaithSet<NonTerminalMolecule>(
+					groundingMolecules);
 			groundingMolecules = null;
 		}
 		return groundingMoleculeSet;
 	}
 
-	
 	/**
 	 * It's the responsibility of the caller not to add a molecule twice
 	 */
 	public void addGroundingMolecule(NonTerminalMolecule molecule) {
 		groundingMolecules.add(molecule);
 	}
-	
+
 	public void setMolecules(Collection<NonTerminalMolecule> molecules) {
 		groundingMolecules.clear();
 		groundingMolecules.addAll(molecules);
 	}
-	
+
 	@Override
 	public void markFinalized() {
 		tempIdentity = null;

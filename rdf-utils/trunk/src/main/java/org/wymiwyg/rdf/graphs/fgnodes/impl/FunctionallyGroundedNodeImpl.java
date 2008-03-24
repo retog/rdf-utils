@@ -30,25 +30,29 @@ import org.wymiwyg.rdf.graphs.Node;
 import org.wymiwyg.rdf.graphs.Triple;
 import org.wymiwyg.rdf.graphs.fgnodes.FunctionallyGroundedNode;
 import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
+import org.wymiwyg.rdf.molecules.impl.FunctionallyGroundedNodeBase;
 
 /**
  * @author reto
+ * @deprecated the approach of
+ *             {@link org.wymiwyg.rdf.molecules.impl.FunctionallyGroundedNodeImpl}
+ *             avoids doing complicate equality calculations for unfinalized
+ *             objects
  * 
  */
-public class FunctionallyGroundedNodeImpl extends FunctionallyGroundedNodeBase implements FunctionallyGroundedNode {
+@Deprecated
+public class FunctionallyGroundedNodeImpl extends FunctionallyGroundedNodeBase
+		implements FunctionallyGroundedNode {
 
 	static final Log log = LogFactoryImpl
 			.getLog(FunctionallyGroundedNodeImpl.class);
 
 	public Set<NonTerminalMolecule> groundingMolecules = new HashFreeSet<NonTerminalMolecule>();
 
-
 	private List<FunctionallyGroundedNode> perfomingEqualsAgainst = new ArrayList<FunctionallyGroundedNode>();
 
 	boolean hashComputed;
 
-	
-	
 	public FunctionallyGroundedNodeImpl() {
 
 	}
@@ -99,8 +103,6 @@ public class FunctionallyGroundedNodeImpl extends FunctionallyGroundedNodeBase i
 		}
 		groundingMolecules.remove(molecule);
 	}
-
-	
 
 	/*
 	 * (non-Javadoc)
@@ -226,6 +228,5 @@ public class FunctionallyGroundedNodeImpl extends FunctionallyGroundedNodeBase i
 				groundingMolecules);
 
 	}
-
 
 }

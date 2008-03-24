@@ -14,7 +14,7 @@
  *  limitations under the License.
  *
  */
-package org.wymiwyg.rdf.graphs.fgnodes.impl;
+package org.wymiwyg.rdf.molecules.impl;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -58,6 +58,8 @@ public abstract class FunctionallyGroundedNodeBase implements
 		instanceCount++;
 	}
 
+	
+	
 	private static void serialize(FunctionallyGroundedNode node,
 			ArrayList<FunctionallyGroundedNode> visitedFgNodes,
 			StringWriter writer) {
@@ -176,9 +178,9 @@ public abstract class FunctionallyGroundedNodeBase implements
 		}
 
 		FunctionallyGroundedNode other = (FunctionallyGroundedNode) obj;
-		if (!isFinalized() || !other.isFinalized()) {
+		/*if (!isFinalized() || !other.isFinalized()) {
 			return false;
-		}
+		}*/
 		byte[] otherStronhHash = other.strongHashCode();
 		return Arrays.equals(strongHashCode(), otherStronhHash);
 	}
@@ -207,7 +209,9 @@ public abstract class FunctionallyGroundedNodeBase implements
 	}
 
 	/**
-	 * @return
+	 * @return true if this node is finalized and no molecule will be added to
+	 *         it or to any of the fg-nodes directly or indirectly contained in
+	 *         its molecules
 	 */
 	public boolean isFinalized() {
 		return finalized;

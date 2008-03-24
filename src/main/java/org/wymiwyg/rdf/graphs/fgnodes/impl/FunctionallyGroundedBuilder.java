@@ -29,6 +29,7 @@ import org.wymiwyg.rdf.graphs.Triple;
 import org.wymiwyg.rdf.graphs.fgnodes.FunctionallyGroundedNode;
 import org.wymiwyg.rdf.graphs.impl.TripleImpl;
 import org.wymiwyg.rdf.molecules.NonTerminalMolecule;
+import org.wymiwyg.rdf.molecules.impl.FunctionallyGroundedNodeBase;
 import org.wymiwyg.rdf.molecules.impl.SimpleNonTerminalMolecule;
 
 /**

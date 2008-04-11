@@ -32,6 +32,7 @@ import junit.framework.TestCase;
 
 import org.apache.regexp.RE;
 import org.apache.regexp.RESyntaxException;
+import org.wymiwyg.commons.jena.ModelCreationUtil;
 import org.wymiwyg.commons.util.Util;
 import org.wymiwyg.rdf.graphs.Graph;
 import org.wymiwyg.rdf.graphs.jenaimpl.JenaUtil;

@@ -83,7 +83,7 @@ public class NaturalizedGraph extends SimpleGraph implements Graph {
 	 */
 	public NaturalizedGraph(Graph graph,
 			Collection<FunctionallyGroundedNode> fgNodes) {
-		this(graph, fgNodes, true);
+		this(graph, fgNodes, false);
 	}
 	
 	/** Creates a naturalized graph adding a collection of fgnodes and optionally other referenced fg-nodes

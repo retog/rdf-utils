@@ -16,6 +16,9 @@
  */
 package org.wymiwyg.rdf.leanifier.test;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import java.io.IOException;
 
 import org.wymiwyg.rdf.graphs.Graph;
@@ -25,8 +28,9 @@ import org.wymiwyg.rdf.leanifier.MoleculeBasedLeanifier;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.shared.impl.JenaParameters;
-
+import com.hp.hpl.jena.vocabulary.RDF;
 /**
  * @author reto
  * 
@@ -48,10 +52,6 @@ public class MolecubeasedLeanifierTest extends GraphLeanifierTest {
 		}
 		return new DeAnonymizedGraph(leanModel);
 
-	}
-
-	public void testProb1() throws IOException {
-		super.testProb1();
 	}
 
 	public void testNamedUnnamed() {
@@ -100,14 +100,8 @@ public class MolecubeasedLeanifierTest extends GraphLeanifierTest {
 	}
 
 	@Override
-	public void testFile8() {
-		//graph8 = getGraphFromResource("test8.rdf");
-		/*Graph leanifiedGraph = MoleculeBasedLeanifier.getLeanVersionOf(graph8);
-		Graph doubleLeanifiedGraph = MoleculeBasedLeanifier
-				.getLeanVersionOf(leanifiedGraph);
-		boolean equals = leanifiedGraph.equals(doubleLeanifiedGraph);
-		assertTrue(equals);*/
-		super.testFile8();
+	public void testFile4() {
+		super.testFile4();
 	}
 	
 	public void testFile9() {
@@ -122,7 +116,12 @@ public class MolecubeasedLeanifierTest extends GraphLeanifierTest {
 	}
 	
 	public void testIFPCircle() {
-		Model model = modelWithStatements("_:a rdf:rest http://test; http://test rdf:rest _:a");
+		Model model = ModelFactory.createDefaultModel();
+		Resource a = model.createResource();
+		Resource b = model.createResource("http://test");
+		//modelWithStatements("_:a rdf:rest http://test; http://test rdf:rest _:a");
+		model.add(a, RDF.rest, b);
+		model.add(b, RDF.rest, a);
 		Graph g = JenaUtil.getGraphFromModel(model, true);
 		Graph gLeanified = makeLean(g);
 		Graph doubleLeanifiedGraph = makeLean(gLeanified);
@@ -132,3 +131,4 @@ public class MolecubeasedLeanifierTest extends GraphLeanifierTest {
 
 
 }
+

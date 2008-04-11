@@ -16,10 +16,10 @@
  */
 package org.wymiwyg.rdf.leanifier.test;
 
+import org.wymiwyg.commons.jena.ModelCreationUtil;
 import org.wymiwyg.rdf.graphs.Graph;
 import org.wymiwyg.rdf.graphs.jenaimpl.JenaUtil;
 import org.wymiwyg.rdf.leanifier.MoleculeBasedLeanifier;
-import org.wymiwyg.rdf.utils.jena.test.ModelCreationUtil;
 
 import com.hp.hpl.jena.rdf.model.Model;
 

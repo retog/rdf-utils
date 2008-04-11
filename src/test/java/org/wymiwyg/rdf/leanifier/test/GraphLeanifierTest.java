@@ -16,10 +16,12 @@
  */
 package org.wymiwyg.rdf.leanifier.test;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -27,6 +29,8 @@ import java.net.URL;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.Test;
+import org.wymiwyg.commons.jena.ModelCreationUtil;
 import org.wymiwyg.rdf.graphs.Graph;
 import org.wymiwyg.rdf.graphs.fgnodes.impl.NaturalizedGraph;
 import org.wymiwyg.rdf.graphs.impl.SimpleGraph;
@@ -36,11 +40,9 @@ import org.wymiwyg.rdf.leanifier.MoleculeBasedLeanifier;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
-import org.wymiwyg.rdf.utils.jena.test.ModelCreationUtil;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.test.ModelTestBase;
 import com.hp.hpl.jena.shared.impl.JenaParameters;
 import com.hp.hpl.jena.vocabulary.RDFS;
 
@@ -48,14 +50,8 @@ import com.hp.hpl.jena.vocabulary.RDFS;
  * @author reto
  * 
  */
-public class GraphLeanifierTest extends ModelTestBase {
+public class GraphLeanifierTest {
 
-	/**
-	 * @param arg0
-	 */
-	public GraphLeanifierTest() {
-		super("GraphLeanifierTest");
-	}
 
 	public static final Log log = LogFactory.getLog(GraphLeanifierTest.class);
 
@@ -68,6 +64,7 @@ public class GraphLeanifierTest extends ModelTestBase {
 				.toString());
 	}
 
+	@Test
 	public void testLeanFiles() {
 		// in gcj getClass().getResource("./") returns null, litle work-around
 		URL dirURL = getClass().getResource("GraphLeanifierTest.class");
@@ -146,6 +143,7 @@ public class GraphLeanifierTest extends ModelTestBase {
 		}
 	}
 
+	@Test
 	public void testCompareWithLeanifiedFiles() {
 		// in gcj getClass().getResource("./") returns null, litle work-around
 		URL dirURL = getClass().getResource("GraphLeanifierTest.class");
@@ -196,6 +194,7 @@ public class GraphLeanifierTest extends ModelTestBase {
 
 	}
 
+	@Test
 	public void testNamedUnnamed() {
 		Model model = ModelFactory.createDefaultModel();
 		model.add(model.createResource("http://foo"), RDFS.seeAlso, model
@@ -208,16 +207,19 @@ public class GraphLeanifierTest extends ModelTestBase {
 		assertEquals("remove unnamed resources obsole by named ones", g, g1);
 	}
 
+	
 	protected Model getModelFromResource(String resName) {
 		Model model = ModelFactory.createDefaultModel();
 		model.read(getClass().getResource(resName).toString());
 		return model;
 	}
 
+	
 	protected Graph getGraphFromResource(String resName) {
 		return JenaUtil.getGraphFromModel(getModelFromResource(resName), true);
 	}
-
+	
+	@Test
 	public void testFile3() {
 		JenaParameters.disableBNodeUIDGeneration = true;
 		for (int i = 0; i < 1; i++) {
@@ -229,17 +231,20 @@ public class GraphLeanifierTest extends ModelTestBase {
 		}
 	}
 
+	@Test
 	public void testFile4() {
 		JenaParameters.disableBNodeUIDGeneration = true;
 		for (int i = 0; i < 1; i++) {
 			Graph g = getGraphFromResource("test4.rdf");
 			Graph gLean = makeLean(g);
+			log.debug("made lean");
 			Graph gLeanified = makeLean(gLean);
-			// JenaUtil.getModelFromGraph(gLeanified).write(System.out, "N3");
+			log.debug("made lean again");
 			assertEquals(gLeanified, gLean);
 		}
 	}
 
+	@Test
 	public void testFile5() {
 		JenaParameters.disableBNodeUIDGeneration = true;
 		for (int i = 0; i < 1; i++) {
@@ -251,6 +256,7 @@ public class GraphLeanifierTest extends ModelTestBase {
 		}
 	}
 
+	@Test
 	public void testFile8() {
 		JenaParameters.disableBNodeUIDGeneration = true;
 		for (int i = 0; i < 10; i++) {
@@ -267,6 +273,7 @@ public class GraphLeanifierTest extends ModelTestBase {
 	 * brought back from gvs, fails with molecules faster when strong hashcode
 	 * is computed with XOR than when computed with AND
 	 */
+	@Test
 	public void testFile15() {
 		JenaParameters.disableBNodeUIDGeneration = true;
 		for (int i = 0; i < 50; i++) {
@@ -284,7 +291,7 @@ public class GraphLeanifierTest extends ModelTestBase {
 			assertTrue(equals);
 		}
 	}
-
+	@Test
 	public void testFile3Alt() {
 		JenaParameters.disableBNodeUIDGeneration = true;
 		for (int i = 0; i < 1; i++) {
@@ -295,7 +302,7 @@ public class GraphLeanifierTest extends ModelTestBase {
 			assertEquals(gLeanified, gLean);
 		}
 	}
-
+	@Test
 	public void testDec() throws IOException {
 		Graph prob1Graph = getGraphFromResource("prob1.rdf");
 		ReferenceGroundedDecomposition dec = new ReferenceGroundedDecompositionImpl(
@@ -325,6 +332,7 @@ public class GraphLeanifierTest extends ModelTestBase {
 		// JenaUtil.getModelFromGraph(recDecRecLean).write(System.out);
 	}
 
+	@Test
 	public void testProb1() throws IOException {
 		for (int i = 0; i < 5; i++) {
 			Graph prob1Graph = getGraphFromResource("prob1.rdf");
@@ -350,7 +358,8 @@ public class GraphLeanifierTest extends ModelTestBase {
 			assertTrue(equals);
 		}
 	}
-
+	
+	@Test
 	public void testConsistencyRandom() {
 		Model randomModel = null;
 		Graph randomGraph;

@@ -18,6 +18,7 @@ package org.wymiwyg.rdf.molecules.functref.test;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -32,14 +33,18 @@ import org.wymiwyg.rdf.graphs.Node;
 import org.wymiwyg.rdf.graphs.fgnodes.FunctionallyGroundedNode;
 import org.wymiwyg.rdf.graphs.fgnodes.impl.InverseFunctionalPropertyNodeImpl;
 import org.wymiwyg.rdf.graphs.impl.AnonymizedGraph;
+import org.wymiwyg.rdf.graphs.impl.DeAnonymizedGraph;
 import org.wymiwyg.rdf.graphs.impl.NamedNodeImpl;
 import org.wymiwyg.rdf.graphs.impl.NodeImpl;
 import org.wymiwyg.rdf.graphs.impl.SimpleGraph;
 import org.wymiwyg.rdf.graphs.impl.TripleImpl;
 import org.wymiwyg.rdf.graphs.jenaimpl.JenaUtil;
+import org.wymiwyg.rdf.molecules.MaximumContextualMolecule;
+import org.wymiwyg.rdf.molecules.TerminalMolecule;
 import org.wymiwyg.rdf.molecules.functref.ReferenceGroundedDecomposition;
 import org.wymiwyg.rdf.molecules.functref.impl.FgNodeMerger;
 import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedDecompositionImpl;
+import org.wymiwyg.rdf.molecules.functref.impl.ReferenceGroundedUtil;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -125,7 +130,7 @@ public class FgNodeMergerTest {
 	 */
 	@Test
 	public void fileTest4() {
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 1; i++) {
 			Model origM = ModelFactory.createDefaultModel();
 			origM.read(getClass().getResource("test4.rdf").toString());
 
@@ -135,9 +140,47 @@ public class FgNodeMergerTest {
 					graph);
 			Set<FunctionallyGroundedNode> fgNodes = ref
 					.getFunctionallyGroundedNodes();
-			Map<Object, FunctionallyGroundedNode> map = map(fgNodes);
-			for (int j = 0; j < 20; j++) {
-				map = FgNodeMerger.mergeFgNodes(map);
+			//Map<Object, FunctionallyGroundedNode> map = map(fgNodes);
+			boolean firtsRound = true;
+			Graph lastReconstructedGraph = null;
+			for (int j = 0; j < 10; j++) {
+				Map<Object, FunctionallyGroundedNode> map = map(fgNodes);
+				Map<Object, FunctionallyGroundedNode> mergedMap = FgNodeMerger.mergeFgNodes(map);
+				final Set<FunctionallyGroundedNode> mergedFGnodes = new HashSet<FunctionallyGroundedNode>(mergedMap.values());
+				if (!firtsRound) {
+					assertEquals(fgNodes, mergedFGnodes);
+				}
+				fgNodes = mergedFGnodes;
+				ReferenceGroundedDecomposition referenceGroundedDecomposition = new ReferenceGroundedDecomposition() {
+
+					public Set<MaximumContextualMolecule> getContextualMolecules() {
+						return new HashSet<MaximumContextualMolecule>();
+					}
+
+					public Set<FunctionallyGroundedNode> getFunctionallyGroundedNodes() {
+						return new HashSet<FunctionallyGroundedNode>(new ArrayList<FunctionallyGroundedNode>(mergedFGnodes));
+					}
+
+					public Set<TerminalMolecule> getTerminalMolecules() {
+						return new HashSet<TerminalMolecule>();
+					}
+					
+				};
+				Graph reconstructedGraph = ReferenceGroundedUtil.reconstructGraph(referenceGroundedDecomposition);
+				Graph reconstructedGraph2 = ReferenceGroundedUtil.reconstructGraph(referenceGroundedDecomposition);
+				assertEquals(reconstructedGraph, reconstructedGraph2);
+				reconstructedGraph = new DeAnonymizedGraph(reconstructedGraph);
+				assertEquals(reconstructedGraph, new DeAnonymizedGraph(reconstructedGraph2));
+				if (!firtsRound) {
+					assertEquals(lastReconstructedGraph, reconstructedGraph);
+				}
+				lastReconstructedGraph = reconstructedGraph;
+								//JenaUtil.getModelFromGraph(reconstructedGraph).write(System.out);
+				//assertEquals(graph, reconstructedGraph);
+				
+				//System.out.println(mergedFGnodes);
+				//map = map(mergedFGnodes);
+				firtsRound = false;
 			}
 		}
 	}

@@ -67,14 +67,20 @@ public class FgNodeMerger {
 			keySet.add(entry.getKey());
 		}
 		int sizeBeforeMerging = nodes2Keys.size();
-//		log.info("Size before merging: " + sizeBeforeMerging);
+		if (log.isDebugEnabled()) {
+			log.debug("Size before merging: " + sizeBeforeMerging);
+			log.debug(nodes2Keys.keySet());
+		}
 		mergeFgNodes(nodes2Keys);
 		while (nodes2Keys.size() < sizeBeforeMerging) {
 			sizeBeforeMerging = nodes2Keys.size();
 			if (sizeBeforeMerging > 1)
 				mergeFgNodes(nodes2Keys);
 		}
-//		log.info("Size after merging: " + sizeBeforeMerging);
+		if (log.isDebugEnabled()) {
+			log.debug("Size after merging: " + sizeBeforeMerging);
+			log.debug(nodes2Keys.keySet());
+		}
 		Map<T, FunctionallyGroundedNode> result = new HashMap<T, FunctionallyGroundedNode>();
 		for (Map.Entry<FunctionallyGroundedNode, Set<T>> nodes2KeyEntry : nodes2Keys
 				.entrySet()) {

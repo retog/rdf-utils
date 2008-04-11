@@ -7,7 +7,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.wymiwyg</groupId>
   <artifactId>rdf-utils</artifactId>
-  <version>0.6.2</version>
+  <version>0.6.3</version>
   <description>diff, patch and more</description>
   <build>
     <plugins>
@@ -57,7 +57,7 @@
     <dependency>
       <groupId>org.wymiwyg</groupId>
       <artifactId>wymiwyg-commons-jena</artifactId>
-      <version>0.5</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.hp.hpl.jena</groupId>
@@ -65,12 +65,12 @@
       <version>2.5.5</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
+   <!--  <dependency>
       <groupId>rdf-utils-testing</groupId>
       <artifactId>rdf-utils-testing</artifactId>
       <version>0.6.1</version>
       <scope>test</scope>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

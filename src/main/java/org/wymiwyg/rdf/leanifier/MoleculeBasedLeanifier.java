@@ -105,6 +105,8 @@ public class MoleculeBasedLeanifier {
 			SimpleGraph result = new NaturalizedGraph(nonNaturalGraph, leanifiedDec
 					.getFunctionallyGroundedNodes());
 			result.markFinalized();
+			/*System.out.println("DEBUG not anonymized:");
+			JenaUtil.getModelFromGraph(result).write(System.out, "N3");*/
 			return result;
 		} catch (NoReplacementFoundException ex) {
 			log.error(ex.toString());

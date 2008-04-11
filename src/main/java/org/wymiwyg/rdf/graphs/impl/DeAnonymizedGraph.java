@@ -16,11 +16,14 @@
  */
 package org.wymiwyg.rdf.graphs.impl;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import org.wymiwyg.rdf.graphs.AbstractGraph;
 import org.wymiwyg.rdf.graphs.Graph;
@@ -39,6 +42,7 @@ import com.hp.hpl.jena.vocabulary.OWL;
  */
 public class DeAnonymizedGraph extends AbstractGraph {
 
+	//private final static Log log = LogFactory.getLog(DeAnonymizedGraph.class);
 	
 	/** a set with a defaul-value ehich is the NamedNode with is first when alphabetically sorting by uri
 	 * 
@@ -46,21 +50,29 @@ public class DeAnonymizedGraph extends AbstractGraph {
 	 *
 	 */
 	private class NamedNodeAlternatives {
-		NamedNode canonical;
-		Set<NamedNode> others = new HashSet();
+		SortedSet<NamedNode> allSorted = new TreeSet<NamedNode>(new Comparator<NamedNode>() {
+
+			public int compare(NamedNode o1, NamedNode o2) {
+				return o1.toString().compareTo(o2.toString());
+			}
+			
+		});
 		
 		NamedNodeAlternatives(NamedNode node) {
-			canonical =  node;
+			allSorted.add(node);
+			
 		}
 		
 		void addName(NamedNode node) {
 			multiNodeAlternatives.add(this);
-			if (canonical.getURIRef().compareTo(canonical.toString()) < 0) {
-				others.add(canonical);
-				canonical = node;
-			} else {
-				others.add(node);
-			}
+			allSorted.add(node);
+		}
+
+		/**
+		 * @return
+		 */
+		public NamedNode getCanonical() {
+			return allSorted.first();
 		}
 		
 	}
@@ -82,13 +94,13 @@ public class DeAnonymizedGraph extends AbstractGraph {
 			Node subject = triple.getSubject();
 			NamedNodeAlternatives subjectReplacementAlt = replaceMap.get(subject);
 			if (subjectReplacementAlt != null) {
-				subject = subjectReplacementAlt.canonical;
+				subject = subjectReplacementAlt.getCanonical();
 				modified = true;
 			}
 			Node object = triple.getObject();
 			NamedNodeAlternatives objectReplacementAlt = replaceMap.get(object);
 			if (objectReplacementAlt != null) {
-				object = objectReplacementAlt.canonical;
+				object = objectReplacementAlt.getCanonical();
 				modified = true;
 			}
 			if (modified) {
@@ -107,8 +119,11 @@ public class DeAnonymizedGraph extends AbstractGraph {
 	 */
 	private void addOwlSameAs() {
 		for (NamedNodeAlternatives alternatives : multiNodeAlternatives) {
-			NamedNode canonical = alternatives.canonical;
-			for (NamedNode other : alternatives.others) {
+			NamedNode canonical = alternatives.getCanonical();
+			for (NamedNode other : alternatives.allSorted) {
+				if (other == canonical) {
+					continue;
+				}
 				triples.add(new TripleImpl(canonical, sameAsProp, other));
 			}
 		}

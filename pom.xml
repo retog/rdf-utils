@@ -2,12 +2,12 @@
   <parent>
     <artifactId>wymiwyg</artifactId>
     <groupId>org.wymiwyg</groupId>
-    <version>0.9</version>
+    <version>0.9.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.wymiwyg</groupId>
   <artifactId>rdf-utils</artifactId>
-  <version>0.6.3</version>
+  <version>0.6.4</version>
   <description>diff, patch and more</description>
   <build>
     <plugins>
@@ -57,7 +57,6 @@
     <dependency>
       <groupId>org.wymiwyg</groupId>
       <artifactId>wymiwyg-commons-jena</artifactId>
-      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.hp.hpl.jena</groupId>

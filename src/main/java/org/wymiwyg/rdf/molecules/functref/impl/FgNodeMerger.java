@@ -71,11 +71,11 @@ public class FgNodeMerger {
 			log.debug("Size before merging: " + sizeBeforeMerging);
 			log.debug(nodes2Keys.keySet());
 		}
-		mergeFgNodes(nodes2Keys);
+		mergeFgNodes2(nodes2Keys);
 		while (nodes2Keys.size() < sizeBeforeMerging) {
 			sizeBeforeMerging = nodes2Keys.size();
 			if (sizeBeforeMerging > 1)
-				mergeFgNodes(nodes2Keys);
+				mergeFgNodes2(nodes2Keys);
 		}
 		if (log.isDebugEnabled()) {
 			log.debug("Size after merging: " + sizeBeforeMerging);
@@ -94,7 +94,7 @@ public class FgNodeMerger {
 		return result;
 	}
 
-	static <T> void mergeFgNodes(
+	static <T> void mergeFgNodes2(
 			Map<FunctionallyGroundedNode, Set<T>> nodes2Keys) {
 
 		// finding group of equivalent nodes
